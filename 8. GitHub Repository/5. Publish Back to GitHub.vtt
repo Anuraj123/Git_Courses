@@ -1,0 +1,106 @@
+﻿WEBVTT
+
+1
+00:00:00.000 --> 00:00:04.933
+Welcome, in this video, we're going to look at abbreviating our push command.
+
+2
+00:00:04.933 --> 00:00:09.200
+We just pushed up our changes up to GitHub, and I used the full syntax:
+
+3
+00:00:09.200 --> 00:00:13.666
+"git push", and then the remote reference, and then the name of the branch.
+
+4
+00:00:13.666 --> 00:00:19.133
+When we have tracking branches, the remote reference and the branch names are optional;
+
+5
+00:00:19.133 --> 00:00:23.766
+however, if I just do "git push", at least Apple Git will warn me about
+
+6
+00:00:23.766 --> 00:00:28.700
+a change that just happened between the prior version of Git and Git 2.0.
+
+7
+00:00:28.700 --> 00:00:32.333
+Let's try it out. Now, your system may warn you, or it may not,
+
+8
+00:00:32.333 --> 00:00:37.066
+since Git 1.7, Git has added this message talking about
+
+9
+00:00:37.066 --> 00:00:40.433
+the default push behavior, which in the past was "matching".
+
+10
+00:00:40.433 --> 00:00:44.900
+Which meant, if you had several tracking branches, if you just typed "git push"
+
+11
+00:00:44.900 --> 00:00:48.866
+it would send all changes to all matching branches at the same time.
+
+12
+00:00:48.866 --> 00:00:51.900
+In newer versions of Git, starting in 2.0,
+
+13
+00:00:51.900 --> 00:00:55.100
+the new behavior is to use what's called simple,
+
+14
+00:00:55.100 --> 00:01:00.000
+which means it sends only the current tracking branch up to your remote repository.
+
+15
+00:01:00.000 --> 00:01:05.700
+At the end, it does tell me that I'm up-to-date, which means it did the behavior that is expected.
+
+16
+00:01:05.700 --> 00:01:09.533
+If I type "git version", you can see that I have version 2.3.2,
+
+17
+00:01:09.533 --> 00:01:13.366
+which is past 2.0, which means that it only sent master,
+
+18
+00:01:13.366 --> 00:01:17.033
+and if I were to have other branches, it would still only send master.
+
+19
+00:01:17.033 --> 00:01:21.300
+However, in order to quiet this message, I need to go ahead and set
+
+20
+00:01:21.300 --> 00:01:25.733
+the global configuration item that it's telling me to set. Let's do that right now.
+
+21
+00:01:25.733 --> 00:01:32.766
+Type "git config --global" since we're going to be setting this at the user or global level;
+
+22
+00:01:32.766 --> 00:01:39.600
+space; and the entry item is "push.default"; space; and the value that I want to use is "simple",
+
+23
+00:01:39.600 --> 00:01:42.933
+which is the new default behavior in 2.0 and above.
+
+24
+00:01:42.933 --> 00:01:47.166
+Double check that line, and then press enter. Now when I type "git push",
+
+25
+00:01:47.166 --> 00:01:50.100
+I simply get a message that tells me that everything is up-to-date,
+
+26
+00:01:50.100 --> 00:01:54.533
+I don't get that long message like I did before.
+

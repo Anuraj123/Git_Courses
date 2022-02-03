@@ -1,0 +1,118 @@
+﻿WEBVTT
+
+1
+00:00:00.000 --> 00:00:04.966
+Welcome, in this video, we're going to set up our SSH key.
+
+2
+00:00:04.966 --> 00:00:09.300
+The first step we need to do in order to communicate via SSH with GitHub
+
+3
+00:00:09.300 --> 00:00:12.633
+is to create our SSH key on our local system.
+
+4
+00:00:12.633 --> 00:00:17.833
+I'm currently in my user's home directory; if I do an "ls" on the ".ssh" directory,
+
+5
+00:00:17.833 --> 00:00:21.066
+I currently don't have a directory named ".ssh".
+
+6
+00:00:21.066 --> 00:00:26.433
+So, we need to create one first, "mkdir .ssh";
+
+7
+00:00:26.433 --> 00:00:32.866
+that will create a directory called ".ssh" that will contain all our SSH related files.
+
+8
+00:00:32.866 --> 00:00:39.700
+Press enter, now change directory into the ".ssh" folder: "cd .ssh".
+
+9
+00:00:39.700 --> 00:00:43.800
+This is where we're currently at; we're within a folder called ".ssh",
+
+10
+00:00:43.800 --> 00:00:45.666
+underneath our user's home directory.
+
+11
+00:00:45.666 --> 00:00:52.533
+Now, we need to use a tool called "ssh-keygen" to generate our public and private keys.
+
+12
+00:00:52.533 --> 00:01:00.900
+Type "ssh-keygen -t" for type; space; and then type is going to be "rsa";
+
+13
+00:01:00.900 --> 00:01:07.700
+space; then "-C" for common name; then, in double quotes, put your email address:
+
+14
+00:01:07.700 --> 00:01:11.600
+I'm going to use my email address "jason@git.training".
+
+15
+00:01:11.600 --> 00:01:14.266
+Carefully review this line, then press enter.
+
+16
+00:01:14.266 --> 00:01:18.600
+You'll be prompted where to save this file, press enter to accept the default.
+
+17
+00:01:18.600 --> 00:01:22.833
+Enter a passphrase, or press enter to have no passphrase.
+
+18
+00:01:22.833 --> 00:01:26.100
+Officially, I'm going to recommend that you use a passphrase;
+
+19
+00:01:26.100 --> 00:01:30.800
+however, if you're on windows, and don't like getting prompted for a passphrase all the time,
+
+20
+00:01:30.800 --> 00:01:33.866
+you may consider not using a passphrase.
+
+21
+00:01:33.866 --> 00:01:37.766
+However, the official recommendation is just to use a passphrase.
+
+22
+00:01:37.766 --> 00:01:41.233
+If you entered a passphrase, you will be prompted to verify it.
+
+23
+00:01:41.233 --> 00:01:44.466
+Once you've verified your passphrase again, press enter
+
+24
+00:01:44.466 --> 00:01:52.066
+and your public and private keys will be generated. Type "ls -al" to list all files.
+
+25
+00:01:52.066 --> 00:01:59.800
+You should have an "id_rsa" file, and also an "id_rsa.pub" file.
+
+26
+00:01:59.800 --> 00:02:05.066
+The ".pub" file is the public key, and the other file is your private key.
+
+27
+00:02:05.066 --> 00:02:10.166
+Leave your private key alone, and then open the .pub file with your favorite text editor.
+
+28
+00:02:10.166 --> 00:02:15.033
+Once your favorite text editor opens, select the entire contents of this file,
+
+29
+00:02:15.033 --> 00:02:20.966
+then copy to your clipboard. Once you've done that you can close your editor.
+

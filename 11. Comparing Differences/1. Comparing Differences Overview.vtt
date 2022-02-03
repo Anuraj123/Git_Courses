@@ -1,0 +1,26 @@
+﻿WEBVTT
+
+1
+00:00:00.000 --> 00:00:02.700
+In this section, we will cover how to use GitHub
+
+2
+00:00:02.700 --> 00:00:06.900
+to compare differences between different points in our GitHub repository.
+
+3
+00:00:06.900 --> 00:00:10.866
+We can compare between branches, tags, and even commits.
+
+4
+00:00:10.866 --> 00:00:14.500
+In GitHub, we initiate many of the comparing scenarios
+
+5
+00:00:14.500 --> 00:00:19.200
+using the pull request process, except we don't proceed through
+
+6
+00:00:19.200 --> 00:00:23.866
+with an actual pull request, which we'll cover later.
+

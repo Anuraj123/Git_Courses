@@ -1,0 +1,198 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:10.266
+Welcome, in this video, I'm going to show the common
+issue that happens with Git, as provided by Apple,
+
+00:00:10.266 --> 00:00:15.300
+after the yearly Mac OS upgrade and how to fix it.
+
+00:00:17.210 --> 00:00:24.230
+Every year Apple has provided a significant
+update to Mac OS. This year is no exception.
+
+00:00:24.230 --> 00:00:28.166
+However, each time that happens Git,
+
+00:00:28.166 --> 00:00:34.920
+along with other utilities provided by Apple's command
+line developer tools, get messed up in the update.
+
+00:00:34.933 --> 00:00:40.280
+Now this doesn't happen with the
+occasional patches throughout the year;
+
+00:00:40.280 --> 00:00:49.410
+for example going from 10.13.3 to
+10.13.4 won't cause any issues.
+
+00:00:49.420 --> 00:00:54.833
+This seems to happen only during the more
+significant code name changing updates
+
+00:00:54.833 --> 00:01:02.300
+like upgrading from High Sierra (10.13) to Mojave (10.14)
+
+00:01:02.300 --> 00:01:05.933
+Prior to the upgrade my installed version of Git,
+
+00:01:05.933 --> 00:01:12.000
+which is included with Xcode or via the command
+line developer tools, worked perfectly fine.
+
+00:01:12.010 --> 00:01:15.310
+Now, post upgrade, I have some issues.
+
+00:01:15.310 --> 00:01:16.800
+Let's check it out.
+
+00:01:17.272 --> 00:01:24.166
+With my terminal open I still have the Git binary,
+or at least a symlink on my system's path.
+
+00:01:25.077 --> 00:01:26.633
+"which git",
+
+00:01:26.633 --> 00:01:31.466
+which is located at "/usr/bin/git".
+
+00:01:31.966 --> 00:01:37.820
+If Git is located at another location then you
+aren't using the Apple provided Git binary.
+
+00:01:37.820 --> 00:01:45.680
+Now, when I go to check the version of Git installed,
+"git version", I get an error message like this.
+
+00:01:45.680 --> 00:01:50.133
+I've encountered this error each year
+that I performed the Mac OS upgrade.
+
+00:01:50.133 --> 00:01:54.920
+By now my only surprise is that Apple
+still hasn't fixed this issue.
+
+00:01:55.066 --> 00:01:57.860
+All right, time for the solution.
+
+00:01:57.860 --> 00:02:05.740
+It's basically reinstall the command
+line developer tools with this command:
+
+00:02:05.740 --> 00:02:12.400
+"sudo xcode-select  --install"
+
+00:02:12.400 --> 00:02:15.266
+Actually the sudo part is optional;
+
+00:02:15.266 --> 00:02:22.100
+Mac OS will simply prompt you for your credentials
+before proceeding if you don't use sudo.
+
+00:02:22.100 --> 00:02:25.366
+Now press enter to continue.
+
+00:02:25.366 --> 00:02:32.433
+Now I'm prompted for my password, which is
+required to run any command using sudo.
+
+00:02:32.450 --> 00:02:39.733
+After that you'll be prompted to
+either get Xcode, not now, or install.
+
+00:02:39.733 --> 00:02:43.490
+Of course the middle option simply cancels this process.
+
+00:02:43.490 --> 00:02:49.000
+The first option sends you to the Mac App Store
+to download the latest version of Xcode,
+
+00:02:49.000 --> 00:02:51.490
+which will include the command line developer tools.
+
+00:02:51.500 --> 00:02:59.633
+The last option, install, will just install the
+command line developer's tool part of the code suite.
+
+00:02:59.633 --> 00:03:03.666
+That is the option I normally use, since I don't use Xcode
+
+00:03:03.666 --> 00:03:09.166
+and there's no point in downloading a multi-gigabyte
+application I'm not planning to use otherwise.
+
+00:03:09.166 --> 00:03:12.380
+If you want to install everything, go right ahead.
+
+00:03:12.380 --> 00:03:17.300
+You'll get Git and other tools updated that way as well.
+
+00:03:17.300 --> 00:03:21.290
+For everyone else just click install to continue.
+
+00:03:21.290 --> 00:03:25.480
+After that you'll be greeted with a license agreement dialog.
+
+00:03:25.480 --> 00:03:28.110
+Feel free to read it if you so desire.
+
+00:03:28.110 --> 00:03:31.790
+Otherwise continue by clicking on "Agree".
+
+00:03:31.790 --> 00:03:35.400
+Now the installer will download and re-install
+
+00:03:35.400 --> 00:03:41.500
+the latest copy of the command line developer
+tools compatible with your system.
+
+00:03:41.510 --> 00:03:47.600
+This will likely take several minutes, but I'll
+speed things up with the magic of video editing.
+
+00:03:47.600 --> 00:03:52.633
+Great. Once complete, click on the done button.
+
+00:03:52.633 --> 00:03:59.950
+Once back to the terminal we should able to check
+Git's version and not have an error this time.
+
+00:03:59.950 --> 00:04:02.866
+"git version".
+
+00:04:02.866 --> 00:04:06.690
+Awesome, it looks like we are back in business.
+
+00:04:06.700 --> 00:04:13.666
+Well this really completes this video, but I
+wanted to address one other topic while I'm here.
+
+00:04:13.666 --> 00:04:20.700
+Sicne I'm certain someone will ask or pointed out
+that's regarding alternative ways to install Git.
+
+00:04:20.700 --> 00:04:28.660
+Yes it is true you can use package managers
+like homebrew or MacPorts to install Git.
+
+00:04:28.660 --> 00:04:35.520
+However they have their own issues, especially
+if you do plan to use Xcode at any point.
+
+00:04:35.530 --> 00:04:44.066
+This is why I generally recommend sticking with the flavor
+of Git provided by Apple, it just keeps things simple.
+
+00:04:44.066 --> 00:04:49.866
+If you already have your favorite package
+manager and you never plan to use Xcode,
+
+00:04:49.866 --> 00:04:56.450
+or at least you're comfortable overcoming the
+conflicts, then you can certainly go that route.
+
+00:04:56.530 --> 00:05:00.400
+You are likely to end up with a slightly newer version of Git,
+
+00:05:00.400 --> 00:05:07.433
+but not enough to make a meaningful difference in daily work.

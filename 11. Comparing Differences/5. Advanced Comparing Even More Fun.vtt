@@ -1,0 +1,138 @@
+﻿WEBVTT
+
+1
+00:00:00.000 --> 00:00:05.066
+Welcome, in this video, we're going to do a little bit more advanced comparisons in GitHub.
+
+2
+00:00:05.066 --> 00:00:09.566
+I'm currently logged into GitHub, and I'm on the "website" GitHub repository.
+
+3
+00:00:09.566 --> 00:00:12.600
+Go over to the right hand side and click on "Pull requests",
+
+4
+00:00:12.600 --> 00:00:16.966
+then click on new "pull request". That will take us to the compare changes page,
+
+5
+00:00:16.966 --> 00:00:20.666
+and by default, it's going to want you to compare two branches together;
+
+6
+00:00:20.666 --> 00:00:24.433
+however, if you scroll down, you'll notice that there's some advice
+
+7
+00:00:24.433 --> 00:00:26.933
+on other ways that you can do comparisons:
+
+8
+00:00:26.933 --> 00:00:30.800
+branches, tags, commit ranges, and also time ranges.
+
+9
+00:00:30.800 --> 00:00:36.033
+For example, we could compare the head of develop against three days ago on develop.
+
+10
+00:00:36.033 --> 00:00:40.133
+Let's expand out our base dropdown, and then type an expression
+
+11
+00:00:40.133 --> 00:00:43.733
+that will compare our develop branch from three days ago:
+
+12
+00:00:43.733 --> 00:00:49.500
+"develop"; and then the "@" symbol; then, in curly braces, a date range "",
+
+13
+00:00:49.500 --> 00:00:52.100
+then press enter. This gives us a comparison,
+
+14
+00:00:52.100 --> 00:00:56.333
+comparing the head of develop against develop from three days ago.
+
+15
+00:00:56.333 --> 00:01:00.666
+We can scroll down, and we can see the files that are associated with this comparison.
+
+16
+00:01:00.666 --> 00:01:06.400
+We can get even more specific; let's change this compare to a tag named "unstable".
+
+17
+00:01:06.400 --> 00:01:10.433
+Now we're comparing develop at three days ago to unstable.
+
+18
+00:01:10.433 --> 00:01:13.433
+Now let's change this to master at a specific date:
+
+19
+00:01:13.433 --> 00:01:17.900
+"master"; the "@" symbol; then, in curly braces, the specific date
+
+20
+00:01:17.900 --> 00:01:25.500
+in the year-month-day format, "2015-28-05",
+
+21
+00:01:25.500 --> 00:01:30.233
+that would be august 25th of 2015, then press enter.
+
+22
+00:01:30.233 --> 00:01:35.766
+Now we're comparing master at that specific date against the unstable tag.
+
+23
+00:01:35.766 --> 00:01:39.533
+Again, we can look down and see all the changes that were made.
+
+24
+00:01:39.533 --> 00:01:43.300
+In addition to using date ranges, we can use commit ranges,
+
+25
+00:01:43.300 --> 00:01:48.133
+including relative position to HEAD. Let's change compare back to "develop",
+
+26
+00:01:48.133 --> 00:01:50.600
+and let's change the base to "HEAD",
+
+27
+00:01:50.600 --> 00:01:54.566
+which HEAD typically points to the last commit on the current branch;
+
+28
+00:01:54.566 --> 00:01:59.633
+then the "@" symbol; and then, in curly brace, the number 3: "HEAD@".
+
+29
+00:01:59.633 --> 00:02:03.100
+Press enter, now we're comparing the current develop branch,
+
+30
+00:02:03.100 --> 00:02:08.466
+that is the HEAD position at develop branch, against the HEAD position at 3.
+
+31
+00:02:08.466 --> 00:02:11.733
+Let's do one more example; let's change our base to a tag,
+
+32
+00:02:11.733 --> 00:02:17.500
+in this case we're using the "stable" tag, against HEAD - 1 (HEAD^).
+
+33
+00:02:17.500 --> 00:02:23.300
+Press enter, and now we have our comparison from the stable tag versus HEAD - 1.
+
+34
+00:02:23.300 --> 00:02:27.533
+Scroll down, and you can see the differences involved.
+

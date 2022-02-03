@@ -1,0 +1,214 @@
+﻿WEBVTT
+
+1
+00:00:00.000 --> 00:00:04.533
+Welcome, in this video, we're going to continue with our newly created repository
+
+2
+00:00:04.533 --> 00:00:10.200
+by cloning to our local system. I'm currently on the "my-website" repository on GitHub,
+
+3
+00:00:10.200 --> 00:00:15.100
+which we just created. Now, I want to get a copy of this repository on my local system
+
+4
+00:00:15.100 --> 00:00:17.666
+so I'm going to go through a process known as cloning.
+
+5
+00:00:17.666 --> 00:00:21.133
+Scroll down, and in the lower right hand side of the page,
+
+6
+00:00:21.133 --> 00:00:23.933
+there are options for cloning this repository.
+
+7
+00:00:23.933 --> 00:00:27.500
+It's currently set to HTTPs, which is perfectly fine,
+
+8
+00:00:27.500 --> 00:00:32.100
+but now that we've set up SSH let's switch over to SSH authentication.
+
+9
+00:00:32.100 --> 00:00:35.466
+Great, this has switched over to the SSH URL.
+
+10
+00:00:35.466 --> 00:00:41.133
+Now, click on the copy to clipboard button, and that will copy this URL to your clipboard.
+
+11
+00:00:41.133 --> 00:00:45.466
+Great, now let's return to our terminal. I'm currently in my users' home directory.
+
+12
+00:00:45.466 --> 00:00:50.733
+I've been putting all my projects and repositories underneath a folder named "projects";
+
+13
+00:00:50.733 --> 00:00:53.266
+this is where we want to use the "git clone" command
+
+14
+00:00:53.266 --> 00:00:55.966
+in order to bring down the repository from GitHub.
+
+15
+00:00:55.966 --> 00:01:02.266
+Type "git clone", space, and then paste in the URL we just copied into our clipboard.
+
+16
+00:01:02.266 --> 00:01:04.900
+Double check that, and then press enter.
+
+17
+00:01:04.900 --> 00:01:08.200
+If things went well, you should have a screen that looks similar to this.
+
+18
+00:01:08.200 --> 00:01:13.433
+Now, let's do an "ls -l". In addition to the "demo" repository we've been working with,
+
+19
+00:01:13.433 --> 00:01:17.133
+we now have a new folder named "my-website".
+
+20
+00:01:17.133 --> 00:01:20.666
+One thing you'll notice is that, by default, the "git clone" command
+
+21
+00:01:20.666 --> 00:01:26.100
+will clone the repository into a project folder named after the repository name;
+
+22
+00:01:26.100 --> 00:01:30.866
+in our case, "my-website". Go into the "my-website" folder,
+
+23
+00:01:30.866 --> 00:01:35.300
+and when we do an "ls", specifically an "ls -al",
+
+24
+00:01:35.300 --> 00:01:40.266
+we have our ".gitignore" file, "LICENSE" file, the "README.md" file,
+
+25
+00:01:40.266 --> 00:01:43.166
+which are the three initial files we started out with,
+
+26
+00:01:43.166 --> 00:01:47.633
+and the ".git" folder, which represents the Git repository.
+
+27
+00:01:47.633 --> 00:01:51.766
+Also, when we do a "clone" command, by default Git sets up origin
+
+28
+00:01:51.766 --> 00:01:56.766
+to be the name of our remote reference. When we issue the "git remote -v" command,
+
+29
+00:01:56.766 --> 00:02:01.833
+listing out all the remotes that are available, we see that we have origin pointing back to GitHub.
+
+30
+00:02:01.833 --> 00:02:07.033
+Let's return to our projects folder. Do an "ls -l" to remind ourselves of our folders,
+
+31
+00:02:07.033 --> 00:02:12.533
+and let's say, for this example, that I don't want to use "my-website" as my folder name.
+
+32
+00:02:12.533 --> 00:02:17.833
+No problem, let's go ahead and remove it: "rm -rf", space,
+
+33
+00:02:17.833 --> 00:02:20.266
+and then the folder you want to remove.
+
+34
+00:02:20.266 --> 00:02:23.533
+Be extremely careful with this command, because effectively,
+
+35
+00:02:23.533 --> 00:02:27.666
+we are recursively and by force removing anything we specify;
+
+36
+00:02:27.666 --> 00:02:30.733
+you could do great harm to your system if you're not careful.
+
+37
+00:02:30.733 --> 00:02:33.333
+So, double check this line, and then press enter.
+
+38
+00:02:33.333 --> 00:02:37.966
+Now, when I do an "ls -l", we are left with only the "demo" repository.
+
+39
+00:02:37.966 --> 00:02:40.333
+Let's do our "git clone" command one more time,
+
+40
+00:02:40.333 --> 00:02:44.200
+except now we're going to specify the name of the folder we wish to use.
+
+41
+00:02:44.200 --> 00:02:50.266
+Type "git clone", space, and then paste in the URL that should still be on our clipboard,
+
+42
+00:02:50.266 --> 00:02:54.066
+space, and then the name of the folder you wish to create
+
+43
+00:02:54.066 --> 00:02:58.633
+on the local side for this repository: I'm just going to simply name it "website".
+
+44
+00:02:58.633 --> 00:03:02.866
+Once you've done that, press enter. Git will say that we're "Cloning into website".
+
+45
+00:03:02.866 --> 00:03:05.266
+So, instead of using the default behavior,
+
+46
+00:03:05.266 --> 00:03:08.566
+which is to create a folder named after the repository,
+
+47
+00:03:08.566 --> 00:03:13.933
+it's going to use the name that we passed in. We can confirm this by doing "ls -l".
+
+48
+00:03:13.933 --> 00:03:18.333
+We have our demo repository as before, and then we also have "website",
+
+49
+00:03:18.333 --> 00:03:21.000
+which we just created through the "git clone" command.
+
+50
+00:03:21.000 --> 00:03:25.366
+If we go into the folder named website, the way that I have my terminal set up
+
+51
+00:03:25.366 --> 00:03:29.266
+I have "(master)" in parenthesis, which indicates this is a Git repository
+
+52
+00:03:29.266 --> 00:03:36.633
+on the master branch. If I do an "ls -al", that will list all files including hidden ones
+
+53
+00:03:36.633 --> 00:03:42.900
+and we can confirm that this is the exact same repository from before.
+

@@ -1,0 +1,210 @@
+﻿WEBVTT
+
+1
+00:00:00.000 --> 00:00:05.200
+Welcome, in this video, we're going to create a branch locally, and then push it up to GitHub.
+
+2
+00:00:05.200 --> 00:00:09.500
+I'm currently logged into GitHub, and I'm on the "website" repository,
+
+3
+00:00:09.500 --> 00:00:13.300
+on the master branch. And if I go over to my terminal,
+
+4
+00:00:13.300 --> 00:00:16.766
+I'm also on the corresponding local Git repository,
+
+5
+00:00:16.766 --> 00:00:21.233
+also on the master branch, which happens to be up-to-date with 'origin/master'
+
+6
+00:00:21.233 --> 00:00:23.800
+and I am in a clean working directory state.
+
+7
+00:00:23.800 --> 00:00:27.500
+In a previous video, we created a branch directly on GitHub
+
+8
+00:00:27.500 --> 00:00:29.966
+and we did a commit directly on GitHub;
+
+9
+00:00:29.966 --> 00:00:34.600
+however, modifying files directly on GitHub is not exactly a best practice.
+
+10
+00:00:34.600 --> 00:00:38.633
+What you'll end up doing most of the time is creating your branches locally,
+
+11
+00:00:38.633 --> 00:00:41.566
+and then pushing them up to GitHub; so, let's do that now.
+
+12
+00:00:41.566 --> 00:00:45.100
+I'm going to create a branch called "remove-ipsum".
+
+13
+00:00:45.100 --> 00:00:51.400
+So, the command for this is "git checkout -b", in order to create the branch locally;
+
+14
+00:00:51.400 --> 00:00:54.000
+space; and then the name of the branch.
+
+15
+00:00:54.000 --> 00:00:58.700
+Great, so what we did is create a new branch, and then switched into it at the same time;
+
+16
+00:00:58.700 --> 00:01:03.900
+again, we are starting out locally. Listing out the files that I have in my repository,
+
+17
+00:01:03.900 --> 00:01:09.400
+we have "lipsum.txt", which is just a text file that has some filler text in it;
+
+18
+00:01:09.400 --> 00:01:15.133
+however, this file isn't really providing any tangible benefit to a website based project.
+
+19
+00:01:15.133 --> 00:01:20.700
+So, I'm going to remove it; using Git's "rm" command, I'm going to remove "lipsum.txt".
+
+20
+00:01:20.700 --> 00:01:25.333
+Doing a status, we can see that we have staged the fact that we are doing a delete.
+
+21
+00:01:25.333 --> 00:01:31.133
+In order to finalize this, we need to commit; "git commit -m "removing ipsum file" ".
+
+22
+00:01:31.133 --> 00:01:35.766
+Great, doing an "ls" again, we no longer see our "lipsum.txt" file,
+
+23
+00:01:35.766 --> 00:01:40.066
+and, we're back to a clean working directory; however, we've been doing this locally.
+
+24
+00:01:40.066 --> 00:01:44.333
+So if I head over to GitHub, do a reload just to make sure we have everything,
+
+25
+00:01:44.333 --> 00:01:49.000
+then go to branches; if I scroll down, the only two branches that I have listed
+
+26
+00:01:49.000 --> 00:01:52.466
+would be master, and the example branch we created earlier.
+
+27
+00:01:52.466 --> 00:01:55.900
+The "remove-ipsum" branch is not located on GitHub yet.
+
+28
+00:01:55.900 --> 00:02:00.500
+So, let's push that up. Syntax for that would be to use the "git push" command.
+
+29
+00:02:00.500 --> 00:02:02.866
+And, we've done this before, but with master;
+
+30
+00:02:02.866 --> 00:02:05.600
+I'm just showing you that you can do this with any branch.
+
+31
+00:02:05.600 --> 00:02:09.866
+"git push -u", that sets up the tracking relationship; space;
+
+32
+00:02:09.866 --> 00:02:14.333
+and the name of our remote, which is "origin"; and then the name of the
+
+33
+00:02:14.333 --> 00:02:17.766
+branch we wish to push up, which is "remove-ipsum".
+
+34
+00:02:17.766 --> 00:02:20.233
+Double check the line, and then press enter.
+
+35
+00:02:20.233 --> 00:02:23.566
+If everything was successful, you should have something that looks like this.
+
+36
+00:02:23.566 --> 00:02:28.766
+In particular, right after the Git URL we have a new branch being created,
+
+37
+00:02:28.766 --> 00:02:32.600
+that is our local branch is being pushed up to GitHub.
+
+38
+00:02:32.600 --> 00:02:36.033
+In doing so, it creates that new branch on GitHub.
+
+39
+00:02:36.033 --> 00:02:38.900
+After that, the tracking relationship is set up,
+
+40
+00:02:38.900 --> 00:02:41.733
+which is what the "-u" parameter was all about.
+
+41
+00:02:41.733 --> 00:02:46.566
+And the tracking branch just means that these two branches are in sync with each other,
+
+42
+00:02:46.566 --> 00:02:49.866
+or that's what their intentions are. So, if I do a "git pull",
+
+43
+00:02:49.866 --> 00:02:54.700
+or a Git push without specifying anymore, this is the branch that it will be going to.
+
+44
+00:02:54.700 --> 00:02:57.900
+So, now let's head over to GitHub, and see if that branch has arrived.
+
+45
+00:02:57.900 --> 00:03:00.800
+We can see that GitHub is already refreshed,
+
+46
+00:03:00.800 --> 00:03:05.533
+and we already have the "remove-ipsum" being detected as a new branch.
+
+47
+00:03:05.533 --> 00:03:10.233
+Also, if we refresh our browser, the branches list should now have
+
+48
+00:03:10.233 --> 00:03:14.700
+our remove-ipsum branch alongside the other two branches.
+
+49
+00:03:14.700 --> 00:03:18.700
+We can switch into that branch by clicking on that particular item.
+
+50
+00:03:18.700 --> 00:03:22.300
+Now, let's scroll down, and on this version of our files
+
+51
+00:03:22.300 --> 00:03:25.533
+we no longer have the "lipsum.txt" file.
+
+52
+00:03:25.533 --> 00:03:33.433
+However, if I switch back to master, this branch still has the "ipsum.txt" file.
+

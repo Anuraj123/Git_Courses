@@ -1,0 +1,110 @@
+﻿WEBVTT
+
+1
+00:00:00.000 --> 00:00:04.066
+Welcome, in this video, we're going to check out our network and branching graph
+
+2
+00:00:04.066 --> 00:00:08.500
+on GitHub, and on the local system. Let's start out on the local system.
+
+3
+00:00:08.500 --> 00:00:12.800
+Let's go back to our terminal, and I'm currently in the "website" Git repository,
+
+4
+00:00:12.800 --> 00:00:16.700
+on the master branch, and I'm currently in a clean working directory state.
+
+5
+00:00:16.700 --> 00:00:20.300
+Now that we've done lots of commits and some branching and merging,
+
+6
+00:00:20.300 --> 00:00:24.066
+we should start to see some level of branching off and merging back
+
+7
+00:00:24.066 --> 00:00:29.366
+when we do our graph. If I do a "git log --oneline --graph",
+
+8
+00:00:29.366 --> 00:00:35.300
+the "--graph" option is what will denote the graph of our branches as they come and go.
+
+9
+00:00:35.300 --> 00:00:38.866
+So, you can see some earlier commits were on other branches
+
+10
+00:00:38.866 --> 00:00:41.366
+and they were eventually merged back into master.
+
+11
+00:00:41.366 --> 00:00:45.200
+Some of the branches noted came from GitHub, and some were local.
+
+12
+00:00:45.200 --> 00:00:47.400
+I'm going to press 'q' to quit out of that,
+
+13
+00:00:47.400 --> 00:00:50.466
+To give some more context, I'm going to use my "hist" alias,
+
+14
+00:00:50.466 --> 00:00:54.600
+which is equivalent to the "git log" command with several other options.
+
+15
+00:00:54.600 --> 00:00:59.833
+Doing that will actually show us the branches that are involved with each of the commits.
+
+16
+00:00:59.833 --> 00:01:03.466
+And, right now, everything is up-to-date at the top most commit.
+
+17
+00:01:03.466 --> 00:01:07.966
+So, both master and 'origin/master' are pointing to our latest commit.
+
+18
+00:01:07.966 --> 00:01:12.700
+And, we can scroll back into our commit history, and scroll back up as well.
+
+19
+00:01:12.700 --> 00:01:17.500
+Press 'q' to quit. We can see a similar type graph on the GitHub interface too.
+
+20
+00:01:17.500 --> 00:01:19.233
+Let's switch back over to GitHub.
+
+21
+00:01:19.233 --> 00:01:23.433
+I'm currently logged into GitHub, on the website GitHub repository.
+
+22
+00:01:23.433 --> 00:01:27.433
+Over on the right hand side, we have our repository menu.
+
+23
+00:01:27.433 --> 00:01:31.100
+One of the options is "Graphs", so click on "Graphs".
+
+24
+00:01:31.100 --> 00:01:34.600
+Within graphs, we have "Network", click on "Network".
+
+25
+00:01:34.600 --> 00:01:39.433
+Network will kind of give us a graphical representation of the different branches,
+
+26
+00:01:39.433 --> 00:01:43.666
+and even other people that have been forking off of our repository.
+
+27
+00:01:43.666 --> 00:01:51.033
+We'll cover that later, but for now, it just shows us our own branches and merging back in.
+

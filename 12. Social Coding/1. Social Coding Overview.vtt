@@ -1,0 +1,38 @@
+﻿WEBVTT
+
+1
+00:00:00.000 --> 00:00:05.000
+One of the key aspects of putting code onto GitHub is to share it with others,
+
+2
+00:00:05.000 --> 00:00:09.900
+or to join other projects and then contribute back changes to their repository.
+
+3
+00:00:09.900 --> 00:00:14.200
+Some key skills for doing so is to make a copy within your account
+
+4
+00:00:14.200 --> 00:00:18.433
+by forking a repository, and then after making some changes,
+
+5
+00:00:18.433 --> 00:00:23.066
+you will want to contribute back those changes using the pull request process.
+
+6
+00:00:23.066 --> 00:00:27.666
+This works both ways, so we will look at also reviewing pull requests,
+
+7
+00:00:27.666 --> 00:00:32.066
+and finally accepting other's changes into our repository.
+
+8
+00:00:32.066 --> 00:00:36.700
+Finally, we will synchronize changes from our upstream repository
+
+9
+00:00:36.700 --> 00:00:42.200
+back to our individual fork or copy of the repository.
+

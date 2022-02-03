@@ -1,0 +1,50 @@
+﻿WEBVTT
+
+1
+00:00:00.000 --> 00:00:04.100
+Git was started out of a crisis, when BitKeeper decided to revoke
+
+2
+00:00:04.100 --> 00:00:09.800
+it's free license to the Linux Kernel project, and everyone else using BitKeeper for free.
+
+3
+00:00:09.800 --> 00:00:13.266
+Linus Torvalds, the creator of the Linux Kernel project,
+
+4
+00:00:13.266 --> 00:00:18.000
+decided to start a new version control system to address the specific requirements
+
+5
+00:00:18.000 --> 00:00:20.200
+of the growing needs of that project,
+
+6
+00:00:20.200 --> 00:00:23.433
+and to migrate away from BitKeeper as quickly as possible.
+
+7
+00:00:23.433 --> 00:00:28.866
+As a result, in the spring of 2005, Linus announced the Git project.
+
+8
+00:00:28.866 --> 00:00:32.933
+Just like the Linux Kernel project, Linus didn't write Git by himself;
+
+9
+00:00:32.933 --> 00:00:35.266
+he had the help of the open-source community,
+
+10
+00:00:35.266 --> 00:00:40.100
+which has continued evolve Git into the de facto standard it is today.
+
+11
+00:00:40.100 --> 00:00:43.800
+Now, Git enjoys wide adoption for development projects,
+
+12
+00:00:43.800 --> 00:00:48.633
+from individuals to large enterprises.
+

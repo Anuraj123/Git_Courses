@@ -1,0 +1,110 @@
+﻿WEBVTT
+
+1
+00:00:00.000 --> 00:00:04.133
+Welcome, in this video, we're going to check out our newly created feature branch
+
+2
+00:00:04.133 --> 00:00:09.166
+and then submit a pull request to contribute our changes to our upstream repository.
+
+3
+00:00:09.166 --> 00:00:12.000
+First, let's check out the newly created branch;
+
+4
+00:00:12.000 --> 00:00:16.066
+if I click on "feature-readme" or select it from the dropdown,
+
+5
+00:00:16.066 --> 00:00:20.633
+I'm now on the "feature-readme" branch in my GitHub repository.
+
+6
+00:00:20.633 --> 00:00:25.166
+If I scroll down just a little bit, I can see that we have the "README.md" file.
+
+7
+00:00:25.166 --> 00:00:29.000
+The "README.md" file is a special file within GitHub;
+
+8
+00:00:29.000 --> 00:00:33.866
+if GitHub detects it, it will display it at the bottom of the repository listing.
+
+9
+00:00:33.866 --> 00:00:37.433
+Now that we've confirmed that those changes have made it up to GitHub
+
+10
+00:00:37.433 --> 00:00:40.800
+on that feature branch, let's proceed forward by submitting
+
+11
+00:00:40.800 --> 00:00:44.300
+these contributions to our upstream fork repository.
+
+12
+00:00:44.300 --> 00:00:48.800
+To start that process, I can click on the "Compare & pull request" button,
+
+13
+00:00:48.800 --> 00:00:53.166
+or within the listing of the repository I can click on "pull request"
+
+14
+00:00:53.166 --> 00:00:55.233
+when I'm on that corresponding branch.
+
+15
+00:00:55.233 --> 00:00:58.933
+I'm going to click on the "Compare & pull request" button to proceed.
+
+16
+00:00:58.933 --> 00:01:01.833
+By default, the pull request is going to set up
+
+17
+00:01:01.833 --> 00:01:05.133
+the relationship back to the upstream repository.
+
+18
+00:01:05.133 --> 00:01:09.566
+This happens when your repository is part of a fork, which it is.
+
+19
+00:01:09.566 --> 00:01:15.266
+I have my main fork, which is my upstream or parent repository on "scm-ninja",
+
+20
+00:01:15.266 --> 00:01:19.233
+and I have my fork, which is in my user space on GitHub.
+
+21
+00:01:19.233 --> 00:01:22.500
+I want to make sure that I'm comparing my feature branch to the branch
+
+22
+00:01:22.500 --> 00:01:26.800
+that I need to target in my parent repository, in this case master.
+
+23
+00:01:26.800 --> 00:01:32.666
+Once I'm satisfied with this relationship, I can scroll down and click on "Create pull request".
+
+24
+00:01:32.666 --> 00:01:37.666
+Excellent, once you've landed on this page, you have successfully created a pull request.
+
+25
+00:01:37.666 --> 00:01:41.833
+And what you'll also notice is that you'll land on the target repository
+
+26
+00:01:41.833 --> 00:01:45.766
+when this pull request is created. And that's an important distinction, because
+
+27
+00:01:45.766 --> 00:01:54.300
+what a pull request is is the request from the upstream repository to pull in your changes.
+

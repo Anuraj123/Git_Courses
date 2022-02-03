@@ -1,0 +1,70 @@
+﻿WEBVTT
+
+1
+00:00:00.000 --> 00:00:04.266
+Welcome in this video, we're going to create a repository on GitHub
+
+2
+00:00:04.266 --> 00:00:07.933
+in a way that I like to call the starting remote approach.
+
+3
+00:00:07.933 --> 00:00:11.566
+I'm currently on GitHub, and I'm on my user's newsfeed.
+
+4
+00:00:11.566 --> 00:00:14.700
+If you're not here, go ahead and go to GitHub and log in,
+
+5
+00:00:14.700 --> 00:00:17.166
+or if you're in another location, but logged in,
+
+6
+00:00:17.166 --> 00:00:21.000
+you can click on the octocat icon to get to the newsfeed page.
+
+7
+00:00:21.000 --> 00:00:24.833
+Once you're there, we're going to go over and click on "New repository".
+
+8
+00:00:24.833 --> 00:00:29.866
+This repository will be for a website, so I'm going to call this repository "my-website".
+
+9
+00:00:29.866 --> 00:00:35.600
+I'm going to skip the optional description, but this time I'm going to initialize with a README file,
+
+10
+00:00:35.600 --> 00:00:39.600
+and also add a ".gitignore" file that's tailored towards node.
+
+11
+00:00:39.600 --> 00:00:43.433
+I'm also going to add a license file for "Apache License 2.0".
+
+12
+00:00:43.433 --> 00:00:46.533
+And, once you've done that, click on "Create repository".
+
+13
+00:00:46.533 --> 00:00:50.466
+What you'll notice this time, is instead of landing on a page with instructions
+
+14
+00:00:50.466 --> 00:00:56.066
+on how to link your repository to GitHub, GitHub goes directly to the repository's main page.
+
+15
+00:00:56.066 --> 00:01:00.866
+And, that's because we initialized our repository with a handful of files,
+
+16
+00:01:00.866 --> 00:01:05.466
+which means that GitHub was able to create an initial branch called master
+
+17
+00:01:05.466 --> 00:01:11.433
+in order to add the initial commit, which has our initial set of files.
+

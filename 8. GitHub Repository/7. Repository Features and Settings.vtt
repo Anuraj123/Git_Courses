@@ -1,0 +1,182 @@
+﻿WEBVTT
+
+1
+00:00:00.000 --> 00:00:02.933
+Welcome, in this video, we're going to become familiar
+
+2
+00:00:02.933 --> 00:00:06.800
+with the GitHub interface, in particular, our GitHub repository.
+
+3
+00:00:06.800 --> 00:00:11.100
+When you log in, you'll first land on a page known as your newsfeed page.
+
+4
+00:00:11.100 --> 00:00:14.633
+This gives you an overview of what's going on in your GitHub account.
+
+5
+00:00:14.633 --> 00:00:17.766
+On the right hand side, you'll see a list of repos that you have
+
+6
+00:00:17.766 --> 00:00:23.133
+including all repos, public repos, if you have private repos they would show up here,
+
+7
+00:00:23.133 --> 00:00:27.500
+sources, and forks when we get to that. Let's keep it on all repos.
+
+8
+00:00:27.500 --> 00:00:32.133
+We've already tried out the create new repo button, and it's corresponding process.
+
+9
+00:00:32.133 --> 00:00:35.633
+So, let's dive into one of the existing repos that we've already created;
+
+10
+00:00:35.633 --> 00:00:40.300
+let's go into "my-website". When you first click on the repository name,
+
+11
+00:00:40.300 --> 00:00:43.333
+the main page for your repository loads.
+
+12
+00:00:43.333 --> 00:00:46.233
+This has some basic information about your repository,
+
+13
+00:00:46.233 --> 00:00:50.533
+including the base folder contain files and folders that are part of your repository.
+
+14
+00:00:50.533 --> 00:00:52.933
+We have the branch that we're currently on, master.
+
+15
+00:00:52.933 --> 00:00:57.300
+We have a listing of existing commits. We have our branches tab.
+
+16
+00:00:57.300 --> 00:01:00.200
+We have releases and our contributors.
+
+17
+00:01:00.200 --> 00:01:04.000
+On the right hand side, we have a repository menu, which includes
+
+18
+00:01:04.000 --> 00:01:07.433
+our code, which is what we're currently on, reviewing the source code
+
+19
+00:01:07.433 --> 00:01:10.166
+files and folders that are part of this repository;
+
+20
+00:01:10.166 --> 00:01:14.733
+issues, which we will cover later in this course; pull requests;
+
+21
+00:01:14.733 --> 00:01:19.366
+the wiki; pulse; and graphs. We also have settings that are unique to this repository.
+
+22
+00:01:19.366 --> 00:01:24.366
+We click on settings, we have our repository name, which we can rename if we want to;
+
+23
+00:01:24.366 --> 00:01:29.066
+for example, if I don't like the fact that I named this repository "my-website",
+
+24
+00:01:29.066 --> 00:01:33.766
+I can modify it, in this case I'm just going to call it website, and then click "Rename".
+
+25
+00:01:33.766 --> 00:01:38.700
+Now, my repository is named just "website". Let's jump back into settings.
+
+26
+00:01:38.700 --> 00:01:41.600
+We have our default branch, which we will be changing later,
+
+27
+00:01:41.600 --> 00:01:44.733
+we have other features that are associated with the repository,
+
+28
+00:01:44.733 --> 00:01:48.233
+we may optionally enable or disable wikis and issues.
+
+29
+00:01:48.233 --> 00:01:52.233
+And, we can do other things, including stuff that's inside the danger zone.
+
+30
+00:01:52.233 --> 00:01:56.066
+We can make this repository private if we didn't feel like sharing with the world;
+
+31
+00:01:56.066 --> 00:02:01.466
+however the way that GitHub works is they actually charge you for private repositories.
+
+32
+00:02:01.466 --> 00:02:06.333
+That's their particular business model, so I tend to just keep my repositories public.
+
+33
+00:02:06.333 --> 00:02:09.733
+Also, I have the ability to transfer the repository elsewhere,
+
+34
+00:02:09.733 --> 00:02:13.800
+which we will cover later, and finally we're able to delete the repository.
+
+35
+00:02:13.800 --> 00:02:16.366
+Let's go back to the main page for this repository.
+
+36
+00:02:16.366 --> 00:02:21.733
+By default, if you have a file named "README.md" in a particular folder,
+
+37
+00:02:21.733 --> 00:02:26.366
+GitHub will render that particular file as a markdown file, which is very handy,
+
+38
+00:02:26.366 --> 00:02:30.133
+and this is the common pattern for repositories on GitHub.
+
+39
+00:02:30.133 --> 00:02:34.366
+And finally, in the lower right hand side we have our cloning options.
+
+40
+00:02:34.366 --> 00:02:39.100
+They're currently set to SSH, but we've also covered HTTPS as well,
+
+41
+00:02:39.100 --> 00:02:42.000
+and Subversion we're just not going to cover in this course.
+
+42
+00:02:42.000 --> 00:02:46.033
+We have the option to download this entire repository as a zip file,
+
+43
+00:02:46.033 --> 00:02:49.433
+which is convenient if you need to give a copy of your source code
+
+44
+00:02:49.433 --> 00:02:51.866
+to someone else that isn't on GitHub.
+
+45
+00:02:51.866 --> 00:02:58.700
+And, we have the ability to clone in desktop, which we will cover later in this course.
+

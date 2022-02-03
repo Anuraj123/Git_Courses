@@ -1,0 +1,38 @@
+﻿WEBVTT
+
+1
+00:00:00.000 --> 00:00:05.500
+In this video, we're going to learn about getting help for Git commands from within Git Bash.
+
+2
+00:00:05.500 --> 00:00:14.400
+So let's open up Git Bash. Once Git Bash is open, we can use the git help command to get help about specific commands.
+
+3
+00:00:14.400 --> 00:00:22.400
+So the syntax for git help is, git, space, help, space, followed by the command that we need help on.
+
+4
+00:00:22.400 --> 00:00:33.433
+So an upcoming command will be the config command. So let's try that out; type git, space, help, space, and then the command "config".
+
+5
+00:00:33.433 --> 00:00:40.733
+Once you've done that, press enter. If Windows prompts you for how to open this file, you can leave it at the default,
+
+6
+00:00:40.733 --> 00:00:49.733
+but I prefer using Google Chrome. So I'm going to select Google Chrome, and also check "Always use this app to open .html files".
+
+7
+00:00:49.733 --> 00:00:59.266
+Then click "OK". Once we do that, Git for Windows will launch the manual, or help page, for the git config command.
+
+8
+00:00:59.266 --> 00:01:04.466
+We can scroll up and down, and get an idea of what's available for that specific command.
+
+9
+00:01:04.466 --> 00:01:10.800
+Once we are done reviewing the help page, we can close our browser.
+

@@ -1,0 +1,86 @@
+﻿WEBVTT
+
+1
+00:00:00.000 --> 00:00:05.000
+Welcome, in this video, we're going to look at deleting our gist.
+
+2
+00:00:05.000 --> 00:00:08.866
+I'm currently on the gist that's associated with my profile,
+
+3
+00:00:08.866 --> 00:00:13.700
+and although it is a fine gist, I decide perhaps I want to go in a different direction
+
+4
+00:00:13.700 --> 00:00:16.600
+or I no longer want to make this gist available.
+
+5
+00:00:16.600 --> 00:00:19.366
+The option I have available is to delete the gist.
+
+6
+00:00:19.366 --> 00:00:23.200
+So, on the specific gist page, click the delete button.
+
+7
+00:00:23.200 --> 00:00:27.200
+GitHub will prompt me to ensure that I really want to delete this gist;
+
+8
+00:00:27.200 --> 00:00:32.566
+I'm going to click "OK". I get a blue banner that tells me I just successfully deleted the gist,
+
+9
+00:00:32.566 --> 00:00:36.733
+and, in this case, I have no other gist so I don't have anything to list.
+
+10
+00:00:36.733 --> 00:00:40.600
+Once I'm done here, I can click on view my profile on GitHub,
+
+11
+00:00:40.600 --> 00:00:43.800
+and that returns me back to my profile page on GitHub.
+
+12
+00:00:43.800 --> 00:00:47.733
+Once I'm here, I'm going to click on the octocat to return to my newsfeed.
+
+13
+00:00:47.733 --> 00:00:51.133
+Now, we're not completely done yet; we need to do a little bit of cleanup
+
+14
+00:00:51.133 --> 00:00:54.266
+back on our local system. So, go back to our terminal,
+
+15
+00:00:54.266 --> 00:00:59.533
+and I'm currently in the "my-gist" folder, which is the Git repository for our gist,
+
+16
+00:00:59.533 --> 00:01:02.933
+underneath the projects folder within our user's home directory.
+
+17
+00:01:02.933 --> 00:01:07.066
+Let's back up a level, and now delete the "my-gist" folder.
+
+18
+00:01:07.066 --> 00:01:14.933
+Type "rm"; space; and then us the "-rf" options; space; and then the name of the folder.
+
+19
+00:01:14.933 --> 00:01:20.333
+Double check that line, because the "rm -rf" command is extremely powerful.
+
+20
+00:01:20.333 --> 00:01:24.400
+Once you're confident that you have everything specified correctly, press enter.
+
+21
+00:01:24.400 --> 00:01:31.900
+Now if we type "ls -al", we no longer have the "my-gist" folder.
+

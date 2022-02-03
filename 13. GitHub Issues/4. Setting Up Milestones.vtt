@@ -1,0 +1,158 @@
+﻿WEBVTT
+
+1
+00:00:00.000 --> 00:00:05.266
+Welcome, in this video, we're going to look at milestones within the GitHub issues feature.
+
+2
+00:00:05.266 --> 00:00:10.533
+I'm currently logged into GitHub, in my personal account, on the "website" repository.
+
+3
+00:00:10.533 --> 00:00:14.600
+Within that repository, I'm currently on the issues main page.
+
+4
+00:00:14.600 --> 00:00:20.066
+Before we create a new issue, let's look at milestones; click on the "Milestones" tab.
+
+5
+00:00:20.066 --> 00:00:24.333
+When you first get here, you won't have any milestones associated with this project,
+
+6
+00:00:24.333 --> 00:00:27.666
+so let's create one; click on the green "New milestone" button.
+
+7
+00:00:27.666 --> 00:00:32.900
+And milestones are just major events that you're building up to within your repository.
+
+8
+00:00:32.900 --> 00:00:36.400
+It could be a pending release, or some other type of checkpoint.
+
+9
+00:00:36.400 --> 00:00:41.166
+I'm going to create a milestone called "Beta 1"; in the title, I'm going to say "Beta 1".
+
+10
+00:00:41.166 --> 00:00:44.566
+In the description, I'm just going to type some descriptive text
+
+11
+00:00:44.566 --> 00:00:47.966
+that provides a little bit more context for this milestone.
+
+12
+00:00:47.966 --> 00:00:50.966
+Additionally, I could provide an optional date;
+
+13
+00:00:50.966 --> 00:00:55.133
+I'm going to set this out to next week, then I'm going to click "Create milestone".
+
+14
+00:00:55.133 --> 00:00:57.966
+Great, well I'm going to create another milestone while I'm here.
+
+15
+00:00:57.966 --> 00:01:01.400
+Click on "New milestone", I'm going to name this "Beta 2";
+
+16
+00:01:01.400 --> 00:01:06.433
+provide a description accordingly, and set this two weeks out from where I currently am,
+
+17
+00:01:06.433 --> 00:01:11.400
+and then I'm going to click "Create milestone". Great, now I have two milestones.
+
+18
+00:01:11.400 --> 00:01:16.033
+At any point I could delete a milestone, close the milestone, or edit the milestone.
+
+19
+00:01:16.033 --> 00:01:20.633
+For example, I'm going to edit Beta 2; go over to the right hand side, and click on "Edit".
+
+20
+00:01:20.633 --> 00:01:24.300
+I've decided that two weeks really isn't enough for the next beta,
+
+21
+00:01:24.300 --> 00:01:28.300
+so I'm going to advance to the next month and choose a more reasonable timeframe.
+
+22
+00:01:28.300 --> 00:01:31.633
+I'm going to select the 4th, then click "Save changes".
+
+23
+00:01:31.633 --> 00:01:34.800
+Great, I'm going to create one more for the purpose of closing it.
+
+24
+00:01:34.800 --> 00:01:37.800
+Go to new milestone; I'm going to create "Alpha 1",
+
+25
+00:01:37.800 --> 00:01:41.500
+then, for the description, "This is the first alpha for this project".
+
+26
+00:01:41.500 --> 00:01:45.700
+I'm going to set this date for a few weeks ago, then "Create milestone".
+
+27
+00:01:45.700 --> 00:01:50.900
+What you'll notice is that GitHub will let us know that we are past due by a month.
+
+28
+00:01:50.900 --> 00:01:55.333
+I'm going to go ahead and close this milestone; I can either do that within the edit page,
+
+29
+00:01:55.333 --> 00:01:58.100
+or directly on this page by clicking on "Close".
+
+30
+00:01:58.100 --> 00:02:03.300
+Closing the milestone will move that milestone from the open status to the closed status.
+
+31
+00:02:03.300 --> 00:02:07.500
+I can always access it again by clicking on the "Closed" status.
+
+32
+00:02:07.500 --> 00:02:12.266
+And, if I needed to, I could re-open this milestone, or I could just delete it.
+
+33
+00:02:12.266 --> 00:02:15.166
+I'm going to keep it around, and just return back to open.
+
+34
+00:02:15.166 --> 00:02:19.466
+Once you have a number of milestones listed, you also have the ability to sort,
+
+35
+00:02:19.466 --> 00:02:23.566
+and we have various options, including: closest due date, furthest due date,
+
+36
+00:02:23.566 --> 00:02:27.200
+least complete, most complete, most issues, least issues.
+
+37
+00:02:27.200 --> 00:02:29.800
+Since we don't have any issues yet, we're not going to bother
+
+38
+00:02:29.800 --> 00:02:33.566
+sorting on those last two items. Alright, I believe that's enough for now,
+
+39
+00:02:33.566 --> 00:02:38.233
+so I'm going to return back to the main issues page.
+

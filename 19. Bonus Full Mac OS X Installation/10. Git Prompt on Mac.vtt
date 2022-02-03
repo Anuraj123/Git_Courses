@@ -1,0 +1,182 @@
+﻿WEBVTT
+
+1
+00:00:00.000 --> 00:00:04.433
+Welcome, in this video, we're going to set up the Mac command line prompt
+
+2
+00:00:04.433 --> 00:00:07.666
+to Git branch whenever we're in a Git repository.
+
+3
+00:00:07.666 --> 00:00:12.366
+To do that, I need to download a special script called Git prompt.
+
+4
+00:00:12.366 --> 00:00:18.200
+Open up your browser, and go to "github.com/git".
+
+5
+00:00:18.200 --> 00:00:23.800
+Then go into the Git repository, under master go to "contrib",
+
+6
+00:00:23.800 --> 00:00:28.533
+then go to "completion", then click on "gitprompt.sh".
+
+7
+00:00:28.533 --> 00:00:34.800
+Click on raw, and with the raw file contents, we're going to select all and the copy.
+
+8
+00:00:34.800 --> 00:00:40.066
+Command+a, or control+a, then command+c or control+c.
+
+9
+00:00:40.066 --> 00:00:44.666
+That will copy the entire contents. Then, fire up your command prompt,
+
+10
+00:00:44.666 --> 00:00:49.733
+and within the user's home directory, create or open up the ".bashrc" file.
+
+11
+00:00:49.733 --> 00:00:54.200
+I'm going to use my text editor, TextMate; I'm going to start this file with a dot,
+
+12
+00:00:54.200 --> 00:01:00.400
+so that it's hidden by default; "git-prompt", and I'll end it with ".sh"; then press enter.
+
+13
+00:01:00.400 --> 00:01:04.866
+When the text editor appears, paste in the entire contents from your clipboard;
+
+14
+00:01:04.866 --> 00:01:09.966
+command or control+v. Now let's save this file, command or control+s
+
+15
+00:01:09.966 --> 00:01:13.466
+And, in TextMate, I need to close this file with command+w,
+
+16
+00:01:13.466 --> 00:01:17.466
+and now quit TextMate with command+q. Now that I'm back at the terminal,
+
+17
+00:01:17.466 --> 00:01:24.266
+If I do an "ls -a", I see I have a ".git-prompt.sh" file.
+
+18
+00:01:24.266 --> 00:01:29.233
+Now, let's create our ".bashrc" file. Invoke your text editor, in my case,
+
+19
+00:01:29.233 --> 00:01:34.300
+"mate"; space; and then the filename ".bashrc". Press enter.
+
+20
+00:01:34.300 --> 00:01:39.533
+If this is a brand new file, it will be empty, otherwise you may already have existing code.
+
+21
+00:01:39.533 --> 00:01:43.433
+We need to include the source of that file that we just created.
+
+22
+00:01:43.433 --> 00:01:52.266
+So type "source", then "~", which references our user's home directory, "/.git-prompt.sh".
+
+23
+00:01:52.266 --> 00:01:56.266
+Great, now in the next line, we're going to export a special command.
+
+24
+00:01:56.266 --> 00:01:59.533
+I've already saved off that command, and now I'm going to paste it in.
+
+25
+00:01:59.533 --> 00:02:03.600
+What this command is basically saying, is set the "PS1" variable
+
+26
+00:02:03.600 --> 00:02:10.366
+to this enclosed string, which calls the "__git_ps1" function
+
+27
+00:02:10.366 --> 00:02:16.966
+that's included in the ".git-prompt.sh" file, passing in a parameter with "%s".
+
+28
+00:02:16.966 --> 00:02:21.100
+After that function returns, we're going to return our working directory,
+
+29
+00:02:21.100 --> 00:02:25.500
+a hardcoded dollar sign, and a space. Now that we've done that,
+
+30
+00:02:25.500 --> 00:02:31.200
+let's save and close, and back at our terminal, let's open up or create one more file;
+
+31
+00:02:31.200 --> 00:02:35.066
+this is the ".bash_profile" file.
+
+32
+00:02:35.066 --> 00:02:39.266
+Once you've typed in your text editor, in my case "mate"; space; the filename,
+
+33
+00:02:39.266 --> 00:02:42.833
+which is ".bash_profile", press enter.
+
+34
+00:02:42.833 --> 00:02:48.000
+For the sake of time, I have copied an existing script that I will now paste into this file.
+
+35
+00:02:48.000 --> 00:02:53.666
+For this file, I'm using some bash code that says to export the "CLICOLOR" variable,
+
+36
+00:02:53.666 --> 00:02:57.466
+setting the value to 1, then I'm using an if statement
+
+37
+00:02:57.466 --> 00:03:00.566
+to include the source of the ".bashrc" file.
+
+38
+00:03:00.566 --> 00:03:05.633
+So, regardless of whether the ".bashrc" fie or the ".bash_profile"
+
+39
+00:03:05.633 --> 00:03:10.033
+is executed based on wither I have an interactive terminal or not,
+
+40
+00:03:10.033 --> 00:03:12.866
+it's not going to matter, because it's going to still execute
+
+41
+00:03:12.866 --> 00:03:15.900
+whatever code that I have in the ".bashrc" file.
+
+42
+00:03:15.900 --> 00:03:20.433
+Let's save and then close, now back at the terminal we need to exit.
+
+43
+00:03:20.433 --> 00:03:25.166
+So, command+q, or in iTerm you can just type exit.
+
+44
+00:03:25.166 --> 00:03:29.266
+Great, now to test it out, let's fire up our terminal again.
+
+45
+00:03:29.266 --> 00:03:34.366
+We can already see that we have a very different terminal prompt.
+

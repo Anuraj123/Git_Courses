@@ -1,0 +1,94 @@
+﻿WEBVTT
+
+1
+00:00:00.000 --> 00:00:03.766
+Welcome, in this video, we're going to do a little bit of time travel
+
+2
+00:00:03.766 --> 00:00:07.666
+on the GitHub repository. I'm current logged into GitHub,
+
+3
+00:00:07.666 --> 00:00:11.733
+and I'm on the "website" GitHub repository in the commit history.
+
+4
+00:00:11.733 --> 00:00:15.833
+And, as I'm looking at the commit history, I see these angle brackets
+
+5
+00:00:15.833 --> 00:00:20.100
+and that means that I can browse the repository as of that point.
+
+6
+00:00:20.100 --> 00:00:25.300
+So, let's do that; let's go back and look at the repository as of the initial commit.
+
+7
+00:00:25.300 --> 00:00:27.866
+When we first created the repository,
+
+8
+00:00:27.866 --> 00:00:32.266
+we initialized it with a ".gitignore", a "LICENSE", and a "README.md" file.
+
+9
+00:00:32.266 --> 00:00:36.600
+Once of the things that you'll notice, is that, instead of pointing to a specific branch,
+
+10
+00:00:36.600 --> 00:00:41.200
+in our case master, we're now pointing to "tree:", and then the commit id.
+
+11
+00:00:41.200 --> 00:00:44.633
+That means we are not at the tip of any particular branch;
+
+12
+00:00:44.633 --> 00:00:49.200
+we are directly on a specific commit, and browsing this repository
+
+13
+00:00:49.200 --> 00:00:52.933
+as of that commit; even the commits show only one commit.
+
+14
+00:00:52.933 --> 00:00:56.933
+So, when we are done looking at this repository as of this commit point,
+
+15
+00:00:56.933 --> 00:01:00.966
+we can click on the name of the repository, or we can use the dropdown
+
+16
+00:01:00.966 --> 00:01:04.000
+and switch to another branch, in our case master.
+
+17
+00:01:04.000 --> 00:01:08.133
+When we do that, we get back to a point that has our 11 commits.
+
+18
+00:01:08.133 --> 00:01:12.533
+Let's do it again; so go back into commits, and now we're going to click on the
+
+19
+00:01:12.533 --> 00:01:15.066
+commit message associated with the commit.
+
+20
+00:01:15.066 --> 00:01:19.233
+We're going to browse the files, which is as of this point in history.
+
+21
+00:01:19.233 --> 00:01:23.733
+Again, the tree updates to the commit id that we're browsing at.
+
+22
+00:01:23.733 --> 00:01:27.366
+Now that I'm done doing that, I'm going to click on the name of the repository
+
+23
+00:01:27.366 --> 00:01:33.300
+and that restores us back to master, and our 11 commits.
+

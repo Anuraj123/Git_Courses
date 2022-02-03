@@ -1,0 +1,66 @@
+﻿WEBVTT
+
+1
+00:00:00.000 --> 00:00:06.033
+Welcome, in this video we're going to download and install P4Merge for the Mac operating system.
+
+2
+00:00:06.033 --> 00:00:11.800
+Fire up your favorite browser, I'm using Google Chrome, then go to perforce.com.
+
+3
+00:00:11.800 --> 00:00:19.766
+While Perforce is actually a company that sells a competing product to Git, they also provide complementary tools to git,
+
+4
+00:00:19.766 --> 00:00:28.066
+including a free download that is an excellent diff and merge tool. From the homepage go to downloads, then downloads.
+
+5
+00:00:28.066 --> 00:00:35.066
+Under latest releases, click on clients, then find the iTerm "P4MERGE: VISUAL MERGE TOOL".
+
+6
+00:00:35.066 --> 00:00:43.166
+Make sure Macintosh is selected, under "Select OS", select the latest version that most applies to your operating system.
+
+7
+00:00:43.166 --> 00:00:50.966
+In this case, I'm using Mac OS 10.10, so the closest match is 10.8+, 64 bit.
+
+8
+00:00:50.966 --> 00:00:56.766
+Then click on download. On the registration page, click on the "Skip Registration" button.
+
+9
+00:00:56.766 --> 00:01:02.900
+Now, the P4Merge client will Download. Once the client has finished downloading,
+
+10
+00:01:02.900 --> 00:01:08.066
+go to the downloads stack, and click on the "P4V.dmg" image.
+
+11
+00:01:08.066 --> 00:01:17.200
+Once the Perforce install image has loaded, select the item P4Merge, then drag it into the applications folder.
+
+12
+00:01:17.200 --> 00:01:25.233
+Great, once that's completed, let's verify by going to our applications stack. then locate the P4Merge icon.
+
+13
+00:01:25.233 --> 00:01:31.366
+Click on it to launch P4Merge. Once prompted by the Mac operating system to confirm whether or not
+
+14
+00:01:31.366 --> 00:01:37.600
+we really want to open this application, click on "Open". Great. When this screen appears,
+
+15
+00:01:37.600 --> 00:01:43.400
+we know that P4Merge has been installed correctly. To quit, press command+q.
+
+16
+00:01:43.400 --> 00:01:52.633
+Now that we've installed P4Mege, we close the install volume, and also eject it from our desktop.
+

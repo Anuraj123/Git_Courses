@@ -1,0 +1,46 @@
+﻿WEBVTT
+
+1
+00:00:00.066 --> 00:00:05.000
+Welcome, in this video, we're going to configure TextMate 2 to work with our command prompt.
+
+2
+00:00:05.000 --> 00:00:12.266
+Now that we've downloaded and installed TextMate 2, we need to set it up so that we can access it from the command prompt as we need.
+
+3
+00:00:12.266 --> 00:00:18.433
+If I open up my terminal program and type the "mate" command, currently the command is not found.
+
+4
+00:00:18.433 --> 00:00:26.966
+So I'm going to exit out, and now open up TextMate 2. Then go to the TextMate menu, preferences, or command+comma.
+
+5
+00:00:26.966 --> 00:00:36.900
+Once the preferences window is open, go to the terminal tab. Currently the shell support is not installed, which we found out earlier.
+
+6
+00:00:36.900 --> 00:00:41.966
+To set it up, click on the install button. Since we're making changes to our operating system,
+
+7
+00:00:41.966 --> 00:00:48.466
+we'll need to provide the username and password of our admin account. Once we've done that click on OK.
+
+8
+00:00:48.466 --> 00:00:54.700
+Great, once that's done, the red indicator changes to green, and it says shell support installed.
+
+9
+00:00:54.700 --> 00:01:02.133
+Let's test that out. Let's close the preferences window, and let's fully quit out of TextMate, command+q.
+
+10
+00:01:02.133 --> 00:01:07.433
+Let's open up our terminal program again, and now, type mate. Then press enter.
+
+11
+00:01:07.433 --> 00:01:12.633
+If we were successful, TextMate will be launched.
+

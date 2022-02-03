@@ -1,0 +1,138 @@
+﻿WEBVTT
+
+1
+00:00:00.000 --> 00:00:05.000
+Welcome, in this video, we're going to access our gist as a Git repository.
+
+2
+00:00:05.000 --> 00:00:09.500
+Starting off, I'm going to return back to GitHub; if you click on the octocat icon,
+
+3
+00:00:09.500 --> 00:00:13.933
+you'll end up on your newsfeed page, then we can click on "Gist".
+
+4
+00:00:13.933 --> 00:00:18.000
+This will list all of the gists that you have associated with your account.
+
+5
+00:00:18.000 --> 00:00:21.733
+I have one that is named ".bash_profile".
+
+6
+00:00:21.733 --> 00:00:24.700
+If I click on it, it will take me to that particular gist.
+
+7
+00:00:24.700 --> 00:00:28.466
+Just like the other Git repositories that we have, we have the option
+
+8
+00:00:28.466 --> 00:00:33.166
+of cloning this as a Git repository. I'm going to go down to my clone options,
+
+9
+00:00:33.166 --> 00:00:37.333
+and currently it's set to SSH, but HTTPS would work as well;
+
+10
+00:00:37.333 --> 00:00:40.633
+then, click on "Copy to clipboard" button. Once it's copied,
+
+11
+00:00:40.633 --> 00:00:44.833
+let's return to our terminal. Let's make sure that we're in the projects folder,
+
+12
+00:00:44.833 --> 00:00:47.200
+so if you need to back up a directory do so.
+
+13
+00:00:47.200 --> 00:00:50.400
+From our projects directory within our user's home directory,
+
+14
+00:00:50.400 --> 00:00:55.300
+I'm going to use the "git clone" command: "git clone", then paste in the URL we just copied.
+
+15
+00:00:55.300 --> 00:00:58.866
+Normally I would let Git use the default directory name,
+
+16
+00:00:58.866 --> 00:01:01.900
+but in this case I want to use something more specific.
+
+17
+00:01:01.900 --> 00:01:09.466
+So type the folder name you wish to use for this particular clone, press enter.
+
+18
+00:01:09.466 --> 00:01:14.433
+If we do an "ls", you'll see the "my-gist" folder; let's go into that folder.
+
+19
+00:01:14.433 --> 00:01:22.800
+If we do an "ls -al", you'll see that we have both the ".bash_profile" and ".bashrc" files.
+
+20
+00:01:22.800 --> 00:01:26.300
+Let's make a quick edit; I'm going to add some comments to this file.
+
+21
+00:01:26.300 --> 00:01:30.433
+And, with bash files, comments are lines that begin with a hash.
+
+22
+00:01:30.433 --> 00:01:33.633
+Once you're done making your changes, save and close,
+
+23
+00:01:33.633 --> 00:01:37.400
+and let's go ahead and add similar comments to the ".bashrc" file.
+
+24
+00:01:37.400 --> 00:01:42.500
+Then save, then close; do a "git status". I see that we have two modified files;
+
+25
+00:01:42.500 --> 00:01:46.033
+so, although these files are associated with a gist,
+
+26
+00:01:46.033 --> 00:01:49.533
+this all operates like a traditional Git repository.
+
+27
+00:01:49.533 --> 00:01:53.333
+I'm going to add those files; both files show as modified.
+
+28
+00:01:53.333 --> 00:01:58.000
+I'm going to commit what's in stage, with the commit message "Adding comments to files".
+
+29
+00:01:58.000 --> 00:02:04.266
+Now, it's time to push: "git push origin master". If everything worked successfully,
+
+30
+00:02:04.266 --> 00:02:07.300
+we should have our changes back on our gist on GitHub.
+
+31
+00:02:07.300 --> 00:02:10.333
+Let's head over to our browser and refresh our page;
+
+32
+00:02:10.333 --> 00:02:14.366
+great, now we see the comments that are associated with this gist.
+
+33
+00:02:14.366 --> 00:02:17.500
+We also see the revisions went up to 3.
+
+34
+00:02:17.500 --> 00:02:23.966
+If we click on the revision, we have a comparison versus the last commit.
+

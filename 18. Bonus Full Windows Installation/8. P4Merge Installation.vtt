@@ -1,0 +1,195 @@
+﻿WEBVTT
+
+1
+00:00:00.000 --> 00:00:05.700
+Welcome, in this video, I'm going to show you how to install P4Merge for Windows.
+
+2
+00:00:05.700 --> 00:00:12.100
+I'm going to go to my browser, which is Google Chrome. Once Chrome is open, I'm going to go to "perforce.com".
+
+3
+00:00:12.100 --> 00:00:20.733
+And on the current version of their website, as of the recording of this video, I'm going to go to the "DOWNLOADS" tab and click on "Downloads".
+
+4
+00:00:20.733 --> 00:00:28.500
+Then, once on the downloads page, I'm going to scroll down until I find the "P4MERGE: VISUAL MERGE TOOL".
+
+5
+00:00:28.500 --> 00:00:38.200
+I'm going to confirm that it's selected on Windows. And in the middle dropdown, I need to choose 64 or 32 bit version of the Windows installer.
+
+6
+00:00:38.200 --> 00:00:46.100
+Since I'm running the 64 bit version of Windows, I'm going to select the 64 bit version. The latest version is automatically selected,
+
+7
+00:00:46.100 --> 00:00:53.900
+so all I have to do now is click on the download button. Before I get to download the installer file I'm prompted for registration.
+
+8
+00:00:53.900 --> 00:00:58.400
+However; I am given the option to skip registration, which is what I am going to do.
+
+9
+00:00:58.400 --> 00:01:04.800
+Great. Now the P4Merge installer begins to download. Once the installer has finished downloading,
+
+10
+00:01:04.800 --> 00:01:09.333
+I'm going to open up, and click on open to run the installer in place.
+
+11
+00:01:09.333 --> 00:01:17.900
+Windows will prompt me to make sure that I want to actually install this software. I'm going to say "Yes", and that begins the installation wizard.
+
+12
+00:01:17.900 --> 00:01:25.333
+Great, on the first page of the installer, the select your features page, I'm going to de-select all items,
+
+13
+00:01:25.333 --> 00:01:32.233
+except for the third item, which is "Visual Merge Tool". So to do that, I'm going to click on this icon, which represents a hard drive,
+
+14
+00:01:32.233 --> 00:01:39.800
+and I'm going to select the x option, which means don't install it. I'm doing that for the visual client, as well as the admin tools,
+
+15
+00:01:39.800 --> 00:01:47.966
+and the command line client. So all that remains that we'll be installing is the "Visual Merge Tool", or P4Merge.
+
+16
+00:01:47.966 --> 00:01:55.266
+Once these selections have been made, click on "Next". This is just a last chance screen before we actually do the installation.
+
+17
+00:01:55.266 --> 00:02:04.466
+I'm good to go at this point, so I'm going to click on "Start". Great. We've completed the installation of P4Merge, so now click "Finish" .
+
+18
+00:02:04.466 --> 00:02:09.300
+We're going to configure P4Merge to be accessible from any command prompt.
+
+19
+00:02:09.300 --> 00:02:14.666
+First of all, let's test out to make sure that P4Merge is accessible or not.
+
+20
+00:02:14.666 --> 00:02:24.100
+Now this process will work with either Git Bash, PowerShell, or even the Windows command prompt.
+So go to Git Bash, for example; that launches Git Bash.
+
+21
+00:02:24.100 --> 00:02:30.433
+The command for P4Merge is simply p4merge. If I type "p4merge", then press enter,
+
+22
+00:02:30.433 --> 00:02:38.166
+bash tells me that p4merge is not a known command. That means that P4Merge is not accessible from the command environments.
+
+23
+00:02:38.166 --> 00:02:46.133
+Well, let's exit out for now, and let's find out where P4Merge actually is. So we can normally find P4Merge by going to the start menu,
+
+24
+00:02:46.133 --> 00:02:52.866
+all applications, if we scroll down to the Perforce folder, we should have an item "P4Merge".
+
+25
+00:02:52.866 --> 00:02:58.866
+Great, so selecting it launches P4Merge. We're not going to actually compare any files at this point,
+
+26
+00:02:58.866 --> 00:03:04.333
+but I just want to make sure that the P4Merge application would load. So I'm going to cancel.
+
+27
+00:03:04.333 --> 00:03:10.666
+And now that we've confirmed that, we know that P4Merge is installed correctly. So let's add it to our system path,
+
+28
+00:03:10.666 --> 00:03:16.233
+so it can be accessible from anywhere we launch P4Merge. Let's open up file explorer.
+
+29
+00:03:16.233 --> 00:03:23.333
+Now file explorer may actually be named Windows explorer in previous versions of Windows. I'm going to go to my c-drive,
+
+30
+00:03:23.333 --> 00:03:32.233
+Then I'm going to look under "Program Files"; this is the default location for 64 bit applications on a 64 bit version of Windows.
+
+31
+00:03:32.233 --> 00:03:39.333
+I see under program files, that I have a folder named Perforce. I'm going to go into that. And under that Perforce folder,
+
+32
+00:03:39.333 --> 00:03:46.866
+I have the "p4merge" application. So all we need is the path to this folder. So I'm going up to the address bar;
+
+33
+00:03:46.866 --> 00:03:55.166
+by clicking on it, I get the normalized path to this folder. So now either control+c, or right click and copy.
+
+34
+00:03:55.166 --> 00:04:02.066
+Then, while in file explorer, we're going to right click on "This PC", then go to "Properties".
+
+35
+00:04:02.066 --> 00:04:09.000
+That will launch the "System" window within the control panel. Once that loads, go to "Advanced System Settings";
+
+36
+00:04:09.000 --> 00:04:17.466
+that will launch the "System Properties" on the "Advanced" tab. At the bottom of that tab is "Environment Variables...", click on that button.
+
+37
+00:04:17.466 --> 00:04:24.300
+That will launch the "Environment Variables" dialogue. We need to find the system variable of path.
+
+38
+00:04:24.300 --> 00:04:30.366
+Great. Once you've located it, you can either double click the variable entry, or click on the "Edit..." button.
+
+39
+00:04:30.366 --> 00:04:36.466
+Now, within the "Variable value:", click on the field, and then go to the end of this value.
+
+40
+00:04:36.466 --> 00:04:44.366
+At the end of the value for the "Variable value:", if the path to Perforce is not there, add it, by starting with a semicolon,
+
+41
+00:04:44.366 --> 00:04:52.300
+semicolon is how we separate our path values, then control+v or paste in the value that we copied prior.
+
+42
+00:04:52.300 --> 00:04:58.033
+That will paste in the path to our Perforce folder. Then click "OK" to set the value.
+
+43
+00:04:58.033 --> 00:05:05.633
+After that, click "OK" to close our "Environment Variables" dialogue. Click "OK" again to close the "System Properties".
+
+44
+00:05:05.633 --> 00:05:13.366
+Now we should be able to close the "System" window and file explorer. Alright, let's try that again; we're going to go to Git Bash
+
+45
+00:05:13.366 --> 00:05:19.666
+Like I've said before, this step will work equally as well with PowerShell or the Windows command prompt.
+
+46
+00:05:19.666 --> 00:05:28.166
+Once your command environment loads, type "p4merge" then press enter. If you come up with this screen, it means that P4merge has loaded.
+
+47
+00:05:28.166 --> 00:05:35.566
+Now that we've confirmed that, let's cancel, and let's exit out of our command environment.
+
+48
+00:05:35.566 --> 00:05:35.600
+Now that we've confirmed that, let's cancel, and let's exit out of our command environment.
+

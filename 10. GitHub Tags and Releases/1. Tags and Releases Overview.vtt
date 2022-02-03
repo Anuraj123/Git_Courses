@@ -1,0 +1,22 @@
+﻿WEBVTT
+
+1
+00:00:00.000 --> 00:00:02.966
+Tags are an often forgotten aspect of Git,
+
+2
+00:00:02.966 --> 00:00:07.333
+but with GitHub they can play a larger role in the life of your project.
+
+3
+00:00:07.333 --> 00:00:12.400
+Locally, we use tags to mark important events; while that remains true on GitHub,
+
+4
+00:00:12.400 --> 00:00:15.833
+GitHub extends the tagging concept with releases,
+
+5
+00:00:15.833 --> 00:00:23.466
+allowing us to attach release notes and provide links to download archives of our project.
+

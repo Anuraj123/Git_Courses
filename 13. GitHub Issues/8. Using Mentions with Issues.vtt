@@ -1,0 +1,110 @@
+﻿WEBVTT
+
+1
+00:00:00.000 --> 00:00:05.733
+Welcome, in this video, we're going to associate a previous commit with an existing issue.
+
+2
+00:00:05.733 --> 00:00:10.600
+In one of the previous videos, we updated our project, and then closed an issue;
+
+3
+00:00:10.600 --> 00:00:14.866
+however, there's no association between the work we did and the issue.
+
+4
+00:00:14.866 --> 00:00:19.466
+You just have to assume the work actually got done, or you have to do your own research.
+
+5
+00:00:19.466 --> 00:00:23.066
+Let's look and see; let's go to issues, then click on closed,
+
+6
+00:00:23.066 --> 00:00:25.933
+because the issue I want to look at is already closed.
+
+7
+00:00:25.933 --> 00:00:30.300
+The issue I want to look at is "#3": "Add Getting Started section to README".
+
+8
+00:00:30.300 --> 00:00:35.266
+There currently isn't any association between the work that was related to this issue,
+
+9
+00:00:35.266 --> 00:00:39.400
+and a particular commit that was involved with the work. So, let's solve that.
+
+10
+00:00:39.400 --> 00:00:43.466
+Let's click on "website", click on "commits", and we know the commit
+
+11
+00:00:43.466 --> 00:00:46.633
+that has "Adding Getting Started section to README"
+
+12
+00:00:46.633 --> 00:00:50.733
+is the commit that's associated with that issue, so click on that commit.
+
+13
+00:00:50.733 --> 00:00:54.366
+Then, let's scroll down; and the easiest way to associate this commit
+
+14
+00:00:54.366 --> 00:00:58.766
+with that particular issue is to simply mention it in a comment.
+
+15
+00:00:58.766 --> 00:01:02.566
+Now, if I type the pound or hash mark, I have a list of
+
+16
+00:01:02.566 --> 00:01:05.866
+pull requests and issues that are available to me.
+
+17
+00:01:05.866 --> 00:01:11.966
+I can continue by typing "3", or I can select issue "#3", then I finish my comment.
+
+18
+00:01:11.966 --> 00:01:15.433
+Once I'm happy with it, click on "Comment on this commit".
+
+19
+00:01:15.433 --> 00:01:19.500
+Great, now let's go check it out, click on "Issues", go to "Closed";
+
+20
+00:01:19.500 --> 00:01:22.266
+click on issue "#3", and let's scroll down,
+
+21
+00:01:22.266 --> 00:01:26.366
+and you see we have an association to that particular commit.
+
+22
+00:01:26.366 --> 00:01:30.666
+And, if we click on the commit id, we return to the commit that was associated
+
+23
+00:01:30.666 --> 00:01:35.100
+with doing that work for that issue, and we can even see what happened.
+
+24
+00:01:35.100 --> 00:01:38.100
+It's also important to note, if you have multiple commits involved,
+
+25
+00:01:38.100 --> 00:01:40.433
+you don't have to use close to close the issue.
+
+26
+00:01:40.433 --> 00:01:44.233
+You can simply reference the issue id without closing it,
+
+27
+00:01:44.233 --> 00:01:49.533
+and it will associate any of those commits with that particular issue.
+

@@ -1,0 +1,242 @@
+﻿WEBVTT
+
+1
+00:00:00.000 --> 00:00:05.000
+Welcome, in this video, we're going to be looking at the difference between "fetch" and "pull".
+
+2
+00:00:05.000 --> 00:00:10.400
+Right now, I'm in the "website" repository, which I have linked to my repository on GitHub.
+
+3
+00:00:10.400 --> 00:00:14.733
+And, while I'm here, I'm going to make a quick edit directly on my GitHub repository.
+
+4
+00:00:14.733 --> 00:00:18.400
+Now, we'll actually go into this a little bit deeper in other videos,
+
+5
+00:00:18.400 --> 00:00:23.033
+but for now, I just want to do a quick update. I'm going to pick on the "index.html" file,
+
+6
+00:00:23.033 --> 00:00:26.933
+and click on "Edit this file". And, let's give this a title: "My website".
+
+7
+00:00:26.933 --> 00:00:29.666
+Scroll down, and provide a commit message.
+
+8
+00:00:29.666 --> 00:00:32.400
+I'm going to leave the extended description blank;
+
+9
+00:00:32.400 --> 00:00:36.466
+I'm going to leave this on commit directly to master, and now let's commit our change.
+
+10
+00:00:36.466 --> 00:00:39.733
+Great, we just updated our remote repository,
+
+11
+00:00:39.733 --> 00:00:43.666
+a change of which our local repository is currently unaware.
+
+12
+00:00:43.666 --> 00:00:46.733
+So, let's return to our terminal; if I do a "git status",
+
+13
+00:00:46.733 --> 00:00:50.700
+it tells me that everything is "up-to-date with 'origin/master' ",
+
+14
+00:00:50.700 --> 00:00:54.100
+which is the master branch on our origin remote reference,
+
+15
+00:00:54.100 --> 00:00:57.000
+which is a synonym to our GitHub repository.
+
+16
+00:00:57.000 --> 00:01:01.466
+While on master, let's go ahead and modify our file on our local repository.
+
+17
+00:01:01.466 --> 00:01:05.433
+I'm going to make some updates to the Readme file; save and then close.
+
+18
+00:01:05.433 --> 00:01:09.633
+Once back on the terminal, let's use the express commit to commit our changes:
+
+19
+00:01:09.633 --> 00:01:12.700
+"Updating README". Great, so doing a "git status"
+
+20
+00:01:12.700 --> 00:01:16.000
+Git tells me that I'm "ahead of 'origin/master' by 1 commit.";
+
+21
+00:01:16.000 --> 00:01:19.500
+however, we know that we made a commit on GitHub directly.
+
+22
+00:01:19.500 --> 00:01:23.966
+Let's try pushing up our change: "git push". When we try to push this time,
+
+23
+00:01:23.966 --> 00:01:28.666
+GitHub rejected our attempt to push up; it's telling us to "fetch" first.
+
+24
+00:01:28.666 --> 00:01:32.100
+One thing to keep in mind, is although we've been using the term "pull",
+
+25
+00:01:32.100 --> 00:01:37.666
+a "pull" is really two commands in one; it is a "fetch" and it is also a "merge".
+
+26
+00:01:37.666 --> 00:01:41.466
+Git will first fetch all the updates from the remote repository,
+
+27
+00:01:41.466 --> 00:01:45.533
+and then it will merge those changes into our current repository.
+
+28
+00:01:45.533 --> 00:01:50.866
+Obviously, there's opportunity for this to fail in the form of a merge conflict,
+
+29
+00:01:50.866 --> 00:01:55.200
+but often times those merges go in automatically, or as a fast-forward.
+
+30
+00:01:55.200 --> 00:02:00.933
+Well, let's say that we're not sure; so we could either do a fetch or a pull in this scenario.
+
+31
+00:02:00.933 --> 00:02:05.666
+If we did the pull, we would automatically integrate any changes that are out on GitHub;
+
+32
+00:02:05.666 --> 00:02:08.266
+however, that can be a destructive command
+
+33
+00:02:08.266 --> 00:02:12.766
+if you have changes that are not compatible with what's currently on GitHub.
+
+34
+00:02:12.766 --> 00:02:17.500
+So, one way to alleviate that is just to do a "fetch"; fetches are non-destructive.
+
+35
+00:02:17.500 --> 00:02:21.800
+"git fetch"; Git will now go out to our remote repository
+
+36
+00:02:21.800 --> 00:02:26.266
+and update all of its local information based on what's changed out on GitHub.
+
+37
+00:02:26.266 --> 00:02:30.533
+Now, when we do a "git status", Git tells us that 'origin/master'
+
+38
+00:02:30.533 --> 00:02:33.400
+has diverged from our local master branch;
+
+39
+00:02:33.400 --> 00:02:36.366
+that we have one commit that's different on each side.
+
+40
+00:02:36.366 --> 00:02:41.133
+And, it recommends that we use "git pull" to automatically merge our remote branch.
+
+41
+00:02:41.133 --> 00:02:44.366
+Technically, we could do this with the "git merge" command as well,
+
+42
+00:02:44.366 --> 00:02:49.633
+but just like the advice given, I often find that just doing a "git pull" is a lot simpler.
+
+43
+00:02:49.633 --> 00:02:53.500
+Type "git pull". Since the master branch on both sides were different,
+
+44
+00:02:53.500 --> 00:02:55.400
+what's occurring is a merge commit.
+
+45
+00:02:55.400 --> 00:02:59.433
+Thankfully, there's no conflicts, or we would be in a "merging" state.
+
+46
+00:02:59.433 --> 00:03:03.100
+Either accept this default commit message or provide your own.
+
+47
+00:03:03.100 --> 00:03:05.500
+I'm perfectly content with this commit message,
+
+48
+00:03:05.500 --> 00:03:08.500
+so I'm going to save and then close my text editor.
+
+49
+00:03:08.500 --> 00:03:12.366
+That accepts the commit message for this merge commit; however, we're not done,
+
+50
+00:03:12.366 --> 00:03:14.766
+we just merged down everything from GitHub.
+
+51
+00:03:14.766 --> 00:03:19.133
+GitHub is still unaware of our changes, so we need to push up what we have.
+
+52
+00:03:19.133 --> 00:03:23.900
+Type "git push". Great, now that we have pulled down all our changes
+
+53
+00:03:23.900 --> 00:03:27.433
+there are no conflicts between GitHub and our local repo.
+
+54
+00:03:27.433 --> 00:03:33.666
+So, when we do a push, it goes in just fine. Doing a pull, or a fetch, prior to any pushes
+
+55
+00:03:33.666 --> 00:03:38.266
+is a best practice, and a necessity if you are sharing your repository with others.
+
+56
+00:03:38.266 --> 00:03:40.766
+Alright, let's go very our changes on GitHub.
+
+57
+00:03:40.766 --> 00:03:43.333
+If I reload, we can see the last commit message
+
+58
+00:03:43.333 --> 00:03:47.100
+is our merge commit message that we just entered in with our text editor.
+
+59
+00:03:47.100 --> 00:03:49.533
+And, you can see the updates to the Readme file;
+
+60
+00:03:49.533 --> 00:03:53.666
+the index was already updated on GitHub.
+

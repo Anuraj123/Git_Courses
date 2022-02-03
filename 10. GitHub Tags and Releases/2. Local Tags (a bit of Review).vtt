@@ -1,0 +1,242 @@
+﻿WEBVTT
+
+1
+00:00:00.000 --> 00:00:04.833
+Welcome, in this video, we're going to create a few tags in our local Git repository
+
+2
+00:00:04.833 --> 00:00:08.800
+that we're going to be using with GitHub during the next few videos.
+
+3
+00:00:08.800 --> 00:00:11.366
+I'm starting out fresh on my terminal program;
+
+4
+00:00:11.366 --> 00:00:14.466
+I'm currently in my user's home directory, so now let's go
+
+5
+00:00:14.466 --> 00:00:18.466
+to the "website" Git repository. That's currently in the "website" folder,
+
+6
+00:00:18.466 --> 00:00:22.133
+within a projects folder, within our user's home directory.
+
+7
+00:00:22.133 --> 00:00:24.733
+You can see that we are currently on the "develop" branch,
+
+8
+00:00:24.733 --> 00:00:28.200
+and our working directory is clean. Alright, so now let's get started.
+
+9
+00:00:28.200 --> 00:00:31.933
+I'm going to use the "git log" command, passing in "--oneline",
+
+10
+00:00:31.933 --> 00:00:35.766
+to give me a summary of the recent commits in our Git repository.
+
+11
+00:00:35.766 --> 00:00:38.900
+Using this list of commits, I want to create several tags
+
+12
+00:00:38.900 --> 00:00:42.500
+that mark major milestones within this repository so far.
+
+13
+00:00:42.500 --> 00:00:46.933
+If I type "git tag", I currently don't have any tags, and using the "git tag"
+
+14
+00:00:46.933 --> 00:00:51.633
+without any parameters will list tags if they are available in our repository.
+
+15
+00:00:51.633 --> 00:00:55.800
+The first tags I will be creating will be simple or lightweight tags,
+
+16
+00:00:55.800 --> 00:00:59.533
+and I simply want those tags to point to the HEAD position
+
+17
+00:00:59.533 --> 00:01:02.866
+on the current branches for develop and master respectively.
+
+18
+00:01:02.866 --> 00:01:06.300
+To do that, I will create the first tag called "unstable",
+
+19
+00:01:06.300 --> 00:01:11.333
+and I want it to reference the HEAD position, which is the last commit on the develop branch.
+
+20
+00:01:11.333 --> 00:01:16.200
+So type "git tag"; space; "unstable", which is the name of the tag we're going to use;
+
+21
+00:01:16.200 --> 00:01:20.433
+space; and the reference point to associate the tag, which is "develop",
+
+22
+00:01:20.433 --> 00:01:23.733
+which will mean the last commit on the develop branch.
+
+23
+00:01:23.733 --> 00:01:27.600
+Now, if I do a "git tag", I see that I have a tag named "unstable".
+
+24
+00:01:27.600 --> 00:01:31.600
+Now, let's create another tag "git tag stable master";
+
+25
+00:01:31.600 --> 00:01:35.800
+in this case, we're going to create a tag named stable on the master branch.
+
+26
+00:01:35.800 --> 00:01:39.733
+Type "git tag", and that will list both "stable" and "unstable".
+
+27
+00:01:39.733 --> 00:01:45.333
+To see our tags being listed type "git hist", which is an alias we created in a previous video.
+
+28
+00:01:45.333 --> 00:01:51.133
+You can see at the very top, we have the commit id "369b832",
+
+29
+00:01:51.133 --> 00:01:53.933
+which has the tag "unstable" associated with it.
+
+30
+00:01:53.933 --> 00:02:00.033
+You'll notice, within our history, that tags are noted with a "tag:", and then the tag name.
+
+31
+00:02:00.033 --> 00:02:08.100
+If we go a little bit further down, you can see that "a07fa0c" is associated with "tag: stable",
+
+32
+00:02:08.100 --> 00:02:12.533
+which is also on 'origin/master' and our local master branch.
+
+33
+00:02:12.533 --> 00:02:16.466
+Now I'm going to list out my commits using "git log --oneline".
+
+34
+00:02:16.466 --> 00:02:20.133
+The previous tags we created were simple or lightweight tags.
+
+35
+00:02:20.133 --> 00:02:23.666
+Simple and lightweight tags simply label a specific commit;
+
+36
+00:02:23.666 --> 00:02:27.233
+there's no extra information associated with those tags.
+
+37
+00:02:27.233 --> 00:02:32.766
+The next set of tags I want to create are going to be release tags, or annotated tags.
+
+38
+00:02:32.766 --> 00:02:38.666
+This time, I'm adding more information: "git tag -a", this is going to be an annotated tag;
+
+39
+00:02:38.666 --> 00:02:47.466
+then the name of the tag, in this case "v0.1-alpha -m" to provide a tag message;
+
+40
+00:02:47.466 --> 00:02:53.566
+"Release 1.0 (Alpha)"; and then, at the very end, I'm providing the commit id
+
+41
+00:02:53.566 --> 00:02:58.633
+that I want to associate with this tag, which is "85fe102".
+
+42
+00:02:58.633 --> 00:03:00.766
+Double check the line and then press enter.
+
+43
+00:03:00.766 --> 00:03:06.566
+Now if I do a "git tag", I can see that I have the "v0.1-alpha" tag listed.
+
+44
+00:03:06.566 --> 00:03:10.500
+With annotated tags, we have the option of using the "git show" command
+
+45
+00:03:10.500 --> 00:03:15.466
+specifying the tag: "git show v0.1-alpha".
+
+46
+00:03:15.466 --> 00:03:20.000
+When we do that we see, at the very top, we have the tag followed by the tag name,
+
+47
+00:03:20.000 --> 00:03:23.233
+and then the tagger, the date, and the tag message;
+
+48
+00:03:23.233 --> 00:03:26.966
+these are all specific attributes of an annotated tag.
+
+49
+00:03:26.966 --> 00:03:30.200
+After the tag specific information, we have the information
+
+50
+00:03:30.200 --> 00:03:34.066
+regarding the commit itself, including a diff.
+
+51
+00:03:34.066 --> 00:03:39.333
+Alright, let's list those commits again, and let's add a few more tags before we go to GitHub.
+
+52
+00:03:39.333 --> 00:03:48.466
+In this case, I'm creating a "v0.2-alpha" tag that is associated with commit "bb1e043".
+
+53
+00:03:48.466 --> 00:03:50.766
+Double check this line, and then press enter.
+
+54
+00:03:50.766 --> 00:03:55.866
+And this last annotated tag, we will name it "v0.3-beta",
+
+55
+00:03:55.866 --> 00:04:02.766
+and associate it with commit "704f97c". Of course, when you create these tags,
+
+56
+00:04:02.766 --> 00:04:07.600
+you will want to use the specific commit ids that are associate with your repository.
+
+57
+00:04:07.600 --> 00:04:10.966
+So, you will have different commit ids as you create these tags.
+
+58
+00:04:10.966 --> 00:04:15.166
+Let's list the tags by doing "git tag"; we have "stable" and "unstable",
+
+59
+00:04:15.166 --> 00:04:19.300
+which are the lightweight tags, and then our three tags that start with
+
+60
+00:04:19.300 --> 00:04:27.133
+"v0." some number: two alphas and a beta, those three of which are annotated tags.
+

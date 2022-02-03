@@ -1,0 +1,86 @@
+﻿WEBVTT
+
+1
+00:00:00.000 --> 00:00:04.966
+Welcome in this video, we're going to look at how we do comparisons in GitHub.
+
+2
+00:00:04.966 --> 00:00:08.766
+So far, we've done several commits on our GitHub repository,
+
+3
+00:00:08.766 --> 00:00:12.800
+created a few branches and also tags. Since we've done all that
+
+4
+00:00:12.800 --> 00:00:16.233
+we have the opportunity to do comparisons between
+
+5
+00:00:16.233 --> 00:00:20.833
+commits, branches, and tags in multiple locations throughout GitHub.
+
+6
+00:00:20.833 --> 00:00:24.666
+One way we could do that is by initiating a pull request.
+
+7
+00:00:24.666 --> 00:00:28.800
+If we click on pull request, it'll put us on a pull request page,
+
+8
+00:00:28.800 --> 00:00:35.033
+by which I can create a new pull request. Doing that puts me onto a compare changes page.
+
+9
+00:00:35.033 --> 00:00:39.400
+This will allow me to change the base, that is where I'm comparing against,
+
+10
+00:00:39.400 --> 00:00:43.866
+with my current branch or tag; let's compare "develop" against "master".
+
+11
+00:00:43.866 --> 00:00:49.600
+Doing that, we refresh the page with a difference between master and our develop branches.
+
+12
+00:00:49.600 --> 00:00:52.766
+So, at the top of this, I see that I have "4 commits here",
+
+13
+00:00:52.766 --> 00:00:57.200
+you can see what dates they were on. I can go to the specific commits by clicking on
+
+14
+00:00:57.200 --> 00:01:01.500
+the commit message with each one or the commit id associated.
+
+15
+00:01:01.500 --> 00:01:06.333
+And then, at the bottom of this page, I see a diff between the two branches being compared.
+
+16
+00:01:06.333 --> 00:01:11.000
+Right now, it's showing just one file changed between develop and master.
+
+17
+00:01:11.000 --> 00:01:15.666
+I have it on the unified diff, but I could also move over to split.
+
+18
+00:01:15.666 --> 00:01:20.900
+Doing that refreshes my page, and now I have a split view of the comparison.
+
+19
+00:01:20.900 --> 00:01:24.100
+At this point, I no longer need the pull request;
+
+20
+00:01:24.100 --> 00:01:27.966
+I just wanted to use the pull request page to do comparisons.
+
+21
+00:01:27.966 --> 00:01:32.466
+Let's click back on the name of our repository.
+

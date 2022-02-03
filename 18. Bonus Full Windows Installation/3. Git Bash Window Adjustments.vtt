@@ -1,0 +1,66 @@
+﻿WEBVTT
+
+1
+00:00:00.000 --> 00:00:07.833
+Welcome, in this video, we're going to adjust the Git Bash temrinal to be a little bit more readable for the remainder of this course.
+
+2
+00:00:07.833 --> 00:00:13.066
+First of all, I'm going to go over to the Git Bash icon, and launch Git Bash.
+
+3
+00:00:13.066 --> 00:00:20.966
+As you can see, the default settings for Git Bash are a little bit dificult to read, so let's go ahead and adjust the settings
+
+4
+00:00:20.966 --> 00:00:29.733
+to be a little bit more presentable. I'm going to go up here to the icon for git bash, click on it, then select the "Options" menu item.
+
+5
+00:00:29.733 --> 00:00:36.166
+That brings up the options dialogue for the Git Bash environment. First, let's start with text.
+
+6
+00:00:36.166 --> 00:00:41.100
+So I'm going to select the text item, then, under font, I'm going to click on the select button.
+
+7
+00:00:41.100 --> 00:00:49.366
+Of the available fonts, I'm going to select Consolas; I'm going to keep it regular, and now I'm going to select 18 for the size.
+
+8
+00:00:49.366 --> 00:00:58.433
+Please feel free to slect the font, style, and size that best meets your needs. Once I've done that I'm going to click on "OK".
+
+9
+00:00:58.433 --> 00:01:03.766
+And when we return, font has changed to "Consolas, 18-point";
+
+10
+00:01:03.766 --> 00:01:10.433
+I'm doing this mainly for training purposes, so don't feel like you have to follow allong exactly.
+
+11
+00:01:10.433 --> 00:01:19.000
+The next item will be to adjust the window. So I'm going to select the "Window" item, and for me, instead of the standard 80 columns,
+
+12
+00:01:19.000 --> 00:01:27.666
+I'm going to use 120. If you prefer 80 that's fine, but I have found that 120 is a good number, especially for widescreen monitors.
+
+13
+00:01:27.666 --> 00:01:37.266
+And I just want a few more rows, so I'm going to bump this up from 24 to 28. Once I've made those adjustments, I'm going to click on "OK".
+
+14
+00:01:37.266 --> 00:01:46.333
+Now there are a few changes that have been made, but it's not fully in effect. In order to do that, we need to close Git Bash and re-launch it.
+
+15
+00:01:46.333 --> 00:01:54.766
+So either close Git Bash directly or type "exit'. Once git bash is closed, go back to Git bash and launch it.
+
+16
+00:01:54.766 --> 00:02:00.066
+Great, that's a little bit more readable.
+

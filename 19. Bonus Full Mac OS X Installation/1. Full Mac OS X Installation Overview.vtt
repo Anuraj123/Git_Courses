@@ -1,0 +1,102 @@
+﻿WEBVTT
+
+1
+00:00:00.000 --> 00:00:05.033
+This course includes installation instructions for the two main operating systems
+
+2
+00:00:05.033 --> 00:00:09.033
+widely used today: Windows and the Mac operating system.
+
+3
+00:00:09.033 --> 00:00:14.500
+This section covers how to install Git and related tools on Mac OS X.
+
+4
+00:00:14.500 --> 00:00:20.066
+If you are using Windows, you can skip this section, and instead see the previous section;
+
+5
+00:00:20.066 --> 00:00:24.766
+you only need to watch the installation section that applies to your operating system.
+
+6
+00:00:24.766 --> 00:00:30.166
+In all my courses, I have standardized on using Chrome; however, most modern versions
+
+7
+00:00:30.166 --> 00:00:34.866
+of the Mac can use the default browser, Safari, without a problem.
+
+8
+00:00:34.866 --> 00:00:38.400
+If you prefer to follow along exactly, download Chrome
+
+9
+00:00:38.400 --> 00:00:42.233
+and install it by accepting all the defaults along the way.
+
+10
+00:00:42.233 --> 00:00:45.900
+We start off by installing the Apple provided version of Git,
+
+11
+00:00:45.900 --> 00:00:50.500
+which is included with the developer command line tools and Xcode.
+
+12
+00:00:50.500 --> 00:00:54.766
+If you have Xcode already, then you should already have Git installed.
+
+13
+00:00:54.766 --> 00:00:57.833
+Either way, after the installation, we will cover some
+
+14
+00:00:57.833 --> 00:01:01.000
+configuration settings and a few starting commands.
+
+15
+00:01:01.000 --> 00:01:05.633
+After Git is installed, I cover how to install and configure TextMate 2,
+
+16
+00:01:05.633 --> 00:01:09.333
+which is a very popular text editor, that is a lot more functional
+
+17
+00:01:09.333 --> 00:01:12.300
+than the standard TextEdit provided by Apple.
+
+18
+00:01:12.300 --> 00:01:17.066
+You can use your favorite text editor of choice, like Sublime or Nano.
+
+19
+00:01:17.066 --> 00:01:22.700
+Finally, we will install a visual comparison tool called P4Merge by Perforce.
+
+20
+00:01:22.700 --> 00:01:27.000
+Oddly enough, Perforce, which also has a competing source control tool,
+
+21
+00:01:27.000 --> 00:01:31.700
+provides an excellent, freely available tool, that works well with Git.
+
+22
+00:01:31.700 --> 00:01:37.100
+I will cover how to install P4Merge, and how to configure it to work seamlessly with Git.
+
+23
+00:01:37.100 --> 00:01:41.700
+At the very end of this section, I provide a special installation notes lecture
+
+24
+00:01:41.700 --> 00:01:47.100
+that has all the instructions for installing Git and all the related tools used in this course.
+
+25
+00:01:47.100 --> 00:01:54.133
+This is provided to help those that prefer a written guide for doing installs and setup.
+

@@ -1,0 +1,58 @@
+﻿WEBVTT
+
+1
+00:00:00.000 --> 00:00:05.000
+Welcome, in this video, we're going to get started with GitHub issues.
+
+2
+00:00:05.000 --> 00:00:08.133
+I'm currently logged into GitHub, and the first thing I want to do
+
+3
+00:00:08.133 --> 00:00:11.633
+is to make sure that issues is available to my repository.
+
+4
+00:00:11.633 --> 00:00:14.400
+I'm going to do this with the website repository,
+
+5
+00:00:14.400 --> 00:00:18.333
+so go down to your repositories and click on website.
+
+6
+00:00:18.333 --> 00:00:24.200
+If you see issues over here on the right hand side, issues is available to this repository.
+
+7
+00:00:24.200 --> 00:00:27.800
+If for some reason this is missing, you can go into settings,
+
+8
+00:00:27.800 --> 00:00:31.366
+and under features make sure that issues is checked.
+
+9
+00:00:31.366 --> 00:00:36.533
+Great, let's return back to the main page for this repository, and click on issues.
+
+10
+00:00:36.533 --> 00:00:40.200
+Currently, there aren't any open issues with this repository.
+
+11
+00:00:40.200 --> 00:00:43.500
+At the top, we have various tabs that pertain to issues.
+
+12
+00:00:43.500 --> 00:00:48.800
+Whenever we create pull requests, an issue is created that tracks the pull request.
+
+13
+00:00:48.800 --> 00:00:53.933
+Labels are used with issues to denote the type of issue that you're dealing with,
+
+14
+00:00:53.933 --> 00:01:01.266
+and then milestones are just major events within the repository, AKA milestones.
+

@@ -1,0 +1,306 @@
+﻿WEBVTT
+
+1
+00:00:00.000 --> 00:00:05.366
+Welcome, in this video, we're going to change the default branch of our GitHub repository.
+
+2
+00:00:05.366 --> 00:00:10.066
+I'm currently logged into GitHub, and I'm in the "website" GitHub repository.
+
+3
+00:00:10.066 --> 00:00:15.500
+I'm currently on the master branch, and at this point in time, it is the only branch we have;
+
+4
+00:00:15.500 --> 00:00:20.933
+however, in some work flows, the master branch represents what's currently in production,
+
+5
+00:00:20.933 --> 00:00:25.400
+and active development should not happen on the master branch directly.
+
+6
+00:00:25.400 --> 00:00:29.333
+Instead, there should be another branch that is also long-lived
+
+7
+00:00:29.333 --> 00:00:33.066
+where all the development effort goes, and then, periodically,
+
+8
+00:00:33.066 --> 00:00:35.666
+those changes are merged back into master
+
+9
+00:00:35.666 --> 00:00:38.700
+when the codebase reaches production ready status.
+
+10
+00:00:38.700 --> 00:00:42.133
+So, let's set up our new develop long-live branch.
+
+11
+00:00:42.133 --> 00:00:47.933
+I'm going to expand out our branch dropdown, and in the search or create branch field,
+
+12
+00:00:47.933 --> 00:00:51.466
+I'm going to create a branch called develop, then press enter.
+
+13
+00:00:51.466 --> 00:00:56.000
+The branch named develop has been created, and is currently even with master.
+
+14
+00:00:56.000 --> 00:00:59.000
+That's OK; we don't need to make any commits for this demo.
+
+15
+00:00:59.000 --> 00:01:03.366
+Now, on the right hand side, we have our repository menu.
+
+16
+00:01:03.366 --> 00:01:06.900
+One of those options is settings, so click on settings.
+
+17
+00:01:06.900 --> 00:01:10.233
+These are the settings for this specific repository.
+
+18
+00:01:10.233 --> 00:01:13.700
+Under the main heading for settings, we have the repository name,
+
+19
+00:01:13.700 --> 00:01:17.566
+which we have renamed before, and we also have our default branch.
+
+20
+00:01:17.566 --> 00:01:22.466
+If we expand our dropdown, we have master, which is the current selection, and develop.
+
+21
+00:01:22.466 --> 00:01:27.400
+To change it, we just select develop. Now we can click on "Update" to set this.
+
+22
+00:01:27.400 --> 00:01:32.300
+GitHub will warn us since changing the default branch is not a trivial change;
+
+23
+00:01:32.300 --> 00:01:38.466
+it does have some consequences, in particular how new pull requests and clones react.
+
+24
+00:01:38.466 --> 00:01:42.066
+I'm going to click on "I understand, update the default branch."
+
+25
+00:01:42.066 --> 00:01:45.500
+Great, now develop is my new default branch,
+
+26
+00:01:45.500 --> 00:01:48.633
+and I have a little banner at the top that confirms this change.
+
+27
+00:01:48.633 --> 00:01:53.366
+I'm going to dismiss the banner. Now, let's get back to the main page for our repository,
+
+28
+00:01:53.366 --> 00:01:55.833
+by clicking on the name of the repository.
+
+29
+00:01:55.833 --> 00:01:59.733
+Right away, we see one effect of changing our default branch;
+
+30
+00:01:59.733 --> 00:02:04.833
+when we click on the name of our repository, we always land on our default branch,
+
+31
+00:02:04.833 --> 00:02:08.566
+which now is develop. Let's check out another side effect;
+
+32
+00:02:08.566 --> 00:02:12.500
+expand the branch dropdown, and let's create a new feature branch.
+
+33
+00:02:12.500 --> 00:02:15.700
+I'm going to create a throw away branch called "just-a-demo",
+
+34
+00:02:15.700 --> 00:02:19.933
+and before I can issue a pull request, I need to have at least one commit
+
+35
+00:02:19.933 --> 00:02:22.066
+different from the originating branch.
+
+36
+00:02:22.066 --> 00:02:27.200
+So, I'm going to click on the faithful Readme file, and make a quick edit.
+
+37
+00:02:27.200 --> 00:02:30.666
+Once I've entered a commit message, click on "Commit changes".
+
+38
+00:02:30.666 --> 00:02:35.566
+Now, let's click on the name of the repository; that returns us to our main repository page,
+
+39
+00:02:35.566 --> 00:02:38.866
+and GitHub detects that we have a newly created branch.
+
+40
+00:02:38.866 --> 00:02:43.200
+In doing so, it offers us the option to compare and do a pull request.
+
+41
+00:02:43.200 --> 00:02:47.200
+Let's click on that button; the other side effect of changing the default branch
+
+42
+00:02:47.200 --> 00:02:52.666
+is when we go to create our pull request, our destination, or base branch,
+
+43
+00:02:52.666 --> 00:02:57.200
+is now defaulted to the new default branch, which is now develop.
+
+44
+00:02:57.200 --> 00:03:00.466
+For this example, I'm not going to go through with the pull request;
+
+45
+00:03:00.466 --> 00:03:04.100
+this was just a quick example to show this change in behavior.
+
+46
+00:03:04.100 --> 00:03:07.966
+Click on "website", now I'm going to delete the branch from the branches tab.
+
+47
+00:03:07.966 --> 00:03:12.900
+Find "just-a-demo" and click on the trash can. Great, now we've deleted that.
+
+48
+00:03:12.900 --> 00:03:16.733
+One last side effect I want to show, and that is what happens when you clone.
+
+49
+00:03:16.733 --> 00:03:21.566
+So, I'm going to scroll down, and below the repository menu are the clone options.
+
+50
+00:03:21.566 --> 00:03:24.533
+It's currently set to SSH, which is how I usually clone,
+
+51
+00:03:24.533 --> 00:03:27.300
+and then click on the copy to clipboard button.
+
+52
+00:03:27.300 --> 00:03:30.166
+That should copy the value that's currently in this field.
+
+53
+00:03:30.166 --> 00:03:34.433
+If you don't have it, then you can double-click on this field, select all the text within it,
+
+54
+00:03:34.433 --> 00:03:38.333
+and then copy the URL so that that URL will be in your clipboard.
+
+55
+00:03:38.333 --> 00:03:42.100
+Now, let's go to our terminal; back on our local system,
+
+56
+00:03:42.100 --> 00:03:45.166
+I'm currently within the website Git repository,
+
+57
+00:03:45.166 --> 00:03:49.233
+but, for this example, I actually need to delete this repository and start over.
+
+58
+00:03:49.233 --> 00:03:51.833
+So, I'm going to back up one level, that takes us to our
+
+59
+00:03:51.833 --> 00:03:54.800
+"projects" folder, under our user's home directory.
+
+60
+00:03:54.800 --> 00:03:58.666
+I'm going to forcefully and recursively delete the website folder.
+
+61
+00:03:58.666 --> 00:04:02.600
+So, now we're left with a demo repository that we created earlier.
+
+62
+00:04:02.600 --> 00:04:07.366
+Now type "git clone" and then paste in the value that should be in your clipboard,
+
+63
+00:04:07.366 --> 00:04:12.433
+which should point to your GitHub repository. Once you've done that, press enter.
+
+64
+00:04:12.433 --> 00:04:15.300
+Great, let's go into the website repository,
+
+65
+00:04:15.300 --> 00:04:18.200
+that's now been re-cloned onto our local system.
+
+66
+00:04:18.200 --> 00:04:22.166
+Now you see the other effect; that is the default branch that we get
+
+67
+00:04:22.166 --> 00:04:27.766
+when we clone a repository from GitHub will use the default branch set on GitHub.
+
+68
+00:04:27.766 --> 00:04:34.000
+So, now, it is set to develop; our local repository doesn't actually have a master branch,
+
+69
+00:04:34.000 --> 00:04:37.566
+and the develop branches are set up as tracking branches.
+
+70
+00:04:37.566 --> 00:04:41.066
+If I wanted to get the master branch on my local system,
+
+71
+00:04:41.066 --> 00:04:45.666
+I would have to check that branch out and fetch it down from the remote repository:
+
+72
+00:04:45.666 --> 00:04:50.400
+"git checkout master". Since there was no master branch on our local system,
+
+73
+00:04:50.400 --> 00:04:55.000
+Git went out to our remote, origin, and brought in the 'origin/master' branch
+
+74
+00:04:55.000 --> 00:04:58.166
+and set that up as our local master branch.
+
+75
+00:04:58.166 --> 00:05:02.533
+So now, we have both master and develop on our local system;
+
+76
+00:05:02.533 --> 00:05:08.333
+however, develop is still the default branch on GitHub.
+

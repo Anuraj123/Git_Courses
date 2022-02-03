@@ -1,0 +1,46 @@
+﻿WEBVTT
+
+1
+00:00:00.000 --> 00:00:04.666
+Welcome, in this video, we're going to install Git on the mac.
+
+2
+00:00:04.666 --> 00:00:09.833
+Open up your terminal program, and simply type "git version". Then press enter.
+
+3
+00:00:09.833 --> 00:00:16.400
+If you get this response, that means that Git is not installed. However, with newer version of the Mac operating system
+
+4
+00:00:16.400 --> 00:00:22.233
+we will be automatically prompted to install Git using the developer command line tools.
+
+5
+00:00:22.233 --> 00:00:28.800
+When this prompt comes up, you have the option of getting Xcode, which will include Git; dismiss this dialogue entirely,
+
+6
+00:00:28.800 --> 00:00:34.966
+which means not to install Git; or to install, which will install Git using the command line tools.
+
+7
+00:00:34.966 --> 00:00:42.700
+Click on "Install". On the license agreement, click on "Agree". This will being the download and installation process.
+
+8
+00:00:42.700 --> 00:00:48.766
+Once the installation process has finished, click on done. Great, to make sure we have a clean terminal session,
+
+9
+00:00:48.766 --> 00:00:55.033
+let's quit out of terminal, command+q, and fire it back up. Now type "git version", then press enter,
+
+10
+00:00:55.033 --> 00:01:00.000
+if our installation was successful, Git will respond with the version number that has been installed.
+
+11
+00:01:00.000 --> 00:01:07.666
+And in this particular case, we have, in parenthesis, the qualifier that it's an Apple version of Git.
+

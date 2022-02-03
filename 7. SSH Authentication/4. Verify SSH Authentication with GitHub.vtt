@@ -1,0 +1,150 @@
+﻿WEBVTT
+
+1
+00:00:00.000 --> 00:00:03.166
+Welcome, in this video, we're going to continue setting up
+
+2
+00:00:03.166 --> 00:00:07.833
+our SSH authentication by entering our key into the GitHub interface.
+
+3
+00:00:07.833 --> 00:00:11.733
+In a previous step, we generated our public and private keys
+
+4
+00:00:11.733 --> 00:00:17.866
+and then we copied the contents of the "id_rsa.pub" file into our clipboard.
+
+5
+00:00:17.866 --> 00:00:20.533
+Now, let's head over to GitHub. From your account,
+
+6
+00:00:20.533 --> 00:00:24.466
+go to your profile and go to the drop down then go to settings.
+
+7
+00:00:24.466 --> 00:00:28.800
+When your personal settings come up, go to the menu item "SSH keys",
+
+8
+00:00:28.800 --> 00:00:35.233
+then click on "Add SSH key". When you do that a form will pop up at the bottom of the page.
+
+9
+00:00:35.233 --> 00:00:38.666
+Put in a descriptive tittle for this SSH key.
+
+10
+00:00:38.666 --> 00:00:44.333
+Remember that SSH keys are generally associated with a given computer or virtual machine.
+
+11
+00:00:44.333 --> 00:00:47.133
+I'm going to use the title "Training Macbook Pro"
+
+12
+00:00:47.133 --> 00:00:50.833
+since this is the machine I primarily use for all my training.
+
+13
+00:00:50.833 --> 00:00:53.600
+Then, go to the "Key" field. Once in the "key" field,
+
+14
+00:00:53.600 --> 00:00:56.300
+paste in the value that's currently in your clipboard.
+
+15
+00:00:56.300 --> 00:01:01.300
+Once you've done that, click on "Add key". Since this is a sensitive operation,
+
+16
+00:01:01.300 --> 00:01:05.266
+GitHub will prompt you for your GitHub log in before you can proceed;
+
+17
+00:01:05.266 --> 00:01:08.300
+this is just a double verification. Once you've done that,
+
+18
+00:01:08.300 --> 00:01:13.666
+GitHub should list this new key under your SSH keys, underneath personal settings.
+
+19
+00:01:13.666 --> 00:01:17.200
+If you did it wrong, you can always delete the key and start over.
+
+20
+00:01:17.200 --> 00:01:20.433
+However, let's check it out; let's see if this worked.
+
+21
+00:01:20.433 --> 00:01:25.300
+So, let's go back to our terminal, and to confirm that this machine that I'm currently on
+
+22
+00:01:25.300 --> 00:01:28.900
+is able to communicate with GitHub via SSH,
+
+23
+00:01:28.900 --> 00:01:32.400
+we're going to use the "ssh" command to try to log in.
+
+24
+00:01:32.400 --> 00:01:42.666
+Type "ssh -T git@github.com". Once you've done that press enter.
+
+25
+00:01:42.666 --> 00:01:46.933
+If you've never connected to GitHub before via SSH, you would be prompted
+
+26
+00:01:46.933 --> 00:01:50.666
+confirming whether or not you really want to connect. Type "yes".
+
+27
+00:01:50.666 --> 00:01:54.266
+You'll be prompted for your SSH key passphrase.
+
+28
+00:01:54.266 --> 00:01:58.533
+Sometimes it may be referred to as a password, but they're the same thing.
+
+29
+00:01:58.533 --> 00:02:01.566
+Since I'm on the Mac, I have the option of remembering this
+
+30
+00:02:01.566 --> 00:02:05.566
+passphrase or password in my keychain, and I'm going to do so,
+
+31
+00:02:05.566 --> 00:02:10.333
+since I don't like being prompted each time. Click OK, or press enter.
+
+32
+00:02:10.333 --> 00:02:15.600
+Once you've done that, SSH will attempt to connect, and then it will exit out to the terminal.
+
+33
+00:02:15.600 --> 00:02:19.166
+The last line is what's important; it should greet you by your username,
+
+34
+00:02:19.166 --> 00:02:23.433
+and then tell you that you have successfully authenticated, which is the important part.
+
+35
+00:02:23.433 --> 00:02:27.300
+But, GitHub does not provide shell access, which it explains.
+
+36
+00:02:27.300 --> 00:02:30.700
+That's ok, because don't need shell access; we just need to use the
+
+37
+00:02:30.700 --> 00:02:37.433
+SSH authentication process to log in, and we have just confirmed that.
+

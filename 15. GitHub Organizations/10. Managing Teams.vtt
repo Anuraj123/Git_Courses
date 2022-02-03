@@ -1,0 +1,126 @@
+﻿WEBVTT
+
+1
+00:00:00.000 --> 00:00:04.100
+Welcome, in this video, we're going to move the "awesomejt" user
+
+2
+00:00:04.100 --> 00:00:09.100
+from the developers team into a new team. I'm currently logged into GitHub,
+
+3
+00:00:09.100 --> 00:00:14.000
+and I'm on the "my-organization-example" organization.
+
+4
+00:00:14.000 --> 00:00:18.633
+If I click on teams, I currently have a single team called developers.
+
+5
+00:00:18.633 --> 00:00:22.366
+I'm going to create a new team and call this team "Contributors";
+
+6
+00:00:22.366 --> 00:00:27.433
+and the description I'm going to use is "Read-only team for less trusted developers".
+
+7
+00:00:27.433 --> 00:00:32.200
+Then click, create team. While I'm here, I'm going to associate a repository,
+
+8
+00:00:32.200 --> 00:00:37.933
+so click on "Repositories". Type "web", which should bring up the website repository,
+
+9
+00:00:37.933 --> 00:00:43.433
+click on that, and I wish to leave "Read" as the permission for this repository.
+
+10
+00:00:43.433 --> 00:00:48.266
+Again, read allows team members to view or read this repository,
+
+11
+00:00:48.266 --> 00:00:51.433
+clone it, and also fork the repository.
+
+12
+00:00:51.433 --> 00:00:56.500
+Alright, let's head back over to team members. I'm going to add the "awesomejt" user.
+
+13
+00:00:56.500 --> 00:01:00.900
+And, at this point, I just have to type the first few letters of the username,
+
+14
+00:01:00.900 --> 00:01:04.566
+and since this user's already part of this organization
+
+15
+00:01:04.566 --> 00:01:08.900
+this match will show before anyone else on the general GitHub website.
+
+16
+00:01:08.900 --> 00:01:12.000
+Once I find my match, I'm going to select it, and this time,
+
+17
+00:01:12.000 --> 00:01:16.366
+since the "awesomejt" user is already a member of this organization,
+
+18
+00:01:16.366 --> 00:01:20.533
+the "awesomejt" user is directly added to the contributors team;
+
+19
+00:01:20.533 --> 00:01:23.500
+no invitation is required at this point.
+
+20
+00:01:23.500 --> 00:01:26.500
+Great, so now let's head back over to teams,
+
+21
+00:01:26.500 --> 00:01:31.833
+and "awesomejt", at this point, is a member of both contributors and developers.
+
+22
+00:01:31.833 --> 00:01:37.000
+Let's go over to developers; I need to remove "awesomejt" from developers,
+
+23
+00:01:37.000 --> 00:01:40.700
+so that he only remains in the "Contributors" team.
+
+24
+00:01:40.700 --> 00:01:45.100
+So, I'm going to go over to the gear dropdown, and then select "Remove from team".
+
+25
+00:01:45.100 --> 00:01:49.400
+GitHub will update and remove "awesomejt" from this team.
+
+26
+00:01:49.400 --> 00:01:54.666
+If I click on teams, I can see that "awesomejt" is still part of the contributors team.
+
+27
+00:01:54.666 --> 00:01:59.000
+I like setting up my organizations in a fashion like this, where I will have
+
+28
+00:01:59.000 --> 00:02:04.700
+a core team of developers, and then a team of contributors with different permissions.
+
+29
+00:02:04.700 --> 00:02:08.800
+Typically my trusted core developers I will give more permissions,
+
+30
+00:02:08.800 --> 00:02:13.700
+in this case read and write, and then contributors I will give less permissions,
+
+31
+00:02:13.700 --> 00:02:18.100
+in this case only read access.
+

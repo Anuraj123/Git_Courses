@@ -1,0 +1,98 @@
+﻿WEBVTT
+
+1
+00:00:00.000 --> 00:00:03.300
+Welcome, in this video, we're going to look at the release page
+
+2
+00:00:03.300 --> 00:00:07.133
+and also then delete our release. I'm currently logged into GitHub,
+
+3
+00:00:07.133 --> 00:00:12.200
+and on the website GitHub repository. Specifically, I'm within Releases.
+
+4
+00:00:12.200 --> 00:00:17.500
+We just created a "Release 0.3 BETA". If I click on the title,
+
+5
+00:00:17.500 --> 00:00:21.266
+it takes me to a release page about this release specifically.
+
+6
+00:00:21.266 --> 00:00:25.100
+And, similar to the tags page, it lists the name of the release,
+
+7
+00:00:25.100 --> 00:00:28.166
+the tag associated, the commit id associated,
+
+8
+00:00:28.166 --> 00:00:30.966
+whether or not this is a full release or pre-release,
+
+9
+00:00:30.966 --> 00:00:33.433
+and other information about this release.
+
+10
+00:00:33.433 --> 00:00:37.233
+I have the option to edit this release, which we've covered before,
+
+11
+00:00:37.233 --> 00:00:40.233
+and I also have the option to delete this release.
+
+12
+00:00:40.233 --> 00:00:42.966
+One thing to keep in mind is, if you delete a release
+
+13
+00:00:42.966 --> 00:00:46.800
+it doesn't mean you delete the underlying tag associated with it.
+
+14
+00:00:46.800 --> 00:00:49.600
+Let's try that out, click on the "Delete" button.
+
+15
+00:00:49.600 --> 00:00:52.833
+GitHub will warn you, "Are you sure you want to delete this release?"
+
+16
+00:00:52.833 --> 00:00:55.366
+Click on the "Delete this release" button.
+
+17
+00:00:55.366 --> 00:00:59.900
+Great, so now we're back, but we still have this listed under releases.
+
+18
+00:00:59.900 --> 00:01:03.100
+And that's because, by default, the releases tab
+
+19
+00:01:03.100 --> 00:01:06.266
+will simply list out all the tags in GitHub,
+
+20
+00:01:06.266 --> 00:01:09.500
+which is not that much different than the tags tab.
+
+21
+00:01:09.500 --> 00:01:13.466
+In order to fully get rid of both the release notes and the tag,
+
+22
+00:01:13.466 --> 00:01:17.733
+we still need to come in and then click on the tag to go the tag page,
+
+23
+00:01:17.733 --> 00:01:22.966
+and then click on "Delete" here as well. Once you're happy, click on "Delete this tag".
+
+24
+00:01:22.966 --> 00:01:30.400
+Great, now refresh your page; now we're left with just two tags, stable and unstable.
+

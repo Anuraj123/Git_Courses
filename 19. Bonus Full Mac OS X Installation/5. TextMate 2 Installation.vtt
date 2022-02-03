@@ -1,0 +1,67 @@
+﻿WEBVTT
+
+1
+00:00:00.000 --> 00:00:05.466
+Welcome, in this video, we're going to download and install Macromates's TextMate 2.
+
+2
+00:00:05.466 --> 00:00:11.166
+Open up your favorite browse, I'm using Google Chrome, then go to macromates.com.
+
+3
+00:00:11.166 --> 00:00:18.000
+Once that page loads, go to the downloads page. On the downloads page, select TextMate 2.
+
+4
+00:00:18.000 --> 00:00:26.333
+When you see this, it may be in beta or a pre-release version, but that's ok; my testing has indicated this is still very stable,
+
+5
+00:00:26.333 --> 00:00:34.633
+and I highly recommend it. So let's click on the TextMate 2 link. That begins our download. Once the file has finished downloading,
+
+6
+00:00:34.633 --> 00:00:42.066
+Go to the downloads stack, then go to the archive file for TextMate 2. Click on that archive file.
+
+7
+00:00:42.066 --> 00:00:47.400
+Once that archive has been expanded, it will expose the TextMate application.
+
+8
+00:00:47.400 --> 00:00:54.466
+While in finder, we can move this application file from our downloads stack into the applications.
+
+9
+00:00:54.466 --> 00:01:05.566
+Great, we can scroll down and make sure that TextMate is in applications. Let's confirm it by going to the dock,
+and then our applications stack, then scroll down and find TextMate.
+
+10
+00:01:05.566 --> 00:01:11.833
+While we're here, let's launch TextMate by clicking on the icon. Once prompted by the mac operating system
+
+11
+00:01:11.833 --> 00:01:20.166
+to confirm if we really want to open this application or not, since we downloaded this application off the internet, click on open.
+
+12
+00:01:20.166 --> 00:01:27.766
+Great, now that we have TextMate open, if you're planning on using TextMate often, I reccomend adding TextMate to your dock.
+
+13
+00:01:27.766 --> 00:01:36.866
+To do that, let's go to the dock with TextMate running. Find the TextMate icon, and control+click or right click on the icon.
+
+14
+00:01:36.866 --> 00:01:44.066
+Then go to options "Keep in Dock". Alright let's clean everything up. Let's quit out of TextMate with command+q.
+
+15
+00:01:44.066 --> 00:01:51.266
+We can close our finder window, and quit out of chrome. Now let's verify that the TextMate icon is still in our dock.
+
+16
+00:01:51.266 --> 00:01:57.700
+Great, it's still there. Let's relaunch it by clicking on the icon. Excellent!
+

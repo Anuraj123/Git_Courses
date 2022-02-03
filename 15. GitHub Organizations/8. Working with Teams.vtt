@@ -1,0 +1,282 @@
+﻿WEBVTT
+
+1
+00:00:00.000 --> 00:00:03.766
+Welcome, in this video, we're going to look at setting up teams
+
+2
+00:00:03.766 --> 00:00:06.500
+and adding team members to those teams.
+
+3
+00:00:06.500 --> 00:00:09.866
+I want to start off by showing you that I have two browsers set up
+
+4
+00:00:09.866 --> 00:00:13.133
+so that I can show two different user accounts in GitHub.
+
+5
+00:00:13.133 --> 00:00:17.600
+On one browser I have set up my "awesomejt" user in GitHub,
+
+6
+00:00:17.600 --> 00:00:21.533
+and in another browser I have the "jasongtaylor" account.
+
+7
+00:00:21.533 --> 00:00:25.600
+Also, the "jasongtaylor" account is currently the owner of
+
+8
+00:00:25.600 --> 00:00:29.966
+the "my-organization-example" organization.
+
+9
+00:00:29.966 --> 00:00:34.300
+I just mentioned something called owner, and that comes into teams.
+
+10
+00:00:34.300 --> 00:00:40.066
+So on the my organization page, I'm going to switch to the organization's profile.
+
+11
+00:00:40.066 --> 00:00:45.200
+Once there, I'm going to click on "People". People shows all members of the organization,
+
+12
+00:00:45.200 --> 00:00:50.833
+and right now, my "jasongtaylor" account is the only member of the organization.
+
+13
+00:00:50.833 --> 00:00:54.733
+Right now, it shows that my membership is private; that means that
+
+14
+00:00:54.733 --> 00:00:59.466
+only members of this organization will know that I'm part of this organization.
+
+15
+00:00:59.466 --> 00:01:04.866
+If I want other people to know that I'm part of this organization, I need to select public.
+
+16
+00:01:04.866 --> 00:01:07.466
+Whether you're public or private doesn't matter,
+
+17
+00:01:07.466 --> 00:01:10.966
+and it doesn't influence whether or not you pay for GitHub or not;
+
+18
+00:01:10.966 --> 00:01:15.100
+this just effects the visibility of your membership in the organization.
+
+19
+00:01:15.100 --> 00:01:21.133
+If I click on "Owner", I see that I have full administrative access to the entire organization;
+
+20
+00:01:21.133 --> 00:01:27.500
+the owner role is a special role that is like super admin for this particular organization.
+
+21
+00:01:27.500 --> 00:01:30.933
+All organizations must have at least one owner.
+
+22
+00:01:30.933 --> 00:01:34.466
+Great, now I want to invite another person to join the team;
+
+23
+00:01:34.466 --> 00:01:38.100
+however, before that, I want to create another group called a team,
+
+24
+00:01:38.100 --> 00:01:40.700
+so I'm going to go back to the "Teams" tab.
+
+25
+00:01:40.700 --> 00:01:44.566
+I'm going to scroll down, and find the green "Create a new team" button.
+
+26
+00:01:44.566 --> 00:01:48.433
+Let's name the team "Developers". GitHub is going to do a search
+
+27
+00:01:48.433 --> 00:01:52.433
+to make sure the name of the team is unique within the organization.
+
+28
+00:01:52.433 --> 00:01:56.900
+In the description, I can provide an optional description of this team.
+
+29
+00:01:56.900 --> 00:02:00.633
+In this case, developers will have read and write access to repos.
+
+30
+00:02:00.633 --> 00:02:03.966
+And then I'm going to make this team "Visible". I could make it a secret,
+
+31
+00:02:03.966 --> 00:02:07.666
+but I prefer to leave it as visible, so the "@mentioned" will work.
+
+32
+00:02:07.666 --> 00:02:12.033
+Click on "Create team". By default, the user that creates the team
+
+33
+00:02:12.033 --> 00:02:17.200
+is automatically part of that team, so you can see that I'm part of the developers team.
+
+34
+00:02:17.200 --> 00:02:23.066
+Let's add another person; I'm going to click on "awesomejt" after typing in "awesomejt".
+
+35
+00:02:23.066 --> 00:02:27.766
+GitHub will automatically search for any users matching the search criteria.
+
+36
+00:02:27.766 --> 00:02:31.466
+Once the match is found, just click on the item that you wish to select.
+
+37
+00:02:31.466 --> 00:02:36.900
+Anyone that is not already part of this organization, will be sent an invitation.
+
+38
+00:02:36.900 --> 00:02:39.733
+And, if I wanted to, I could edit this invitation.
+
+39
+00:02:39.733 --> 00:02:43.500
+On the invitation page, I can select for the invited user
+
+40
+00:02:43.500 --> 00:02:48.600
+to be just a member of the organization or an owner of the organization.
+
+41
+00:02:48.600 --> 00:02:51.800
+You can definitely have multiple owners of the organization,
+
+42
+00:02:51.800 --> 00:02:55.600
+just keep in mind that owners have full administrative access
+
+43
+00:02:55.600 --> 00:02:58.966
+to the entire organization. I'm going to leave it as "Member".
+
+44
+00:02:58.966 --> 00:03:02.833
+Also, I can select all the teams that I wish this user
+
+45
+00:03:02.833 --> 00:03:05.700
+to be part of once they accept the invitation.
+
+46
+00:03:05.700 --> 00:03:10.733
+And, of course, I have the option to cancel the invitation or, if I made changes,
+
+47
+00:03:10.733 --> 00:03:14.933
+to update the invitation. I'm going to go back by just clicking on people.
+
+48
+00:03:14.933 --> 00:03:20.233
+Now I'm going to hop back over to the other browser, which as the "awesomejt" user account.
+
+49
+00:03:20.233 --> 00:03:24.700
+Let's reload the page; we just want to make sure we have the most up-to-date information.
+
+50
+00:03:24.700 --> 00:03:30.166
+I know that I have a pending invitation to the "my-organization-example" organization.
+
+51
+00:03:30.166 --> 00:03:34.166
+Depending on your settings, you may receive an email with an invitation
+
+52
+00:03:34.166 --> 00:03:36.866
+that will take you to that particular organization.
+
+53
+00:03:36.866 --> 00:03:41.100
+Otherwise, you can go directly to the organization's profile page.
+
+54
+00:03:41.100 --> 00:03:46.366
+So, back on the other browser, I'm going to copy the URL to the organization's profile page
+
+55
+00:03:46.366 --> 00:03:50.300
+and then return to the other browser logged in as "awesomejt".
+
+56
+00:03:50.300 --> 00:03:53.366
+And, in the address bar, I'm going to paste in the URL
+
+57
+00:03:53.366 --> 00:03:56.100
+to the organization that I just got invited to.
+
+58
+00:03:56.100 --> 00:04:01.400
+Once I land on that organization's page, I should have an invitation at the top
+
+59
+00:04:01.400 --> 00:04:08.900
+saying that "jasongtaylor invited you to join the my-organization-example organization",
+
+60
+00:04:08.900 --> 00:04:13.266
+and this happened "6 minutes ago". Now I'm going to click on "View invitation".
+
+61
+00:04:13.266 --> 00:04:17.200
+On the invite page, I have the option to join that organization,
+
+62
+00:04:17.200 --> 00:04:19.333
+so click on the green join button.
+
+63
+00:04:19.333 --> 00:04:25.933
+Great, now I am a member of the "my-organization-example" organization.
+
+64
+00:04:25.933 --> 00:04:30.033
+Now, I'm going to hop back over to the other browser and refresh,
+
+65
+00:04:30.033 --> 00:04:35.466
+and now I see the "awesomejt" that's part of the people of this organization.
+
+66
+00:04:35.466 --> 00:04:40.233
+Click on "People"; I now have "awesomejt" and "jasongtaylor".
+
+67
+00:04:40.233 --> 00:04:45.133
+By default, this member joined with the private visibility, and as we set up
+
+68
+00:04:45.133 --> 00:04:49.033
+"awesomejt" is a member of the organization, not an owner.
+
+69
+00:04:49.033 --> 00:04:55.266
+And, if we go to teams, developers now has two members;
+
+70
+00:04:55.266 --> 00:05:00.766
+our team members are "awesomejt" and "jasongtaylor".
+

@@ -1,0 +1,234 @@
+﻿WEBVTT
+
+1
+00:00:00.000 --> 00:00:03.900
+Welcome, in this video, we're going to return to the local side
+
+2
+00:00:03.900 --> 00:00:08.500
+of our Git repository that corresponds to our GitHub repository.
+
+3
+00:00:08.500 --> 00:00:12.600
+In previous videos, we transferred the "website" repository
+
+4
+00:00:12.600 --> 00:00:18.200
+from our personal account to the organization account, and then we forked it back again.
+
+5
+00:00:18.200 --> 00:00:21.000
+So now we end up with the copy of the repository
+
+6
+00:00:21.000 --> 00:00:24.666
+in both the personal level and the organization level.
+
+7
+00:00:24.666 --> 00:00:27.666
+This is a common setup when you're working with GitHub
+
+8
+00:00:27.666 --> 00:00:30.600
+in something known as the "pull request workflow";
+
+9
+00:00:30.600 --> 00:00:33.766
+so, we are slowly building up to that eventual workflow.
+
+10
+00:00:33.766 --> 00:00:37.533
+The next step is to make sure that our remote references are set up
+
+11
+00:00:37.533 --> 00:00:43.600
+to point to the individual account, as well as the organizational account GitHub repositories.
+
+12
+00:00:43.600 --> 00:00:48.033
+Let's return to the local side; I'm currently in my user's home directory.
+
+13
+00:00:48.033 --> 00:00:51.466
+If I change directory into "projects/website",
+
+14
+00:00:51.466 --> 00:00:56.666
+I land in the main folder for the website Git repository on the local system.
+
+15
+00:00:56.666 --> 00:01:02.133
+Right now, we are on the develop branch, and we currently have a clean working directory.
+
+16
+00:01:02.133 --> 00:01:06.100
+As I've shown before, we have a remote reference named "origin",
+
+17
+00:01:06.100 --> 00:01:11.100
+that currently points to the "jasongtaylor" version of our repository on GitHub.
+
+18
+00:01:11.100 --> 00:01:16.300
+And, since we forked back from the organization and ended up with a copy of
+
+19
+00:01:16.300 --> 00:01:20.733
+the website repository within the "jasongtalyor" user account,
+
+20
+00:01:20.733 --> 00:01:24.800
+nothing needed to change for our remote reference named "origin".
+
+21
+00:01:24.800 --> 00:01:29.100
+And, in fact, we will keep it named origin and add the other reference
+
+22
+00:01:29.100 --> 00:01:32.733
+back to our organization as another remote reference.
+
+23
+00:01:32.733 --> 00:01:35.966
+To do that, I'm going to return to my browser and click on the
+
+24
+00:01:35.966 --> 00:01:38.866
+"forked from my-organization-example/website";
+
+25
+00:01:38.866 --> 00:01:43.266
+that will take me to the organization's version of the website repository.
+
+26
+00:01:43.266 --> 00:01:46.666
+One thing to keep clear is that this repository
+
+27
+00:01:46.666 --> 00:01:50.266
+and where I came from are two separate repositories.
+
+28
+00:01:50.266 --> 00:01:54.666
+In all actuality, we're dealing with three separate repositories;
+
+29
+00:01:54.666 --> 00:01:59.266
+one at the organization level, second one at the individual level,
+
+30
+00:01:59.266 --> 00:02:04.533
+and the third one on our local system. These are all three separate distinct
+
+31
+00:02:04.533 --> 00:02:10.166
+Git repositories, although they are named the same thing and may have similar histories.
+
+32
+00:02:10.166 --> 00:02:13.933
+Alright, now that I'm on the organization version of this repository,
+
+33
+00:02:13.933 --> 00:02:17.933
+I'm going to go to the lower right hand side and look for my cloning options.
+
+34
+00:02:17.933 --> 00:02:22.133
+I'm going to make sure that I'm on SSH, and then I'm going to click on the
+
+35
+00:02:22.133 --> 00:02:27.566
+copy to clipboard button. Once that's copied, I'm going to return back to my local system.
+
+36
+00:02:27.566 --> 00:02:30.666
+Since we already have a remote reference named "origin",
+
+37
+00:02:30.666 --> 00:02:33.166
+we need to name this reference something else.
+
+38
+00:02:33.166 --> 00:02:36.733
+And, to do that, I'm going to use Git's "remote add" command.
+
+39
+00:02:36.733 --> 00:02:42.233
+Start off with "git remote add"; followed by the first parameter,
+
+40
+00:02:42.233 --> 00:02:45.833
+which is the name of the remote reference we wish to create,
+
+41
+00:02:45.833 --> 00:02:49.300
+I'm going to call this "upstream"; then provide a space;
+
+42
+00:02:49.300 --> 00:02:52.566
+and then paste in the value that should be in your clipboard.
+
+43
+00:02:52.566 --> 00:02:57.233
+Make sure this references the organization's version of the repository,
+
+44
+00:02:57.233 --> 00:03:01.666
+and not the one that's on your personal account. Once we've done that press enter.
+
+45
+00:03:01.666 --> 00:03:04.466
+Like many commands in Git, no news is good news,
+
+46
+00:03:04.466 --> 00:03:07.666
+so let's verify with the "git remote -v" again.
+
+47
+00:03:07.666 --> 00:03:11.300
+Great, now we have both origin and upstream specified,
+
+48
+00:03:11.300 --> 00:03:15.500
+and they point to the website repository on the personal account
+
+49
+00:03:15.500 --> 00:03:18.100
+and the organization account respectively.
+
+50
+00:03:18.100 --> 00:03:23.300
+We can try it out by using out "git fetch" command: "git fetch upstream"
+
+51
+00:03:23.300 --> 00:03:27.633
+Doing so, Git will reach out to the remote named "upstream",
+
+52
+00:03:27.633 --> 00:03:31.433
+which points to our organization version of our repository,
+
+53
+00:03:31.433 --> 00:03:35.933
+and, when that happens, Git will notice two new branches, master and develop,
+
+54
+00:03:35.933 --> 00:03:39.366
+that are associated with the upstream remote reference.
+
+55
+00:03:39.366 --> 00:03:43.266
+If you want to fetch from all the remote references at one time,
+
+56
+00:03:43.266 --> 00:03:47.500
+you can use the "--all" parameter that's part of "git fetch".
+
+57
+00:03:47.500 --> 00:03:52.633
+Let's try that now: "git fetch --all".
+
+58
+00:03:52.633 --> 00:03:59.300
+Git will go to "origin" and then "upstream" to fetch any new references.
+

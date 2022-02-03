@@ -1,0 +1,118 @@
+﻿WEBVTT
+
+1
+00:00:00.000 --> 00:00:04.700
+Welcome, in this video, we're going to configure P4Merge to work with Git.
+
+2
+00:00:04.700 --> 00:00:11.500
+First thing, we just need to verify where P4Merge is actually installed. I'm going to open up file explorer;
+
+3
+00:00:11.500 --> 00:00:21.233
+and generally our programs load in "C", "Program Files". This is the Default location for 64 bit applications in a 64 bit version of Windows.
+
+4
+00:00:21.233 --> 00:00:27.766
+Going into that folder, we have a Perforce folder, which is the name of the company that makes P4Merge.
+
+5
+00:00:27.766 --> 00:00:35.333
+Going into that folder, I can see that I have a "p4merge" application. Double clicking it will launch P4Merge.
+
+6
+00:00:35.333 --> 00:00:40.833
+So we're going to cancel out of that. Now that we've confirmed the location, let's open up Git Bash.
+
+7
+00:00:40.833 --> 00:00:46.633
+We position Git Bash and the Windows file explorer in a way that I can see the path.
+
+8
+00:00:46.633 --> 00:00:55.766
+Using Git's config command, I'm going to configure Git to use P4Merge as the diff tool and as the merge resolution tool.
+
+9
+00:00:55.766 --> 00:01:04.066
+The first command: git; space; config; space; --global, because these settings need to be at the global, or user, level;
+
+10
+00:01:04.066 --> 00:01:12.266
+followed by the setting to use, which is "merge.tool"; space; and then the name of the tool that we want to give, which is "p4merge".
+
+11
+00:01:12.266 --> 00:01:19.466
+Double check the line, and then press enter. The second command, which tells git where to look for the P4merge tool,
+
+12
+00:01:19.466 --> 00:01:28.533
+starts off with: git; space; config; space; --global; space; mergetool (note, there is no dot in-between merge and tool);
+
+13
+00:01:28.533 --> 00:01:36.533
+.p4merge (which is the name of the tool that we just named in the prior command); .path; space; and then, in double quotes,
+
+14
+00:01:36.533 --> 00:01:49.200
+the full path to the p4merge executable, which is "C:/Program Files/Perforce/" and the executable name "p4merge.exe".
+
+15
+00:01:49.200 --> 00:01:58.600
+Note: the direction of the slashes uses the familiar Unix-style, as opposed to the back slash of the Windows-style.
+
+16
+00:01:58.600 --> 00:02:04.766
+When configuring within Git Bash, we need to use the forward slash instead of the back slash.
+
+17
+00:02:04.766 --> 00:02:13.600
+Great, double check this line and then press enter. The next command will tell Git to not to prompt whether or not to launch P4Merge
+
+18
+00:02:13.600 --> 00:02:25.600
+every time we need to resolve a conflict. To do that type "git config --global mergetool.prompt false".
+
+19
+00:02:25.600 --> 00:02:34.366
+Great. Now let's set up our difftool configuration. Like in the prior example, we're going to use a similar syntax, except use difftool.
+
+20
+00:02:34.366 --> 00:02:46.366
+So "git config --global diff.tool p4merge". Press enter. Again, in a similar fashion to our mergetool configuration,
+
+21
+00:02:46.366 --> 00:02:58.633
+"git config --global difftool", again, notice the lack of a dot between diff and tool, ".p4merge", the name of the tool we're configuring, ".path",
+
+22
+00:02:58.633 --> 00:03:13.033
+space, and then, in double quotes, the full path to the p4merge executable: like before, it's at "C:/Program Files/Perforce/p4merge.exe".
+
+23
+00:03:13.033 --> 00:03:19.433
+Double check that line, and then press enter. And the last configuration option for our difftool:
+
+24
+00:03:19.433 --> 00:03:28.433
+"git config --global difftool.prompt " and then the value "false".
+
+25
+00:03:28.433 --> 00:03:36.066
+Now, let's list out our configuration: "git config --global --list".
+
+26
+00:03:36.066 --> 00:03:44.433
+Great. Along with the other settings that we set up in the previous examples, we have our mergetool and difftool configurations set up.
+
+27
+00:03:44.433 --> 00:03:55.466
+And, in similar fashion, if I type "git config --global -e", that will invoke my default editor with the .gitconfig file.
+
+28
+00:03:55.466 --> 00:04:03.633
+And, with that, you can see that most of the configuration that is setup in the .gitconfig file is related to the difftool and the mergetool.
+
+29
+00:04:03.633 --> 00:04:13.566
+Alright, let's close that with control+w, and alt+f4. Now that we've finished that, we can exit out of Git Bash.
+

@@ -1,0 +1,42 @@
+﻿WEBVTT
+
+1
+00:00:00.000 --> 00:00:04.733
+Welcome, in this video, we're going to look at Git's help command.
+
+2
+00:00:04.733 --> 00:00:12.933
+Let's fire up our terminal application, I'm using iTerm, and to prove to you that git is installed, I simply type "git version".
+
+3
+00:00:12.933 --> 00:00:18.733
+We can ask Git for help by typing "git help", and Git shows us it's general usage.
+
+4
+00:00:18.733 --> 00:00:27.966
+Additionally, Git tells us how to use the help command even further. The general command for Git help is 'git help <command>';
+
+5
+00:00:27.966 --> 00:00:33.800
+but to see the list of commands that we can use with "git help", we can use "git help -a",
+
+6
+00:00:33.800 --> 00:00:37.866
+and these are all the available commands that are currently installed with Git.
+
+7
+00:00:37.866 --> 00:00:43.800
+It's a bit overwhelming, so I'm going to use the command that we're going to be using very soon, which is config.
+
+8
+00:00:43.800 --> 00:00:48.600
+To learn everything about the config command, type "git help config".
+
+9
+00:00:48.600 --> 00:00:55.500
+That command loads a man style help page. We can use the arrow keys to navigate up and down.
+
+10
+00:00:55.500 --> 00:01:03.166
+And, when we are done reading everything we need about this command, we can exit by typing the q key.
+

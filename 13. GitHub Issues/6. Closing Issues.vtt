@@ -1,0 +1,130 @@
+﻿WEBVTT
+
+1
+00:00:00.000 --> 00:00:03.100
+Welcome, in this video, I'm going to update my Readme file
+
+2
+00:00:03.100 --> 00:00:06.066
+and then close the associated issue in GitHub.
+
+3
+00:00:06.066 --> 00:00:11.100
+I'm currently logged into GitHub, and I'm in the "website" repository that we've been using.
+
+4
+00:00:11.100 --> 00:00:16.566
+If I go to issues, I see that I have 1 issue. Click on "Issues". And we have an issue,
+
+5
+00:00:16.566 --> 00:00:20.433
+that is an enhancement, "Add Getting Started section To README".
+
+6
+00:00:20.433 --> 00:00:24.366
+Well, let's go work on that; I'm going to go back to my main page for the repository,
+
+7
+00:00:24.366 --> 00:00:29.000
+and find my Readme file. There it is, "README.md". Click on the file,
+
+8
+00:00:29.000 --> 00:00:33.133
+and for this simple example, I'm going to edit this file directly on GitHub.
+
+9
+00:00:33.133 --> 00:00:37.166
+Click on the "Edit this file" button, and after the purpose section,
+
+10
+00:00:37.166 --> 00:00:42.533
+I'm going to create a "Getting Started" section. Alright, so let me preview my change;
+
+11
+00:00:42.533 --> 00:00:46.566
+ok, that looks good. Scroll down, and I'm going to commit my change:
+
+12
+00:00:46.566 --> 00:00:49.066
+"Adding Getting Started section to README",
+
+13
+00:00:49.066 --> 00:00:54.266
+then click on "Commit changes" and now I'm going to return back to issues.
+
+14
+00:00:54.266 --> 00:00:58.133
+So now, I know I did the changes that are needed for this enhancement.
+
+15
+00:00:58.133 --> 00:01:00.600
+So I'm going to click on the issue, then write a comment
+
+16
+00:01:00.600 --> 00:01:03.733
+describing what I did for this particular issue:
+
+17
+00:01:03.733 --> 00:01:06.733
+"Added **Getting Started** section in README file."
+
+18
+00:01:06.733 --> 00:01:10.400
+Let's preview it; good, "Getting Started" is bolded, which is great.
+
+19
+00:01:10.400 --> 00:01:14.133
+I could simply comment, but that would leave the issue open;
+
+20
+00:01:14.133 --> 00:01:16.866
+let's instead click on "Close and comment".
+
+21
+00:01:16.866 --> 00:01:21.766
+Even after the issue has been closed, you can still leave additional comments;
+
+22
+00:01:21.766 --> 00:01:23.900
+however, for now, I'm not going to do that.
+
+23
+00:01:23.900 --> 00:01:27.566
+Let's go back over to the right-hand menu, click on issues.
+
+24
+00:01:27.566 --> 00:01:32.433
+The default page for issues shows only open issues, which there are currently none;
+
+25
+00:01:32.433 --> 00:01:37.433
+however, if I click on the closed status, I see the enhancement that we just closed.
+
+26
+00:01:37.433 --> 00:01:40.833
+And, I can click on the title and go into that closed issue.
+
+27
+00:01:40.833 --> 00:01:43.500
+It denotes that it's been closed up here at the very top,
+
+28
+00:01:43.500 --> 00:01:49.066
+and towards the bottom I see that the last item in history is that I closed this issue.
+
+29
+00:01:49.066 --> 00:01:52.733
+All we have are the comments and the fact that I closed the issue,
+
+30
+00:01:52.733 --> 00:01:55.600
+but you don't know which commit was associated with it.
+
+31
+00:01:55.600 --> 00:01:59.833
+Now, I could go in and copy the commit, and reference it within my comments,
+
+32
+00:01:59.833 --> 00:02:04.366
+but there is an easier way, which I'll cover next.
+

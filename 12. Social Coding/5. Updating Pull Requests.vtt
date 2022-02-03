@@ -1,0 +1,178 @@
+﻿WEBVTT
+
+1
+00:00:00.000 --> 00:00:04.966
+Welcome, in this video, we're going to update our pull request.
+
+2
+00:00:04.966 --> 00:00:09.966
+I'm picking up from our last video, currently on the pull request targeting the
+
+3
+00:00:09.966 --> 00:00:13.533
+"starter-web" repository within "scm-ninja".
+
+4
+00:00:13.533 --> 00:00:16.200
+Let's take a quick look around the pull request page.
+
+5
+00:00:16.200 --> 00:00:19.733
+Currently, at the top we have the title of the pull request
+
+6
+00:00:19.733 --> 00:00:23.500
+and the pull request number that's associated with this repository.
+
+7
+00:00:23.500 --> 00:00:29.566
+In this case, pull request "#6" for the "starter-web" repository on "scm-ninja".
+
+8
+00:00:29.566 --> 00:00:34.733
+It tells me that this was opened by my user id, and that I want to merge one commit
+
+9
+00:00:34.733 --> 00:00:38.800
+into "scm-ninja:master". In this case we're abbreviating
+
+10
+00:00:38.800 --> 00:00:44.000
+by leaving out the name of the repository, from my user id, feature branch.
+
+11
+00:00:44.000 --> 00:00:48.933
+If I wanted to, I could edit the title of this pull request, but I'm happy with it for now.
+
+12
+00:00:48.933 --> 00:00:52.533
+I also see that I have the conversation, which is the default tab,
+
+13
+00:00:52.533 --> 00:00:56.200
+I have a commits tab, and I have a files changed tab.
+
+14
+00:00:56.200 --> 00:01:00.900
+The commits tab shows me all the commits that were associated with this pull request,
+
+15
+00:01:00.900 --> 00:01:06.100
+and the files changed shows me all the files that are associated with this pull request.
+
+16
+00:01:06.100 --> 00:01:10.366
+Let's return back to the conversation. As you might imagine, the conversation tab
+
+17
+00:01:10.366 --> 00:01:13.700
+has all the comments that are associated with this pull request.
+
+18
+00:01:13.700 --> 00:01:17.000
+And, if there were multiple commenters on this pull request,
+
+19
+00:01:17.000 --> 00:01:20.333
+you would see the entire conversation listed on this tab.
+
+20
+00:01:20.333 --> 00:01:24.133
+This tab also gives me the general status of this pull request,
+
+21
+00:01:24.133 --> 00:01:27.700
+and whether or not it can be merged with the targeted base branch,
+
+22
+00:01:27.700 --> 00:01:31.300
+which in this case it currently can. On the right hand side,
+
+23
+00:01:31.300 --> 00:01:35.300
+I have the ability to assign labels or specific milestones,
+
+24
+00:01:35.300 --> 00:01:39.366
+or assign it to another user within the repository for review.
+
+25
+00:01:39.366 --> 00:01:44.600
+One thing I'd like to point out is that I can keep adding more commits to this pull request,
+
+26
+00:01:44.600 --> 00:01:49.300
+by adding commits to the underlying feature branch involved with this pull request.
+
+27
+00:01:49.300 --> 00:01:53.366
+So, let's try it out; I'm going to go back to the terminal, and I am currently still
+
+28
+00:01:53.366 --> 00:01:59.033
+on the "feature-readme" branch on my local Git repository for "starter-web".
+
+29
+00:01:59.033 --> 00:02:02.766
+While I have a "README.md" file, there isn't much content in it,
+
+30
+00:02:02.766 --> 00:02:07.366
+so I'd like to add a little bit more content before we move forward with the pull request.
+
+31
+00:02:07.366 --> 00:02:10.366
+So now I'm going to edit the Readme file, and I'm going to add
+
+32
+00:02:10.366 --> 00:02:15.300
+just a little bit more content to the Readme file, then I'm going to save and then close.
+
+33
+00:02:15.300 --> 00:02:17.866
+And now I'm going to use the express commit, that is
+
+34
+00:02:17.866 --> 00:02:22.766
+adding and then committing in one step to establish my commit for my change:
+
+35
+00:02:22.766 --> 00:02:26.033
+"Adding Purpose section to README", now press enter.
+
+36
+00:02:26.033 --> 00:02:30.000
+I now have a clean working directory, and I am one commit ahead
+
+37
+00:02:30.000 --> 00:02:34.866
+of "origin/feature-readme". Alright, so let's synchronize our changes
+
+38
+00:02:34.866 --> 00:02:39.066
+by pushing up to GitHub; simply type "git push".
+
+39
+00:02:39.066 --> 00:02:44.833
+Great, in addition to those changes now being on the "starter-web" repository
+
+40
+00:02:44.833 --> 00:02:49.066
+within my user's space on GitHub, if I go back to the pull request page
+
+41
+00:02:49.066 --> 00:02:52.700
+I now have my new commit associated with this pull request.
+
+42
+00:02:52.700 --> 00:02:55.766
+This is the original commit, and this is my new commit.
+
+43
+00:02:55.766 --> 00:02:58.566
+Both commits are now associated with this pull request,
+
+44
+00:02:58.566 --> 00:03:03.000
+and now I'm ready to accept the pull request.
+

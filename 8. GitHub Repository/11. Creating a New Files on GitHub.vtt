@@ -1,0 +1,166 @@
+﻿WEBVTT
+
+1
+00:00:00.000 --> 00:00:04.933
+Welcome, in this video, we're going to create new files on GitHub directly.
+
+2
+00:00:04.933 --> 00:00:09.133
+I'm currently logged into GitHub, on the "website" GitHub repository.
+
+3
+00:00:09.133 --> 00:00:13.166
+I'm going to go ahead and create a new file directly on the GitHub repository.
+
+4
+00:00:13.166 --> 00:00:18.000
+To do so, I can go down here, next to the branch name and the repository name,
+
+5
+00:00:18.000 --> 00:00:22.300
+which is really the root folder; next to that is a plus symbol.
+
+6
+00:00:22.300 --> 00:00:26.866
+When you hover over it, GitHub tells you that you can create a new file here.
+
+7
+00:00:26.866 --> 00:00:30.000
+However, if I wanted to, I could drill down into this folder
+
+8
+00:00:30.000 --> 00:00:33.166
+and then, under the "website/" the folder name,
+
+9
+00:00:33.166 --> 00:00:36.066
+you can create a new file in this location as well.
+
+10
+00:00:36.066 --> 00:00:39.466
+I'm going to create a new file at the root of this repository.
+
+11
+00:00:39.466 --> 00:00:41.933
+So, I'm going to go back to the root of the repository,
+
+12
+00:00:41.933 --> 00:00:45.100
+and then click on the plus mark to create a new file here.
+
+13
+00:00:45.100 --> 00:00:48.366
+When creating a new file, you need to give the file a name.
+
+14
+00:00:48.366 --> 00:00:54.100
+So next to your repository name slash, you have a field to name your file.
+
+15
+00:00:54.100 --> 00:00:57.600
+If you wanted to, you can get out of here by just clicking on "cancel";
+
+16
+00:00:57.600 --> 00:01:01.400
+that returns us directly back to the main page of our repository.
+
+17
+00:01:01.400 --> 00:01:04.833
+Let's go back into it. Now that we're back on the create new file,
+
+18
+00:01:04.833 --> 00:01:10.766
+I'm going to name this file "lipsum.txt". I'm going to go to "lipsum.com",
+
+19
+00:01:10.766 --> 00:01:15.833
+then copy a paragraph of lorem ipsum; copy, and then paste.
+
+20
+00:01:15.833 --> 00:01:20.633
+Before we save the file, we can preview it; let's give it some reasonable breaks.
+
+21
+00:01:20.633 --> 00:01:25.133
+There we go; that looks decent. Like before, once we are done
+
+22
+00:01:25.133 --> 00:01:29.566
+let's scroll all the way down to the bottom of the page, and put in our commit message:
+
+23
+00:01:29.566 --> 00:01:34.233
+"Create new file -- filler text". This time I'm going to decide to create a new branch,
+
+24
+00:01:34.233 --> 00:01:36.866
+since creating stuff really should be on a feature branch.
+
+25
+00:01:36.866 --> 00:01:39.466
+I'm going to name my branch "feature-lipsum",
+
+26
+00:01:39.466 --> 00:01:43.033
+then I'm going to click on "Propose new file". Going this way around,
+
+27
+00:01:43.033 --> 00:01:47.466
+we are effectively creating a pull request back into our master branch.
+
+28
+00:01:47.466 --> 00:01:51.166
+In addition to the commit message we had before, we also have
+
+29
+00:01:51.166 --> 00:01:55.566
+a pull request commit message and a comment to go along with it.
+
+30
+00:01:55.566 --> 00:01:59.366
+So here I'm writing in Markdown syntax. I can preview it;
+
+31
+00:01:59.366 --> 00:02:02.133
+you can see I have a heading and then two bullets.
+
+32
+00:02:02.133 --> 00:02:07.000
+Once I'm happy with this commit message and the corresponding comment,
+
+33
+00:02:07.000 --> 00:02:09.200
+I'm going to click on create pull request.
+
+34
+00:02:09.200 --> 00:02:14.200
+Since I'm the only contributor to this repository, I'm going to accept my own pull request.
+
+35
+00:02:14.200 --> 00:02:17.000
+So, I'm going to click on the green "Merge pull request".
+
+36
+00:02:17.000 --> 00:02:20.600
+I will have an opportunity to modify this message prior to going in,
+
+37
+00:02:20.600 --> 00:02:24.266
+I'm going to just leave it as is, and click on confirm merge.
+
+38
+00:02:24.266 --> 00:02:28.966
+Once I've done that, I have the opportunity to delete the branch, so I will do so.
+
+39
+00:02:28.966 --> 00:02:31.166
+Now that we've done that, let's click on "website".
+
+40
+00:02:31.166 --> 00:02:34.466
+Great, now we have our "lipsum.txt" file.
+
+41
+00:02:34.466 --> 00:02:40.633
+If we click on it, you can see that we have our five lines of lorem Ipsum.
+

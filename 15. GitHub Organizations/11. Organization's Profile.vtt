@@ -1,0 +1,202 @@
+﻿WEBVTT
+
+1
+00:00:00.000 --> 00:00:05.000
+Welcome, in this video, we're going to look at updating the organization's profile.
+
+2
+00:00:05.000 --> 00:00:09.200
+I'm currently logged into GitHub as the "jasongtaylor" user,
+
+3
+00:00:09.200 --> 00:00:15.066
+and I'm on the "my-organization-example" organization’s profile.
+
+4
+00:00:15.066 --> 00:00:20.200
+As the organization's owner, you have access organization’s profile,
+
+5
+00:00:20.200 --> 00:00:25.366
+and can update its settings. From the profile page click on "Settings".
+
+6
+00:00:25.366 --> 00:00:31.333
+Like an individual user, the profile has many of the same types of settings
+
+7
+00:00:31.333 --> 00:00:35.966
+that you would normally associate with an Indi dual, including a profile picture,
+
+8
+00:00:35.966 --> 00:00:41.300
+name, email, and other information. Let's update the profile picture.
+
+9
+00:00:41.300 --> 00:00:45.566
+Click on "Upload new picture". I'm going to use a wave png
+
+10
+00:00:45.566 --> 00:00:47.700
+that I just downloaded off the internet.
+
+11
+00:00:47.700 --> 00:00:51.666
+Click open; I'm given the opportunity to crop the picture,
+
+12
+00:00:51.666 --> 00:00:55.933
+then, once you're happy with the crop, click "Set new profile picture".
+
+13
+00:00:55.933 --> 00:01:00.100
+Once that's done, we can continue down the rest of the profile page.
+
+14
+00:01:00.100 --> 00:01:03.666
+I'm going to use "The Example Organization" for its name,
+
+15
+00:01:03.666 --> 00:01:08.400
+"example@git.training" for the email address. For the description,
+
+16
+00:01:08.400 --> 00:01:12.466
+I'm going to use "This is an example organization for GitHub training".
+
+17
+00:01:12.466 --> 00:01:17.466
+I'm going to use the URL "http://git.training".
+
+18
+00:01:17.466 --> 00:01:21.400
+And, since I'm located in Florida, I'll set its location as Florida.
+
+19
+00:01:21.400 --> 00:01:25.733
+And the billing address, which is kept private, can be your own email address
+
+20
+00:01:25.733 --> 00:01:32.166
+that isn't associated, per se, with the email address for the organization, which is public.
+
+21
+00:01:32.166 --> 00:01:36.100
+Once you're done updating the profile, click "Update profile".
+
+22
+00:01:36.100 --> 00:01:41.033
+Great, now the profile has been updated. Let's do a quick review of the rest of the items
+
+23
+00:01:41.033 --> 00:01:45.733
+in the menu for the profile settings. Click on "Member privileges";
+
+24
+00:01:45.733 --> 00:01:50.533
+this allows us to allow members to create repositories in this organization:
+
+25
+00:01:50.533 --> 00:01:55.666
+by default they can. The default repository permission, that is when you invite
+
+26
+00:01:55.666 --> 00:02:00.300
+new members to the organization are given the read permission by default.
+
+27
+00:02:00.300 --> 00:02:03.933
+You can also update to "Admin", "Write", or "None".
+
+28
+00:02:03.933 --> 00:02:09.433
+None would only allow members to clone or pull public repositories.
+
+29
+00:02:09.433 --> 00:02:15.166
+And really, for public repositories, "None" and "Read" have similar effects.
+
+30
+00:02:15.166 --> 00:02:18.866
+The difference is, is that if you happen to have private repositories,
+
+31
+00:02:18.866 --> 00:02:22.333
+which again would require a paid membership to GitHub,
+
+32
+00:02:22.333 --> 00:02:28.500
+the read permission would allow read visibility to any private repos as well as public.
+
+33
+00:02:28.500 --> 00:02:33.066
+For now, I like keeping it at read. Team privacy, this allows us to make
+
+34
+00:02:33.066 --> 00:02:37.366
+global changes between making all of our teams visible or not.
+
+35
+00:02:37.366 --> 00:02:41.600
+Billing allows us to update our billing information, if we were in the mood to
+
+36
+00:02:41.600 --> 00:02:46.233
+change to a paid account. For now, I'm happy with keeping it as free.
+
+37
+00:02:46.233 --> 00:02:49.466
+Applications allow access through GitHub API;
+
+38
+00:02:49.466 --> 00:02:52.233
+third-party access is a little bit more advanced.
+
+39
+00:02:52.233 --> 00:02:56.966
+Audit log will show all the events that have happened in the organization.
+
+40
+00:02:56.966 --> 00:02:59.800
+The audit log also allows us to export,
+
+41
+00:02:59.800 --> 00:03:03.433
+which is available in "CSV" or "JSON" formats.
+
+42
+00:03:03.433 --> 00:03:08.533
+We can see here all the activity that has taken place since we created the organization.
+
+43
+00:03:08.533 --> 00:03:11.633
+And then, finally, Webhooks is an advanced topic
+
+44
+00:03:11.633 --> 00:03:16.433
+that relates to how repositories communicate with outside tools.
+
+45
+00:03:16.433 --> 00:03:20.000
+Click on the name of the organization to go back to the profile page.
+
+46
+00:03:20.000 --> 00:03:24.533
+So, as you can see, things have changed a bit since we updated our profile.
+
+47
+00:03:24.533 --> 00:03:30.966
+So now, instead of "my-organization-example", which is still up here in the URL,
+
+48
+00:03:30.966 --> 00:03:34.600
+the name of the organization is "The Example Organization",
+
+49
+00:03:34.600 --> 00:03:37.766
+which also has the description, our location in Florida,
+
+50
+00:03:37.766 --> 00:03:42.400
+the URL, and the public email address.
+

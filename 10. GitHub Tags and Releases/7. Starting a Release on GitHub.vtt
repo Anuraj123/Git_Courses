@@ -1,0 +1,170 @@
+﻿WEBVTT
+
+1
+00:00:00.000 --> 00:00:03.666
+Welcome, in this video, we're going to talk about the differences between
+
+2
+00:00:03.666 --> 00:00:07.333
+tags and releases, and then also create a new release.
+
+3
+00:00:07.333 --> 00:00:12.066
+I'm currently logged into GitHub, and I'm on the "website" GitHub repository.
+
+4
+00:00:12.066 --> 00:00:15.033
+Click on the "releases" tab, and by default,
+
+5
+00:00:15.033 --> 00:00:19.800
+it will land you on the "Releases" tab which, there's also the option for tags.
+
+6
+00:00:19.800 --> 00:00:23.900
+Now, on first glance, there's not really much of a distinction; we have releases,
+
+7
+00:00:23.900 --> 00:00:27.800
+and then we have tags, and they both seem to have the same information.
+
+8
+00:00:27.800 --> 00:00:31.266
+The only difference is that releases is laid out just slightly differently,
+
+9
+00:00:31.266 --> 00:00:34.666
+but it still just lists our tags that we have available.
+
+10
+00:00:34.666 --> 00:00:39.266
+We have the option in the tags tab to add release notes,
+
+11
+00:00:39.266 --> 00:00:43.400
+and release notes is where the distinction, in my mind, comes into play.
+
+12
+00:00:43.400 --> 00:00:51.133
+So, let's pick on our "v0.3-beta" tag; next to it click on add release notes.
+
+13
+00:00:51.133 --> 00:00:54.366
+Adding release notes puts us back on the releases tab
+
+14
+00:00:54.366 --> 00:00:59.666
+on a form that allows us to add release notes to a particular tag in GitHub.
+
+15
+00:00:59.666 --> 00:01:05.033
+It will allow us to choose another tag if we want to, but I'm going to leave it on this tag.
+
+16
+00:01:05.033 --> 00:01:09.200
+I'm going to provide a title for my release notes, and then in the
+
+17
+00:01:09.200 --> 00:01:14.500
+"Describe this release field", I'm going to put the main body of my release notes.
+
+18
+00:01:14.500 --> 00:01:17.400
+Keep in mind it does support the markdown format,
+
+19
+00:01:17.400 --> 00:01:22.333
+and you can see here, as I add my notes, that I'm using the markdown syntax.
+
+20
+00:01:22.333 --> 00:01:26.433
+So, the two hashes mean a second level heading, the three hashes
+
+21
+00:01:26.433 --> 00:01:31.033
+means a third level heading, asterisks in front of a line will turn into bullets,
+
+22
+00:01:31.033 --> 00:01:34.566
+and I'm able to reference specific issues and pull requests.
+
+23
+00:01:34.566 --> 00:01:38.633
+For example "#2" references the pull request 2.
+
+24
+00:01:38.633 --> 00:01:42.266
+Before I create the release notes, I can preview what I'm doing.
+
+25
+00:01:42.266 --> 00:01:45.300
+Now scroll down, and since this is a pre-release version,
+
+26
+00:01:45.300 --> 00:01:48.766
+I'm going to check the check box that says "This is a pre-release".
+
+27
+00:01:48.766 --> 00:01:52.733
+If this was a production ready release, I would leave that unchecked.
+
+28
+00:01:52.733 --> 00:01:57.600
+When I get down to the bottom, if I decide that I'm not quite ready to publish this release,
+
+29
+00:01:57.600 --> 00:02:00.600
+I can save this as a draft, and come back to it later.
+
+30
+00:02:00.600 --> 00:02:05.333
+However, I'm good with the notes I've left, so let's click on "Publish release".
+
+31
+00:02:05.333 --> 00:02:08.800
+Great, so now I've created my release notes,
+
+32
+00:02:08.800 --> 00:02:12.933
+and you can see that I have the title here at the top, who created the release,
+
+33
+00:02:12.933 --> 00:02:17.766
+how far back from develop it is, and then my release notes in Markdown format.
+
+34
+00:02:17.766 --> 00:02:21.266
+So now, when we compare the difference between tags and releases,
+
+35
+00:02:21.266 --> 00:02:24.966
+tags has this simple list of tags. Click on releases;
+
+36
+00:02:24.966 --> 00:02:29.233
+while I still have references to various tags in the Git repository,
+
+37
+00:02:29.233 --> 00:02:33.300
+we also have the release notes being listed underneath releases.
+
+38
+00:02:33.300 --> 00:02:37.066
+If I needed to modify something, I could come over here and click on "Edit",
+
+39
+00:02:37.066 --> 00:02:40.533
+and that will take me back to the edit form for release notes.
+
+40
+00:02:40.533 --> 00:02:44.733
+Just added a note using double underscores for bolding.
+
+41
+00:02:44.733 --> 00:02:48.033
+When I'm happy with my revisions, click on "Update release",
+
+42
+00:02:48.033 --> 00:02:52.700
+and now we see the modifications that I just made.
+

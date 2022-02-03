@@ -1,0 +1,234 @@
+﻿WEBVTT
+
+1
+00:00:00.000 --> 00:00:03.266
+Welcome, in this video, I'm going to make a few more tweaks to the
+
+2
+00:00:03.266 --> 00:00:08.033
+"update-readme" branch, synchronize those back to my local version,
+
+3
+00:00:08.033 --> 00:00:11.400
+then synchronize all my changes to tracking branches locally,
+
+4
+00:00:11.400 --> 00:00:14.266
+and then walk through the process of merging locally
+
+5
+00:00:14.266 --> 00:00:19.000
+then deleting the branch both locally and remotely from the command line.
+
+6
+00:00:19.000 --> 00:00:23.933
+Alright, let's get started, I'm starting out in my "website" GitHub repository.
+
+7
+00:00:23.933 --> 00:00:27.600
+let's switch to the "update-readme" branch;
+
+8
+00:00:27.600 --> 00:00:31.600
+we just pushed up here, so we should have the latest greatest version of it here.
+
+9
+00:00:31.600 --> 00:00:36.666
+I'm going to make a quick tweak to this file, and then commit my changes:
+
+10
+00:00:36.666 --> 00:00:41.800
+"Commit changes". Great, we have one more edit on our "update-readme" branch.
+
+11
+00:00:41.800 --> 00:00:46.500
+Now, let's switch back over to our terminal; I'm on my "website" Git repository
+
+12
+00:00:46.500 --> 00:00:51.100
+on the local system, and I'm still in the "update-readme" branch.
+
+13
+00:00:51.100 --> 00:00:54.866
+It's super easy to just do a "git pull" and get the latest greatest
+
+14
+00:00:54.866 --> 00:00:58.566
+of the updates on GitHub, but I want to show you another option.
+
+15
+00:00:58.566 --> 00:01:00.633
+Eventually, we're going to be merging with master,
+
+16
+00:01:00.633 --> 00:01:03.033
+so I'm going to go ahead and check out to there first.
+
+17
+00:01:03.033 --> 00:01:09.033
+Now, I'm on the master branch, and if I do a "git pull" here, without specifying anything else,
+
+18
+00:01:09.033 --> 00:01:12.833
+I will pull from master on GitHub, not from the other branch.
+
+19
+00:01:12.833 --> 00:01:18.066
+If I show you the configuration, "git config --global -e",
+
+20
+00:01:18.066 --> 00:01:22.933
+at the bottom I have my push option with the "default = simple".
+
+21
+00:01:22.933 --> 00:01:26.566
+And that simply means that whatever branch I'm currently on,
+
+22
+00:01:26.566 --> 00:01:29.500
+only push and pull that particular branch;
+
+23
+00:01:29.500 --> 00:01:34.666
+however if I want to override that, I can use an option when I do a "pull".
+
+24
+00:01:34.666 --> 00:01:40.033
+If I do a "git pull --all", even though I'm currently on the master branch,
+
+25
+00:01:40.033 --> 00:01:43.700
+Git will update all tracking branches at the same time;
+
+26
+00:01:43.700 --> 00:01:49.166
+so master to master and then my "update-readme" to "update-readme".
+
+27
+00:01:49.166 --> 00:01:51.733
+Alright, let's integrate our changes "git merge"
+
+28
+00:01:51.733 --> 00:01:55.166
+and then the branch name we want to merge in, "update-readme".
+
+29
+00:01:55.166 --> 00:01:57.300
+Alright, we've integrated those changes,
+
+30
+00:01:57.300 --> 00:02:00.100
+and it was such an easy merge we did a fast-forward,
+
+31
+00:02:00.100 --> 00:02:03.666
+which means we just assumed that we made the commits directly on master.
+
+32
+00:02:03.666 --> 00:02:06.933
+At least, from a history standpoint, that's what it's going to appear to be.
+
+33
+00:02:06.933 --> 00:02:10.666
+So now we have a few commits that are ahead of 'origin/master',
+
+34
+00:02:10.666 --> 00:02:13.933
+so let's push up those changes. Again, just do a "git push",
+
+35
+00:02:13.933 --> 00:02:17.200
+and it's going to work with our current branch, which is master,
+
+36
+00:02:17.200 --> 00:02:20.633
+so it just pushed up our local master to remote master.
+
+37
+00:02:20.633 --> 00:02:23.466
+Great, now that we've integrated the changes, we no longer need
+
+38
+00:02:23.466 --> 00:02:27.266
+the "update-readme" branch, so let's delete it.
+
+39
+00:02:27.266 --> 00:02:32.200
+Ok, great, that branch has been deleted, and our local version of that branch is gone,
+
+40
+00:02:32.200 --> 00:02:36.166
+but we still have the remote; and, if we switch back over to GitHub,
+
+41
+00:02:36.166 --> 00:02:40.366
+do a quick refresh, it's still listed up here as a recent branch
+
+42
+00:02:40.366 --> 00:02:43.266
+and, if I drop down, it's still listed here as well.
+
+43
+00:02:43.266 --> 00:02:47.233
+I could go into branches and delete it, but let's do it from the command line.
+
+44
+00:02:47.233 --> 00:02:51.800
+To delete a remote branch from the command line, type "git push";
+
+45
+00:02:51.800 --> 00:02:56.100
+and then the name of the remote to use, which in our case is "origin",
+
+46
+00:02:56.100 --> 00:02:59.033
+which references our GitHub repository; space;
+
+47
+00:02:59.033 --> 00:03:03.033
+and in the syntax we start the name of the branch with a colon,
+
+48
+00:03:03.033 --> 00:03:08.833
+doing so is telling Git to delete whatever the name is of the branch after the colon.
+
+49
+00:03:08.833 --> 00:03:12.133
+Alright let's do that. Great, when we did that, Git responded,
+
+50
+00:03:12.133 --> 00:03:16.433
+saying that it deleted the "update-readme" which is on GitHub.
+
+51
+00:03:16.433 --> 00:03:20.966
+Let's go check it out. It instantly updated the little notification we had about
+
+52
+00:03:20.966 --> 00:03:25.533
+recent branches; that's gone completely, and if I reload this page,
+
+53
+00:03:25.533 --> 00:03:28.666
+do a quick dropdown, that other branch has been removed.
+
+54
+00:03:28.666 --> 00:03:32.166
+And, we are down to a single branch, which, of course, is master.
+
+55
+00:03:32.166 --> 00:03:36.200
+Let's return to our terminal, and lets' check out all of our branch references.
+
+56
+00:03:36.200 --> 00:03:40.633
+Using the command line, like we just did, to remove our remote branch
+
+57
+00:03:40.633 --> 00:03:43.900
+Git automatically updated our references as well.
+
+58
+00:03:43.900 --> 00:03:49.066
+So, we don't need to do the "git fetch" with the prune option.
+

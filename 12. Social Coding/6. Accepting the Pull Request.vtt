@@ -1,0 +1,274 @@
+﻿WEBVTT
+
+1
+00:00:00.000 --> 00:00:04.966
+Welcome, in this video, we're going to review the pull request and then accept it.
+
+2
+00:00:04.966 --> 00:00:09.766
+I'm currently logged into GitHub, and on the "starter-web" repository.
+
+3
+00:00:09.766 --> 00:00:14.633
+In particular, I'm on the upstream version of that repository in "scm-ninja",
+
+4
+00:00:14.633 --> 00:00:18.066
+and I have loaded the page for the pull request that I just submitted,
+
+5
+00:00:18.066 --> 00:00:22.300
+which is pull request "#6", "Adding README file". And, I'm viewing this
+
+6
+00:00:22.300 --> 00:00:27.000
+pull request as my main user that I just submitted the pull request as.
+
+7
+00:00:27.000 --> 00:00:31.166
+In another browser, I'm logged in as another user on GitHub;
+
+8
+00:00:31.166 --> 00:00:36.133
+in particular, a user that has read and write access to this repository.
+
+9
+00:00:36.133 --> 00:00:40.300
+Write access is required in order to accept pull requests.
+
+10
+00:00:40.300 --> 00:00:45.800
+As that user, I'm going to go to my pull requests, that are part of my repository.
+
+11
+00:00:45.800 --> 00:00:51.000
+Once on the list of pull requests, I can go to the pull request that I'm interested in reviewing.
+
+12
+00:00:51.000 --> 00:00:54.433
+I'm going to select the top one, which is adding readme file.
+
+13
+00:00:54.433 --> 00:00:57.733
+On this page, I can see who submitted the pull request,
+
+14
+00:00:57.733 --> 00:01:01.200
+what commits were involved, and the files changed.
+
+15
+00:01:01.200 --> 00:01:05.333
+In this case, I see that we're adding a new file "README.md".
+
+16
+00:01:05.333 --> 00:01:08.400
+Let's go back to conversation; I can associate a comment
+
+17
+00:01:08.400 --> 00:01:12.433
+with this pull request, using the Markdown syntax if I wish to.
+
+18
+00:01:12.433 --> 00:01:16.966
+In addition to standard Markdown, GitHub supports a GitHub flavored version
+
+19
+00:01:16.966 --> 00:01:21.266
+of Markdown which has several extra features, including emoticons.
+
+20
+00:01:21.266 --> 00:01:24.566
+Any time you want to preview your comment, you can click on preview.
+
+21
+00:01:24.566 --> 00:01:27.700
+And, once you're done, click on "Comment", or if you wish to
+
+22
+00:01:27.700 --> 00:01:31.566
+close the pull request at the same time, "Close and comment".
+
+23
+00:01:31.566 --> 00:01:35.866
+Since I don't want to close this pull request, I'm going to click on "Comment".
+
+24
+00:01:35.866 --> 00:01:40.766
+Great, now if I scroll up, I can see the comment that this user then left
+
+25
+00:01:40.766 --> 00:01:45.233
+for this pull request. Also, if I flip over to files changed,
+
+26
+00:01:45.233 --> 00:01:49.400
+I have the ability to leave comments at the source code level.
+
+27
+00:01:49.400 --> 00:01:53.133
+For example, I could go to line 5, click on the "+" mark,
+
+28
+00:01:53.133 --> 00:01:57.933
+which expands out a comment field. I leave a comment here; I'm going to preview it.
+
+29
+00:01:57.933 --> 00:02:01.566
+Since I'm happy I can leave the comment by clicking on "Comment'.
+
+30
+00:02:01.566 --> 00:02:06.333
+And now, that particular comment is inserted between lines 5 and 6.
+
+31
+00:02:06.333 --> 00:02:10.000
+And, since this part of the pull request operates much like
+
+32
+00:02:10.000 --> 00:02:15.933
+other diff type sections of GitHub, we can change our view from unified to split,
+
+33
+00:02:15.933 --> 00:02:18.033
+which, in this case, doesn't make a lot of sense
+
+34
+00:02:18.033 --> 00:02:22.466
+since we just created a completely new file, but you can see that "README.md"
+
+35
+00:02:22.466 --> 00:02:26.533
+has no content on this side and all the content on the other side.
+
+36
+00:02:26.533 --> 00:02:32.633
+I also have the option to show or hide notes; if I uncheck, I no longer see my notes.
+
+37
+00:02:32.633 --> 00:02:37.400
+If I re-check it, then those notes re-appear. Returning back to conversation,
+
+38
+00:02:37.400 --> 00:02:40.833
+I'm able to review the merge status of this pull request,
+
+39
+00:02:40.833 --> 00:02:45.100
+and GitHub will let me know if this branch can be automatically merged or not.
+
+40
+00:02:45.100 --> 00:02:48.733
+Green check means it can; GitHub would let you know otherwise.
+
+41
+00:02:48.733 --> 00:02:52.433
+Once you're happy with the pull request, click on "Merge pull request".
+
+42
+00:02:52.433 --> 00:02:56.633
+I'm given the opportunity to modify what's going to be the commit message
+
+43
+00:02:56.633 --> 00:03:00.400
+for this pull request merge. For now, I'm going to leave it the same.
+
+44
+00:03:00.400 --> 00:03:05.966
+Once you're happy click on "Confirm merge". Great, now we get a nice little merge icon,
+
+45
+00:03:05.966 --> 00:03:11.700
+stating that this pull request has been merged into "scm-ninja:master",
+
+46
+00:03:11.700 --> 00:03:16.766
+and, while I'm still on this page, I have the opportunity to revert this pull request
+
+47
+00:03:16.766 --> 00:03:21.033
+if somehow I made a mistake. If I return back to my main browser,
+
+48
+00:03:21.033 --> 00:03:25.266
+I see that the status is already reflected on the main browser that I have,
+
+49
+00:03:25.266 --> 00:03:27.433
+logged in as my main user account.
+
+50
+00:03:27.433 --> 00:03:31.200
+And, I see that a different user accepted my pull request.
+
+51
+00:03:31.200 --> 00:03:35.533
+Directly from the pull request page, I have the option to delete the branch
+
+52
+00:03:35.533 --> 00:03:38.633
+once the pull request has been merged in successfully.
+
+53
+00:03:38.633 --> 00:03:41.266
+Since I don't need the branch once all the changes have been
+
+54
+00:03:41.266 --> 00:03:43.866
+merged into master, I'm going to delete the branch.
+
+55
+00:03:43.866 --> 00:03:47.866
+Great, now I see an indicator showing that I have deleted the branch.
+
+56
+00:03:47.866 --> 00:03:51.800
+And, while I'm on this page, I have the option to restore the branch,
+
+57
+00:03:51.800 --> 00:03:54.833
+if for some reason I deleted the branch by mistake.
+
+58
+00:03:54.833 --> 00:03:58.400
+Now I'm going to click on the "starter-web", and that will take me back
+
+59
+00:03:58.400 --> 00:04:02.433
+to the main page of this repository. And, I'd like to show you after the
+
+60
+00:04:02.433 --> 00:04:07.633
+pull request has been accepted, the pull request changes status from open to closed,
+
+61
+00:04:07.633 --> 00:04:13.066
+but, I can still access it by going to the pull request and then clicking on closed.
+
+62
+00:04:13.066 --> 00:04:19.333
+That will show me all closed pull requests with "Adding README" at the top,
+
+63
+00:04:19.333 --> 00:04:23.600
+at which point I can revert my changes and even restore that branch,
+
+64
+00:04:23.600 --> 00:04:27.566
+and I can see all the comments associated with this pull request.
+
+65
+00:04:27.566 --> 00:04:30.800
+If I needed to, I can continue the conversation.
+
+66
+00:04:30.800 --> 00:04:33.666
+Alright, now that we're finished with our pull request example,
+
+67
+00:04:33.666 --> 00:04:36.966
+I'm going to click on the octocat icon, to return back
+
+68
+00:04:36.966 --> 00:04:41.800
+to my newsfeed page for my logged in user.
+

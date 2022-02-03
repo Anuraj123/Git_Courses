@@ -1,0 +1,218 @@
+﻿WEBVTT
+
+1
+00:00:00.000 --> 00:00:03.700
+Welcome, in this video, we're going to look at resolving conflicts
+
+2
+00:00:03.700 --> 00:00:07.766
+between our local repository and our GitHub repository.
+
+3
+00:00:07.766 --> 00:00:09.933
+Let's get started on the remote side.
+
+4
+00:00:09.933 --> 00:00:14.433
+I'm currently in GitHub, and I'm in the website GitHub repository;
+
+5
+00:00:14.433 --> 00:00:19.100
+I'm on the newly set develop branch as our new default branch,
+
+6
+00:00:19.100 --> 00:00:22.966
+and while I'm here, I'm going to make a quick change that I know is going to conflict.
+
+7
+00:00:22.966 --> 00:00:28.066
+Let's edit the "README.md" file; click on the file, and then click on edit this file.
+
+8
+00:00:28.066 --> 00:00:31.466
+At the end, I'm going to add some text, and then I'm going to go ahead and
+
+9
+00:00:31.466 --> 00:00:35.500
+commit my changes; again I'm making my commit message fairly obvious,
+
+10
+00:00:35.500 --> 00:00:39.633
+so that we can track what's going on "Problematic changes from GitHub".
+
+11
+00:00:39.633 --> 00:00:42.366
+Once I'm happy, click on "commit changes";
+
+12
+00:00:42.366 --> 00:00:45.833
+now, let's head over to our repository on our local side.
+
+13
+00:00:45.833 --> 00:00:49.933
+So, I'm back in the terminal; I'm currently in the "website" Git repository.
+
+14
+00:00:49.933 --> 00:00:53.266
+Although I'm currently on master, let's switch over to develop.
+
+15
+00:00:53.266 --> 00:00:56.866
+Now that we're on develop, I know that we've made changes on the remote side,
+
+16
+00:00:56.866 --> 00:01:00.133
+so let's do a "git fetch" first. So, if we do a "git status" now,
+
+17
+00:01:00.133 --> 00:01:04.466
+we can see that 'origin/develop' is ahead of my local develop by one commit.
+
+18
+00:01:04.466 --> 00:01:07.700
+I'm going to update my Readme file before I issue the "pull".
+
+19
+00:01:07.700 --> 00:01:12.333
+Now, obviously, this is a contrived example, but this would simulate what would happen
+
+20
+00:01:12.333 --> 00:01:15.366
+if you're working on a repository shared with others;
+
+21
+00:01:15.366 --> 00:01:19.000
+they're moving forward, and if you don't keep your repositories in sync
+
+22
+00:01:19.000 --> 00:01:22.333
+you can run into changes that might conflict. I'm going to paste in the changes
+
+23
+00:01:22.333 --> 00:01:27.300
+that I copied from the GitHub repository side as a starting place.
+
+24
+00:01:27.300 --> 00:01:30.633
+I made my changes, so now I'm going to save and close:
+
+25
+00:01:30.633 --> 00:01:35.300
+"Updating README with malice on local side". So now if I do a "git status",
+
+26
+00:01:35.300 --> 00:01:41.200
+the status tells me that develop has diverged by one commit on each side respectively.
+
+27
+00:01:41.200 --> 00:01:45.200
+Let's try to do the "git pull"; normally what would happen if I was to
+
+28
+00:01:45.200 --> 00:01:50.766
+do these type of changes locally with local branches, I would result in a conflicting merge.
+
+29
+00:01:50.766 --> 00:01:55.266
+The same is true when we do a pull, since a "pull" is just a combination
+
+30
+00:01:55.266 --> 00:01:59.533
+of a "git fetch" plus a "git merge" targeting the remote branch.
+
+31
+00:01:59.533 --> 00:02:03.000
+And, as expected, this resulted in a merge conflict.
+
+32
+00:02:03.000 --> 00:02:05.566
+Like before, we can resolve our merge conflict
+
+33
+00:02:05.566 --> 00:02:09.533
+by either modifying our files directly, or by using a merge tool.
+
+34
+00:02:09.533 --> 00:02:12.766
+Since I have a merge tool configured, that's what I'm going to use.
+
+35
+00:02:12.766 --> 00:02:18.766
+"git mergetool"; that launches my merge tool, which, in this case, is P4Merge.
+
+36
+00:02:18.766 --> 00:02:23.466
+It provides me a nice, convenient, three way merge tool, which happens to be free.
+
+37
+00:02:23.466 --> 00:02:27.800
+I can inspect the different changes from the remote side and the local side,
+
+38
+00:02:27.800 --> 00:02:30.333
+and then decide how I want to resolve them,
+
+39
+00:02:30.333 --> 00:02:35.100
+which could include a combination of both, or a complete re-editing of this file.
+
+40
+00:02:35.100 --> 00:02:38.300
+I could come down here and decide I don't like any of these changes,
+
+41
+00:02:38.300 --> 00:02:42.733
+so I want to do a combination of both the remote and the local changes.
+
+42
+00:02:42.733 --> 00:02:47.800
+So, I'm going to copy this line, cut that out, and replace this text with just that one line.
+
+43
+00:02:47.800 --> 00:02:52.266
+Instead of just purpose, I want repository purpose, so I'm going to remove that.
+
+44
+00:02:52.266 --> 00:02:57.233
+Now that I've made my changes, I'm going to save. After saving, close P4Merge.
+
+45
+00:02:57.233 --> 00:03:00.333
+"Resolving conflict with unique approach", press enter.
+
+46
+00:03:00.333 --> 00:03:04.266
+If everything went well, you should exit the "MERGING" status,
+
+47
+00:03:04.266 --> 00:03:06.933
+which merging just means you're in a merge conflict,
+
+48
+00:03:06.933 --> 00:03:10.033
+and you should be back to where we just have our branch name,
+
+49
+00:03:10.033 --> 00:03:12.333
+which means we're out of the "MERGING" status.
+
+50
+00:03:12.333 --> 00:03:16.933
+The only file we have laying around is our ".orig" file, which we can get rid of.
+
+51
+00:03:16.933 --> 00:03:21.800
+Now if we do a "git status", our branch is "ahead of 'origin/develop' by 2 commits".
+
+52
+00:03:21.800 --> 00:03:25.866
+So now, let's clean up by pushing. Let's go check it out on GitHub.
+
+53
+00:03:25.866 --> 00:03:31.466
+We're back on the Readme file, and we're still on develop, so just reload.
+
+54
+00:03:31.466 --> 00:03:34.800
+We now see our changes.
+

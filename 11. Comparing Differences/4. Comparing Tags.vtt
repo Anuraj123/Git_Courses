@@ -1,0 +1,82 @@
+﻿WEBVTT
+
+1
+00:00:00.000 --> 00:00:04.933
+In this video, we're going to quickly compare tags in GitHub.
+
+2
+00:00:04.933 --> 00:00:09.233
+I'm currently logged into GitHub, and on the "website" GitHub repository.
+
+3
+00:00:09.233 --> 00:00:14.133
+Let's click on releases, then go to tags. We have three tags;
+
+4
+00:00:14.133 --> 00:00:19.033
+we have "stable", "v1.0", and "unstable". Let's remember those three tags.
+
+5
+00:00:19.033 --> 00:00:23.766
+Now, let's go to the far right hand side and click on the icon for pull requests,
+
+6
+00:00:23.766 --> 00:00:28.366
+then click on "New pull request". When we land on the compare changes page
+
+7
+00:00:28.366 --> 00:00:30.933
+by default it wants to compare branches together,
+
+8
+00:00:30.933 --> 00:00:36.033
+since this is the workflow by which we generally start our pull request mechanism;
+
+9
+00:00:36.033 --> 00:00:39.266
+however, we use this page for doing comparisons as well.
+
+10
+00:00:39.266 --> 00:00:41.933
+On the base, we're going to stick with master,
+
+11
+00:00:41.933 --> 00:00:45.200
+and at this point, we are comparing master to develop.
+
+12
+00:00:45.200 --> 00:00:49.400
+Let's expand out develop, and now we have an ability to specify
+
+13
+00:00:49.400 --> 00:00:54.800
+a tag, commit, branch, or history marker. Let's use the tag "unstable".
+
+14
+00:00:54.800 --> 00:00:58.633
+Once GitHub finds a match, click on "unstable".
+
+15
+00:00:58.633 --> 00:01:03.200
+Now, we're comparing the unstable tag to the branch named master.
+
+16
+00:01:03.200 --> 00:01:07.033
+By the same token, we can change the base; expand it out,
+
+17
+00:01:07.033 --> 00:01:10.366
+and instead of master, we're going to type "1.0",
+
+18
+00:01:10.366 --> 00:01:15.433
+then click on the item or press enter. So now base has changed to 1.0,
+
+19
+00:01:15.433 --> 00:01:19.200
+and we're comparing that against the unstable tag.
+
+20
+00:01:19.200 --> 00:01:23.900
+So, at this point, we are comparing two different tags.
+

@@ -1,0 +1,370 @@
+﻿WEBVTT
+
+1
+00:00:00.000 --> 00:00:04.966
+Welcome, in this video, we're going to synchronize our individual fork
+
+2
+00:00:04.966 --> 00:00:10.433
+from our parent repository. So far, what I've been referring to as the upstream
+
+3
+00:00:10.433 --> 00:00:16.833
+or parent repository has been the repository on "scm-ninja/starter-web".
+
+4
+00:00:16.833 --> 00:00:21.600
+And that's the repository from which we forked our copy of that repository,
+
+5
+00:00:21.600 --> 00:00:25.066
+which is found in our "jasongtaylor" account
+
+6
+00:00:25.066 --> 00:00:28.366
+or would be found in your account if you've been following along.
+
+7
+00:00:28.366 --> 00:00:32.300
+We can see that by, on our newsfeed page, we have a section
+
+8
+00:00:32.300 --> 00:00:38.900
+that it says repositories you contribute to, and it lists "scm-ninja/starter-web",
+
+9
+00:00:38.900 --> 00:00:42.366
+which gives us the option to go directly to that repository,
+
+10
+00:00:42.366 --> 00:00:46.233
+and if we wanted to, we could watch or star this repository.
+
+11
+00:00:46.233 --> 00:00:49.533
+Let's click star; this will send us notifications later
+
+12
+00:00:49.533 --> 00:00:52.400
+if this repository changes for some reason.
+
+13
+00:00:52.400 --> 00:00:56.666
+Alright, so while we're here, let's copy this GitHub repository's URL;
+
+14
+00:00:56.666 --> 00:01:01.133
+let's scroll down and find the cloning options for this repository,
+
+15
+00:01:01.133 --> 00:01:03.600
+that should be in the lower right hand side.
+
+16
+00:01:03.600 --> 00:01:08.200
+Change the default from HTTPS to SSH if you need to,
+
+17
+00:01:08.200 --> 00:01:14.166
+then click on the copy to clipboard button to copy the SSH URL to your clipboard.
+
+18
+00:01:14.166 --> 00:01:18.800
+Now, let's go back to our terminal. Back at the terminal, I'm in the
+
+19
+00:01:18.800 --> 00:01:22.200
+"starter-web" repository on my local system.
+
+20
+00:01:22.200 --> 00:01:27.366
+I'm currently on the feature branch we just created, in a clean working directory state.
+
+21
+00:01:27.366 --> 00:01:32.466
+Since I know we've merged in those changes into master in a different repository,
+
+22
+00:01:32.466 --> 00:01:35.700
+we can change out of this branch: "git checkout master".
+
+23
+00:01:35.700 --> 00:01:39.400
+Let's verify our changes on GitHub; so you'll notice that
+
+24
+00:01:39.400 --> 00:01:44.666
+on "scm-ninja/starter-web" we have our "README.md" file.
+
+25
+00:01:44.666 --> 00:01:48.333
+If I return to our version of that repository,
+
+26
+00:01:48.333 --> 00:01:52.366
+we do not have that Readme file in the master branch.
+
+27
+00:01:52.366 --> 00:01:56.766
+So, how do we synchronize our upstream repository from which we forked
+
+28
+00:01:56.766 --> 00:02:00.133
+down to our individual copy of our repository?
+
+29
+00:02:00.133 --> 00:02:04.633
+Well, unfortunately there's no direct way to do that from the GitHub interface,
+
+30
+00:02:04.633 --> 00:02:09.600
+so we must use our local copy as an intermediate. Let's go back to the terminal,
+
+31
+00:02:09.600 --> 00:02:14.933
+and back on our master branch, let's go ahead and see a list of all our remote repositories.
+
+32
+00:02:14.933 --> 00:02:20.000
+Type "git remote -v", "-v" is verbose,
+
+33
+00:02:20.000 --> 00:02:23.800
+and that will show all of our remote repository references.
+
+34
+00:02:23.800 --> 00:02:28.200
+When we cloned this repository, we got origin set up for free;
+
+35
+00:02:28.200 --> 00:02:32.866
+that is, when we used the "git clone" command, Git automatically establishes
+
+36
+00:02:32.866 --> 00:02:36.833
+a remote reference named origin back to where we cloned from.
+
+37
+00:02:36.833 --> 00:02:42.733
+In this case, our "starter-web" repository on our user account on GitHub.
+
+38
+00:02:42.733 --> 00:02:46.366
+We do have the ability to add more remotes that refer to
+
+39
+00:02:46.366 --> 00:02:49.833
+other Git repositories from which we can push and pull.
+
+40
+00:02:49.833 --> 00:02:55.000
+To do that, we need to use the "git remote add" command; type "git remote add",
+
+41
+00:02:55.000 --> 00:02:58.266
+then the name of the remote reference we wish to create.
+
+42
+00:02:58.266 --> 00:03:01.633
+It can be anything we want, as long as it's something that we can remember.
+
+43
+00:03:01.633 --> 00:03:05.366
+Since I've been referring to the upstream or parent repository
+
+44
+00:03:05.366 --> 00:03:09.433
+as upstream, I'm going to create the remote reference as "upstream".
+
+45
+00:03:09.433 --> 00:03:13.133
+Now, paste in the URL that should be in your clipboard;
+
+46
+00:03:13.133 --> 00:03:18.166
+command or control+v, then press enter. Now when we do "git remote -v",
+
+47
+00:03:18.166 --> 00:03:23.366
+it shows us we have two pairs of remote references: "origin" and "upstream".
+
+48
+00:03:23.366 --> 00:03:27.633
+And, technically they're listed twice, because you can have different remotes
+
+49
+00:03:27.633 --> 00:03:33.300
+for both the fetch and the push; however, 99% of the time they should be identical.
+
+50
+00:03:33.300 --> 00:03:36.933
+Now I'm going to use the "git pull" command, specifying our
+
+51
+00:03:36.933 --> 00:03:41.433
+"upstream" repository to fetch any updates from that master branch.
+
+52
+00:03:41.433 --> 00:03:46.200
+Type "git pull"; space; and then our new reference, "upstream";
+
+53
+00:03:46.200 --> 00:03:50.466
+space; and then master for the master branch; now press enter.
+
+54
+00:03:50.466 --> 00:03:56.166
+Great, now we've downloaded all the updates from the "upstream/master" repository,
+
+55
+00:03:56.166 --> 00:03:59.866
+and in doing so, we have our Readme file that has been added.
+
+56
+00:03:59.866 --> 00:04:05.266
+Now we have "README.md" file in our files that are part of the local repository,
+
+57
+00:04:05.266 --> 00:04:10.766
+and since our local repository has the changes that we just got from upstream,
+
+58
+00:04:10.766 --> 00:04:15.266
+but our individual fork of the repository on GitHub does not have that,
+
+59
+00:04:15.266 --> 00:04:19.966
+we need to push our changes from our local repository to our individual fork,
+
+60
+00:04:19.966 --> 00:04:24.433
+which is currently referenced as origin; "git push origin master",
+
+61
+00:04:24.433 --> 00:04:28.433
+now press enter. Great, now let's check it out on our personal fork.
+
+62
+00:04:28.433 --> 00:04:32.033
+Go back to our browser, and make sure that we're in our user account
+
+63
+00:04:32.033 --> 00:04:36.600
+on the "starter-web" repository. Now let's refresh our browser,
+
+64
+00:04:36.600 --> 00:04:40.500
+and if we scroll down, we should now have our "README.md" file,
+
+65
+00:04:40.500 --> 00:04:43.366
+and it should display at the bottom of our listing.
+
+66
+00:04:43.366 --> 00:04:46.966
+Super, now let's go back to our terminal, and do a little bit of cleanup.
+
+67
+00:04:46.966 --> 00:04:51.100
+Back on our local Git repository, if I do a "git branch -a"
+
+68
+00:04:51.100 --> 00:04:55.566
+I show all our branches, including local and remote branches.
+
+69
+00:04:55.566 --> 00:04:58.600
+I'm currently on master, which is exactly where I want to be,
+
+70
+00:04:58.600 --> 00:05:01.166
+and it's time to delete that feature branch.
+
+71
+00:05:01.166 --> 00:05:07.566
+Type "git branch -d feature-readme", and that will delete the feature branch.
+
+72
+00:05:07.566 --> 00:05:11.533
+Now, if you did not integrate the changes from the upstream repository
+
+73
+00:05:11.533 --> 00:05:14.533
+onto the master branch, then you wouldn't have the changes
+
+74
+00:05:14.533 --> 00:05:17.800
+from the feature branch on master, and then Git would complain
+
+75
+00:05:17.800 --> 00:05:19.966
+when you tried to delete the feature branch.
+
+76
+00:05:19.966 --> 00:05:23.400
+But, since I've already integrated those changes, Git should allow me
+
+77
+00:05:23.400 --> 00:05:27.966
+to delete the branch without any problems. Super, the branch has been deleted.
+
+78
+00:05:27.966 --> 00:05:33.000
+Now, if I type "git branch -a", I see that I only have the master branch
+
+79
+00:05:33.000 --> 00:05:36.266
+for my remote branches, but something's curious here;
+
+80
+00:05:36.266 --> 00:05:40.133
+I see that I have "remotes/origin/feature-readme".
+
+81
+00:05:40.133 --> 00:05:43.300
+That's a local references to our remote branch.
+
+82
+00:05:43.300 --> 00:05:46.300
+Let's check it out; I don't think we have that branch anymore.
+
+83
+00:05:46.300 --> 00:05:50.366
+If I go back, this is origin, so that's my user account on GitHub
+
+84
+00:05:50.366 --> 00:05:55.966
+and the "starter-web" repository. If I go to the branches dropdown, I only see master,
+
+85
+00:05:55.966 --> 00:06:00.300
+which is further confirmed by the branches tab showing only "1 branch".
+
+86
+00:06:00.300 --> 00:06:06.333
+If I click on it, I see that I only have master; so this repository definitely has only master.
+
+87
+00:06:06.333 --> 00:06:10.200
+But, on my local copy, it still shows that remote reference.
+
+88
+00:06:10.200 --> 00:06:14.133
+If you find yourself in this situation, you can fetch the latest updates
+
+89
+00:06:14.133 --> 00:06:19.800
+passing in the prune option: "git fetch -p", with the "-p" being the prune option.
+
+90
+00:06:19.800 --> 00:06:23.700
+Now press enter. Great, Git goes out to GitHub, notices that
+
+91
+00:06:23.700 --> 00:06:26.866
+the "feature-readme" branch has been deleted,
+
+92
+00:06:26.866 --> 00:06:32.066
+which then it deletes the refine to that branch.
+

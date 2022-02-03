@@ -1,0 +1,214 @@
+﻿WEBVTT
+
+1
+00:00:00.000 --> 00:00:04.966
+To be fair, Git isn't the only source control tool available.
+
+2
+00:00:04.966 --> 00:00:09.833
+Some argue Git isn't the best one either: just the one that's most popular today.
+
+3
+00:00:09.833 --> 00:00:15.166
+For me, I think Git has solidified itself as the de facto standard source control tool,
+
+4
+00:00:15.166 --> 00:00:20.133
+because it is a very powerful and well-designed tool that does enough things right
+
+5
+00:00:20.133 --> 00:00:23.733
+that commercial alternatives aren't required for most projects.
+
+6
+00:00:23.733 --> 00:00:28.566
+Couple that with the fast adoption rate and now huge community around it,
+
+7
+00:00:28.566 --> 00:00:33.400
+makes Git a serious consideration when evaluating source control options.
+
+8
+00:00:33.400 --> 00:00:36.433
+With that said, let's look at how Git stacks up.
+
+9
+00:00:36.433 --> 00:00:42.233
+There are two main camps of source control tools: centralized and distributed.
+
+10
+00:00:42.233 --> 00:00:45.400
+Distributed is the modern approach to source control;
+
+11
+00:00:45.400 --> 00:00:50.933
+like Git, most distributed systems allow for offline or detached operations.
+
+12
+00:00:50.933 --> 00:00:56.333
+It also means that everyone has a copy of the repository, so there is no single point of failure.
+
+13
+00:00:56.333 --> 00:01:01.600
+There are also several commercially available alternatives to Git in the distributed arena.
+
+14
+00:01:01.600 --> 00:01:05.033
+While I haven't tested them all out, I am not aware of any
+
+15
+00:01:05.033 --> 00:01:08.633
+that significantly outshine Git in any compelling way.
+
+16
+00:01:08.633 --> 00:01:13.500
+When comparing Git to centralized systems, for the most part there isn't much to compare.
+
+17
+00:01:13.500 --> 00:01:18.800
+The distributed nature of Git makes Git much faster than any centralized solution;
+
+18
+00:01:18.800 --> 00:01:21.933
+not being tied to the network is a huge win for Git.
+
+19
+00:01:21.933 --> 00:01:25.500
+Decentralized systems, like Git, provide their own backups
+
+20
+00:01:25.500 --> 00:01:29.866
+as contributors make fully standalone copies of the repository.
+
+21
+00:01:29.866 --> 00:01:34.900
+And, those craving some consolidation of power in the form of a central repository,
+
+22
+00:01:34.900 --> 00:01:40.200
+Git can support that too; it's just not mandatory, like it is for centralized tools.
+
+23
+00:01:40.200 --> 00:01:44.300
+Git does have some weak points; most commercial source control tools
+
+24
+00:01:44.300 --> 00:01:49.766
+have nicer looking interfaces. Although, Git enjoys many third party graphical tools
+
+25
+00:01:49.766 --> 00:01:52.133
+and integration with many development tools,
+
+26
+00:01:52.133 --> 00:01:55.733
+something that normally is missing from commercial counterparts.
+
+27
+00:01:55.733 --> 00:01:59.600
+Within the distributed world, some argue Mercurial's approach
+
+28
+00:01:59.600 --> 00:02:02.900
+to treating history as sacred, is superior to Git.
+
+29
+00:02:02.900 --> 00:02:07.633
+I'd have to agree with that, although hiding your mistakes from your boss can come in handy.
+
+30
+00:02:07.633 --> 00:02:10.333
+However, Mercurial has its own issues,
+
+31
+00:02:10.333 --> 00:02:13.333
+like not being widely supported in developer tools,
+
+32
+00:02:13.333 --> 00:02:16.900
+or it's profound lack of graphical clients compared to Git.
+
+33
+00:02:16.900 --> 00:02:22.600
+Git suffers the same problem all distributed systems do when it comes to large binary files;
+
+34
+00:02:22.600 --> 00:02:27.133
+actually, any binary in Git is simply duplicated for each version.
+
+35
+00:02:27.133 --> 00:02:31.633
+There isn't an easy way to store only the changed bits of a binary
+
+36
+00:02:31.633 --> 00:02:36.066
+like you can for a text-based file, like most source code files.
+
+37
+00:02:36.066 --> 00:02:39.666
+This issue is made worse when Git copies the entire history
+
+38
+00:02:39.666 --> 00:02:44.400
+of all files it is tracking to anyone with a copy of the repository.
+
+39
+00:02:44.400 --> 00:02:50.200
+You can see how frequently changing large binary files can quickly bloat a Git repository.
+
+40
+00:02:50.200 --> 00:02:53.633
+There are several approaches for working with large binary files,
+
+41
+00:02:53.633 --> 00:02:56.533
+but nothing natively built into Git just yet.
+
+42
+00:02:56.533 --> 00:03:00.233
+For now, carefully consider how you will manage such files.
+
+43
+00:03:00.233 --> 00:03:04.300
+For example, do they really need to be tracked in source control at all?
+
+44
+00:03:04.300 --> 00:03:08.466
+While there are hundreds of possible features to compare against other tools,
+
+45
+00:03:08.466 --> 00:03:11.433
+the last one I'm going to look at is community support.
+
+46
+00:03:11.433 --> 00:03:16.166
+You can have the best tool for the job, but if there is practically no community behind it,
+
+47
+00:03:16.166 --> 00:03:19.700
+you'll have a hard time finding developers that already know the tool,
+
+48
+00:03:19.700 --> 00:03:24.033
+and it will be hard to find answers to questions regarding that tool.
+
+49
+00:03:24.033 --> 00:03:27.033
+Git enjoys a huge active community;
+
+50
+00:03:27.033 --> 00:03:31.366
+it's not hard to find online courses, tutorials, documentation,
+
+51
+00:03:31.366 --> 00:03:34.200
+and answers to nearly any question about Git.
+
+52
+00:03:34.200 --> 00:03:37.633
+Also, chances are high that any future team members
+
+53
+00:03:37.633 --> 00:03:42.133
+will already have some experience with Git.
+

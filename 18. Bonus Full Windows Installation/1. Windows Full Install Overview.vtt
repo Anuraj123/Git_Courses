@@ -1,0 +1,130 @@
+﻿WEBVTT
+
+1
+00:00:00.000 --> 00:00:05.033
+This course includes installation instructions for two main operating systems
+
+2
+00:00:05.033 --> 00:00:08.566
+widely used today: Windows and the Mac operating system.
+
+3
+00:00:08.566 --> 00:00:13.033
+This section covers how to install Git and related tools on Windows.
+
+4
+00:00:13.033 --> 00:00:17.733
+If you are using a Mac, you can skip this section and move ahead to the next section;
+
+5
+00:00:17.733 --> 00:00:22.533
+you only need to watch the installation section that applies to your operating system.
+
+6
+00:00:22.533 --> 00:00:25.266
+I will be using the Windows 10 operating system,
+
+7
+00:00:25.266 --> 00:00:29.966
+since it is the most recent version of Windows as of the recording of this course.
+
+8
+00:00:29.966 --> 00:00:34.433
+If you have a different version of Windows, many of these steps will be similar,
+
+9
+00:00:34.433 --> 00:00:38.500
+but you may need to adjust for your specific version of Windows.
+
+10
+00:00:38.500 --> 00:00:44.766
+In this course, I use a 64 bit version of Windows since that is the type of hardware I have.
+
+11
+00:00:44.766 --> 00:00:49.266
+All of my installation videos show installing 64bit versions
+
+12
+00:00:49.266 --> 00:00:52.266
+of software when such distinction is required.
+
+13
+00:00:52.266 --> 00:00:56.566
+I recommend that you install the software that best matches your hardware
+
+14
+00:00:56.566 --> 00:01:00.633
+and operating system and make the required adjustments as needed.
+
+15
+00:01:00.633 --> 00:01:04.533
+In all my courses, I have standardized on using Chrome;
+
+16
+00:01:04.533 --> 00:01:08.966
+however, most modern versions of Windows can use the default browser,
+
+17
+00:01:08.966 --> 00:01:12.200
+Edge or Internet Explorer, without a problem.
+
+18
+00:01:12.200 --> 00:01:16.633
+If you prefer to follow along exactly, download Chrome and install it
+
+19
+00:01:16.633 --> 00:01:19.366
+by accepting all the defaults along the way.
+
+20
+00:01:19.366 --> 00:01:23.266
+We start off with installing Git for Windows, which will include
+
+21
+00:01:23.266 --> 00:01:27.433
+Git Bash for Windows, which we will use during the majority of this course.
+
+22
+00:01:27.433 --> 00:01:32.866
+After installation, I will cover some configuration settings, and a few starting commands.
+
+23
+00:01:32.866 --> 00:01:38.066
+After Git is installed, I cover how to install and configure Notepad++,
+
+24
+00:01:38.066 --> 00:01:41.866
+which is a very popular text editor that is a lot more functional
+
+25
+00:01:41.866 --> 00:01:45.000
+than the standard notepad provided by Windows.
+
+26
+00:01:45.000 --> 00:01:50.466
+Finally, we will install a visual comparison tool called P4Merge by Perforce.
+
+27
+00:01:50.466 --> 00:01:55.533
+Oddly enough Perforce, which also has a competing source control tool,
+
+28
+00:01:55.533 --> 00:02:01.233
+provides an excellent, freely available tool, for comparing differences that work well with Git.
+
+29
+00:02:01.233 --> 00:02:06.233
+I will cover how to install P4Merge, and how to configure it seamlessly with Git.
+
+30
+00:02:06.233 --> 00:02:11.000
+At the very end of this section, I provide a special installation notes lecture
+
+31
+00:02:11.000 --> 00:02:16.866
+that has all the instructions for installing Git and all the related tools used in this course.
+
+32
+00:02:16.866 --> 00:02:23.866
+This is provided to help those that prefer a written guide for doing installs and setup.
+

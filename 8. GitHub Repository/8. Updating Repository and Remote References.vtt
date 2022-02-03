@@ -1,0 +1,110 @@
+﻿WEBVTT
+
+1
+00:00:00.000 --> 00:00:03.500
+Welcome, in this video, we're going to update our remote references
+
+2
+00:00:03.500 --> 00:00:06.233
+now that we've renamed our GitHub repository.
+
+3
+00:00:06.233 --> 00:00:12.400
+In a previous video, we renamed our repository from "my-website" to just "website".
+
+4
+00:00:12.400 --> 00:00:15.966
+As a consequence to that, any clones of this repository
+
+5
+00:00:15.966 --> 00:00:19.366
+we'll need to update the references so they will continue to work.
+
+6
+00:00:19.366 --> 00:00:21.966
+Let me show you what I mean; if I go back to my terminal,
+
+7
+00:00:21.966 --> 00:00:24.966
+then go to the "website" repo on our local system,
+
+8
+00:00:24.966 --> 00:00:30.466
+If I do a "remote -v", I can see that origin is pointing to "my-website"
+
+9
+00:00:30.466 --> 00:00:34.933
+on GitHub, instead of just "website" on GitHub. Let's update that now.
+
+10
+00:00:34.933 --> 00:00:39.200
+Alright, in order to update the reference to origin, let's go back to GitHub;
+
+11
+00:00:39.200 --> 00:00:42.900
+in the lower right hand side, we have our cloning options.
+
+12
+00:00:42.900 --> 00:00:47.233
+Just go back to the copy to clipboard button; click it to copy the current
+
+13
+00:00:47.233 --> 00:00:51.100
+URL value into the clipboard, and now let's return back to the terminal.
+
+14
+00:00:51.100 --> 00:00:57.000
+Alright, now type "git remote set-url"; space;
+
+15
+00:00:57.000 --> 00:01:00.066
+and then the name of the remote reference that we need to update,
+
+16
+00:01:00.066 --> 00:01:06.400
+in this case "origin"; then space; and then paste in the URL we just copied from GitHub.
+
+17
+00:01:06.400 --> 00:01:10.900
+Double check that line, and then press enter. Now if we do a "git remote -v",
+
+18
+00:01:10.900 --> 00:01:14.900
+origin is now pointing to "website" instead of "my-website".
+
+19
+00:01:14.900 --> 00:01:19.300
+We can get additional information about origin by typing the command:
+
+20
+00:01:19.300 --> 00:01:26.166
+"git remote show"; space; and then the name of our remote reference, which is "origin".
+
+21
+00:01:26.166 --> 00:01:29.566
+This shows us that we have our remote named origin.
+
+22
+00:01:29.566 --> 00:01:34.266
+The push and fetch URLs are identical, which is the case most of the time.
+
+23
+00:01:34.266 --> 00:01:37.400
+"HEAD branch" is "master", which is our main branch.
+
+24
+00:01:37.400 --> 00:01:40.100
+The remote branch is master, and it's tracked.
+
+25
+00:01:40.100 --> 00:01:44.066
+That just means that whenever we do a "git push" or a "git pull",
+
+26
+00:01:44.066 --> 00:01:48.666
+it will automatically synchronize between the master branches on both sides.
+
+27
+00:01:48.666 --> 00:01:55.600
+And, finally, as much as it knows, it tells us that master on both sides are up-to-date.
+

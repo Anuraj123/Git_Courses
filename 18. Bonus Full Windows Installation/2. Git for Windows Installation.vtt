@@ -1,0 +1,172 @@
+﻿WEBVTT
+
+1
+00:00:00.000 --> 00:00:04.766
+In this video, we're going to install Git for Windows.
+
+2
+00:00:04.766 --> 00:00:11.400
+There are actually several ways to install Git on windows. We are going to use a project called "Git for Windows",
+
+3
+00:00:11.400 --> 00:00:15.833
+that provides us the most up-to-date version available for the Windows platform.
+
+4
+00:00:15.833 --> 00:00:24.900
+This project is an improvement over the older recommendation of using the git-scm.com version of Git for Windows.
+
+5
+00:00:24.900 --> 00:00:31.733
+As of the recording of this video, Git for Windows is still in preview; however, it is very stable,
+
+6
+00:00:31.733 --> 00:00:40.800
+and for our purposes will be just fine. Either way, I recommend downloading and installing the latest version of Git for Windows.
+
+7
+00:00:40.800 --> 00:00:54.400
+Let's start off by invoking our browser, in this case Google Chrome, then go to "git-for-windows.github.io".
+
+8
+00:00:54.400 --> 00:01:03.466
+Once that page loads, click on the download button on the home page. This brings us to a page listing all the available downloads
+
+9
+00:01:03.466 --> 00:01:13.400
+for the GIt for Windows installer. You can see here that we have both 32 bit and 64 bit versions of the installer executable.
+
+10
+00:01:13.400 --> 00:01:21.066
+Since I'm running a 64 bit version of Windows, I'm going to choose the 64 bit version of Git for Windows.
+
+11
+00:01:21.066 --> 00:01:26.300
+Choose the version of Git for Windows that best matches your operating system.
+
+12
+00:01:26.300 --> 00:01:34.833
+Now I'm going to click on the link for the Git installer for my platform. That will begin the download process for the Git installer.
+
+13
+00:01:34.833 --> 00:01:39.900
+Once the installer has finished downloading, go down and click on "Open".
+
+14
+00:01:39.900 --> 00:01:47.100
+That will run the installer directly from the current location. If you are prompted about a security warning,
+
+15
+00:01:47.100 --> 00:01:54.433
+just click on run. Windows may also prompt you to make sure that you want to install this program. Click on "Yes".
+
+16
+00:01:54.433 --> 00:02:02.000
+Once the Git setup wizard starts, on the first page, click on "Next". The second page has the license agreement.
+
+17
+00:02:02.000 --> 00:02:08.200
+Again, click on "Next" to agree to the license agreement.  The next page is select your destination.
+
+18
+00:02:08.200 --> 00:02:17.133
+This is the location that Git will be installed on your system. For me this location is perfectly fine, so now I will click on "Next".
+
+19
+00:02:17.133 --> 00:02:25.766
+On the "Select Components" page, I would like the Git Bash icon on the quick launch, or taskbar, as well as on the desktop.
+
+20
+00:02:25.766 --> 00:02:36.366
+To get both of those icons I will check "Additional icons", which also checks
+"In the Quick Launch" as well as "On the Desktop". Then click on "Next".
+
+21
+00:02:36.366 --> 00:02:44.833
+This is the folder on the start menu that Git will be installed. Since this is fine I will continue by clicking on "Next".
+
+22
+00:02:44.833 --> 00:02:53.433
+This page dictates what parts of Git and GIt Bash are installed. Although we will only be using Git Bash as part of this course,
+
+23
+00:02:53.433 --> 00:03:02.366
+I recommend selecting the middle option. This will install Git Bash, as well as integration with the Windows command prompt.
+
+24
+00:03:02.366 --> 00:03:10.666
+In doing so, no real major changes are being made to my system. So it is both flexible and fairly safe.
+
+25
+00:03:10.666 --> 00:03:18.733
+After you've made your choice, click on the "Next" button to continue. This screen is regarding how to treat line endings.
+
+26
+00:03:18.733 --> 00:03:29.033
+On Windows, text files normally end with a different style line ending than corresponding text files on Linux or the Mac operating system,
+
+27
+00:03:29.033 --> 00:03:35.966
+which option you choose will greatly depend on whether or not you are going to be doing any cross-platform development.
+
+28
+00:03:35.966 --> 00:03:45.166
+I prefer using the middle option: which is to checkout as-is, that is don't change anything, but then commit Unix-style.
+
+29
+00:03:45.166 --> 00:03:54.300
+That means, when I use Git to commit, the file endings for my text files will automatically be converted to a Unix-style line ending.
+
+30
+00:03:54.300 --> 00:04:02.233
+Since I bounce around between Windows, Linux, and the Mac operating system, the middle option makes the most sense for me.
+
+31
+00:04:02.233 --> 00:04:09.500
+If you do all your development on Windows, and that goes for any team members sharing the same Git repositories,
+
+32
+00:04:09.500 --> 00:04:17.866
+then the last option, "commit as-is" will be the option you'll want to select. Again I'm sticking with the middle option,
+
+33
+00:04:17.866 --> 00:04:23.900
+and if I want to later, this can be changed. Once we've made our selection, click on on next.
+
+34
+00:04:23.900 --> 00:04:33.833
+Regarding the terminal emulator to use, I'm going to stick with the top option,
+which is a minimal terminal emulator that runs the bash shell environment.
+
+35
+00:04:33.833 --> 00:04:41.000
+Once you've made your selection, click on "Next". This page, "Enable file system caching" is experimental,
+
+36
+00:04:41.000 --> 00:04:48.100
+and I recommend leaving it unchecked for now. Click on "Next", and now we are installing Git for Windows.
+
+37
+00:04:48.100 --> 00:04:54.233
+Once the installation process has completed, on the final page we can un-check to view the README.
+
+38
+00:04:54.233 --> 00:05:04.166
+Then click on the "Finish" Button. Now, let's close Google Chrome. While we're here, let's verify that Git for Windows has an icon on our desktop.
+
+39
+00:05:04.166 --> 00:05:11.566
+Looks like it's there. So now let's double click on Git Bash to fire up Git Bash for the first time.
+
+40
+00:05:11.566 --> 00:05:22.800
+Now that we've done that, let's verify that Git is installed. Type git, that's g-i-t, space, version. Once you've done that press the enter key.
+
+41
+00:05:22.800 --> 00:05:26.566
+Git should respond with the version of Git that's installed.
+
+42
+00:05:26.566 --> 00:05:37.266
+To close Git Bash, we can click on the close button that's part of the window, or we can type the command "exit".
+

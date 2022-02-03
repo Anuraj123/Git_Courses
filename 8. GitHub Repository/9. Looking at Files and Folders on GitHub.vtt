@@ -1,0 +1,58 @@
+﻿WEBVTT
+
+1
+00:00:00.000 --> 00:00:04.966
+Welcome, in this video, we're going to navigate around in our GitHub repository.
+
+2
+00:00:04.966 --> 00:00:09.000
+I'm currently logged in, and in the "website" repository on GitHub.
+
+3
+00:00:09.000 --> 00:00:12.266
+If I scroll down, on the main page of the repository
+
+4
+00:00:12.266 --> 00:00:16.166
+we have our files and folders that are listed as part of this repository.
+
+5
+00:00:16.166 --> 00:00:19.233
+If I want to access a particular file, I can click on it
+
+6
+00:00:19.233 --> 00:00:22.566
+and I could see the source code associated with that particular file.
+
+7
+00:00:22.566 --> 00:00:27.266
+Also, I can click on the name of the folder to drill down into that folder.
+
+8
+00:00:27.266 --> 00:00:30.333
+GitHub will have special folders named "..",
+
+9
+00:00:30.333 --> 00:00:34.133
+which means exactly the same thing as it does on your operating system,
+
+10
+00:00:34.133 --> 00:00:36.500
+that is, it goes back up to the parent folder.
+
+11
+00:00:36.500 --> 00:00:41.633
+Another way to navigate amongst the files is to use the quick jump ability;
+
+12
+00:00:41.633 --> 00:00:44.233
+if we click on this list like icon,
+
+13
+00:00:44.233 --> 00:00:48.400
+that takes us to a list view of our files and folders we have access to.
+
+14
+00:00:48.400 --> 00:00:55.800
+And, depending on how you work, this may or may not be a faster way to get to particular files.
+

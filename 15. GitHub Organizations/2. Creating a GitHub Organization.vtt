@@ -1,0 +1,138 @@
+﻿WEBVTT
+
+1
+00:00:00.000 --> 00:00:04.966
+Welcome, in this video, we're going to create our first GitHub organization.
+
+2
+00:00:04.966 --> 00:00:09.533
+I'm currently logged into GitHub on my personal account, "jasongtaylor".
+
+3
+00:00:09.533 --> 00:00:12.166
+By default I land on my newsfeed page.
+
+4
+00:00:12.166 --> 00:00:14.766
+You can see that I have a list of repositories over here,
+
+5
+00:00:14.766 --> 00:00:19.800
+as well as repositories that I contribute to. If I go over to the dropdown for my user id,
+
+6
+00:00:19.800 --> 00:00:24.066
+I see I have an option to switch to organizations that might be listed here,
+
+7
+00:00:24.066 --> 00:00:29.033
+which I currently don't have any, and I have the option of creating a new organization.
+
+8
+00:00:29.033 --> 00:00:32.633
+Also, if I go over to the big plus mark, "Create new...",
+
+9
+00:00:32.633 --> 00:00:35.866
+I also have the option to create a new organization.
+
+10
+00:00:35.866 --> 00:00:41.000
+Starting off from either place is fine; since I'm here I'm going to click on "New organization".
+
+11
+00:00:41.000 --> 00:00:46.433
+Great, all organizations require that you have a personal account set up first, which we do.
+
+12
+00:00:46.433 --> 00:00:50.500
+On the create organization page, let's fill out the information for this form.
+
+13
+00:00:50.500 --> 00:00:55.200
+For organization, the organization name is equivalent to your username.
+
+14
+00:00:55.200 --> 00:00:59.033
+And when we type our organization name, GitHub is going to search
+
+15
+00:00:59.033 --> 00:01:03.233
+to make sure it doesn't match an existing username or organization name.
+
+16
+00:01:03.233 --> 00:01:07.366
+If I type a name that already exists, I'll be warned that the username
+
+17
+00:01:07.366 --> 00:01:11.333
+or organization name is already taken. I'm going to create an organization called
+
+18
+00:01:11.333 --> 00:01:17.600
+"my-organization-example" with dashes in-between the words. Once I completed typing it,
+
+19
+00:01:17.600 --> 00:01:21.600
+GitHub verified that this username or organization name is available.
+
+20
+00:01:21.600 --> 00:01:25.333
+All organizations must have an email address associated with it.
+
+21
+00:01:25.333 --> 00:01:28.166
+Then, at the bottom, choose the appropriate plan;
+
+22
+00:01:28.166 --> 00:01:30.800
+by default, you'll be on the "Open Source" plan,
+
+23
+00:01:30.800 --> 00:01:35.500
+which for our use will be perfectly fine since we'll be just creating public repos.
+
+24
+00:01:35.500 --> 00:01:40.666
+Once you have finished filling out the form, click on the green "create organization" button.
+
+25
+00:01:40.666 --> 00:01:44.800
+Great, now that you've done that, you've successfully created your organization.
+
+26
+00:01:44.800 --> 00:01:49.166
+By default, GitHub will land you on the invite organization members.
+
+27
+00:01:49.166 --> 00:01:53.400
+This assumes that you have other people that you wish to invite to this organization.
+
+28
+00:01:53.400 --> 00:01:56.733
+We'll cover this later, so for now we'll click finish.
+
+29
+00:01:56.733 --> 00:02:01.866
+Great, once we've finished up we land on the "my-organization-example" profile page.
+
+30
+00:02:01.866 --> 00:02:05.633
+To return to your newsfeed page, click on the octocat icon.
+
+31
+00:02:05.633 --> 00:02:11.233
+From the newsfeed page, we have the option now to dropdown and select our organization.
+
+32
+00:02:11.233 --> 00:02:15.400
+Doing so switches us to the organization's newsfeed page.
+
+33
+00:02:15.400 --> 00:02:18.800
+If we wanted to return to the organization's profile page
+
+34
+00:02:18.800 --> 00:02:24.533
+we could click on "View my-organization-example".
+

@@ -1,0 +1,50 @@
+﻿WEBVTT
+
+1
+00:00:00.033 --> 00:00:05.400
+Welcome, in this video, we're going to configure TextMate 2 to integrate with Git.
+
+2
+00:00:05.400 --> 00:00:12.933
+Alright, let's start off by going to our terminal program. And at this point we have both Git installed and TextMate 2.
+
+3
+00:00:12.933 --> 00:00:21.100
+So all we have to do is link the two. To do that, we're going to use Git's config command, using the --global parameter
+
+4
+00:00:21.100 --> 00:00:26.433
+to set our core.editor setting at the user level. The command is:
+
+5
+00:00:26.433 --> 00:00:37.000
+git, space, config, space, --global, space, core.editor, space, and then in double quotes, the command we're going to use to invoke mate
+
+6
+00:00:37.000 --> 00:00:43.600
+which is mate, space, -w. Once we've done that, double check the line and then press enter.
+
+7
+00:00:43.600 --> 00:00:51.566
+To confirm that Git and TextMate 2 are integrated together, we're going to use the config command to open the configuration settings.
+
+8
+00:00:51.566 --> 00:00:58.266
+If we type git, space, config, space --global, space -e,
+
+9
+00:00:58.266 --> 00:01:04.433
+Git is going to open the .gitconfig file at the user level, which is what --global is for,
+
+10
+00:01:04.433 --> 00:01:08.666
+Using the default editor configured within Git. Press enter.
+
+11
+00:01:08.666 --> 00:01:14.533
+If everything went well, TextMate 2 should be loaded with the .gitconfig file. Alright, great!
+
+12
+00:01:14.533 --> 00:01:21.666
+To return back to the terminal, quit out of TextMate 2, command +q.
+

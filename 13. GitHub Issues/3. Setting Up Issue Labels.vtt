@@ -1,0 +1,138 @@
+﻿WEBVTT
+
+1
+00:00:00.000 --> 00:00:05.400
+Welcome, in this video, we're going to be looking at labels within the GitHub issues feature.
+
+2
+00:00:05.400 --> 00:00:10.700
+I'm currently logged into GitHub, and I'm currently in the "website" repository.
+
+3
+00:00:10.700 --> 00:00:14.966
+And, within that repository, I'm within the issues feature.
+
+4
+00:00:14.966 --> 00:00:20.266
+Before I create an issue, I want to review the labels and perhaps even add some.
+
+5
+00:00:20.266 --> 00:00:23.866
+So, on the main issues page, click on labels.
+
+6
+00:00:23.866 --> 00:00:27.266
+Labels are a way of categorizing our issues.
+
+7
+00:00:27.266 --> 00:00:31.266
+By default, there are seven labels that come with issues:
+
+8
+00:00:31.266 --> 00:00:37.100
+bug, duplicate, enhancement, help wanted, invalid, question, and wontfix.
+
+9
+00:00:37.100 --> 00:00:40.400
+Most of these should be self-explanatory. For example,
+
+10
+00:00:40.400 --> 00:00:44.333
+bugs are intended for issues that are bug reports
+
+11
+00:00:44.333 --> 00:00:49.400
+and enhancements would be new features that we want to add to the particular project.
+
+12
+00:00:49.400 --> 00:00:54.766
+With each one of these, we have the option of editing or deleting the particular label.
+
+13
+00:00:54.766 --> 00:01:00.133
+So, let's do that; let's say, for our repository, "help wanted" really doesn't mean anything.
+
+14
+00:01:00.133 --> 00:01:05.700
+So, we're going to delete that particular label; click on delete to delete the label.
+
+15
+00:01:05.700 --> 00:01:10.700
+Once you click on that, GitHub will prompt you "Are you sure?" you want to delete the label.
+
+16
+00:01:10.700 --> 00:01:14.400
+Click on "Delete label" button to continue with the deletion,
+
+17
+00:01:14.400 --> 00:01:17.200
+or if you want to keep it click on cancel.
+
+18
+00:01:17.200 --> 00:01:21.533
+Since I'm not interested in that particular label, I'm going to click on "Delete label".
+
+19
+00:01:21.533 --> 00:01:27.466
+Now I'm down to six labels. Another option I have is to simply edit and existing label.
+
+20
+00:01:27.466 --> 00:01:32.000
+So, let's do that; find a label that you want to change and click on edit.
+
+21
+00:01:32.000 --> 00:01:35.400
+I'm going to edit the invalid label; click on "Edit".
+
+22
+00:01:35.400 --> 00:01:40.500
+The edit allows us to change two aspects: the name and the color associated.
+
+23
+00:01:40.500 --> 00:01:44.133
+Instead of "invalid" I wish to use "not applicable".
+
+24
+00:01:44.133 --> 00:01:46.866
+I'm also going to change the color to this light violet.
+
+25
+00:01:46.866 --> 00:01:50.866
+Once you've made the changes that you're happy with, click on "Save changes".
+
+26
+00:01:50.866 --> 00:01:56.366
+Finally, let's create a new label; go to the green button at the top that says "New label".
+
+27
+00:01:56.366 --> 00:02:00.800
+Click "New label", then that provides us an opportunity to provide a name
+
+28
+00:02:00.800 --> 00:02:04.733
+and a color for our new label. I'm going to use the text critical
+
+29
+00:02:04.733 --> 00:02:09.966
+to denote something more severe than bug, and I'm going to choose the orange for the color.
+
+30
+00:02:09.966 --> 00:02:16.100
+Once I'm happy with this, click on create label. Great, so this is my new list of labels.
+
+31
+00:02:16.100 --> 00:02:19.666
+Also, if you wanted to create more labels, the new label feature
+
+32
+00:02:19.666 --> 00:02:24.300
+is still available, so you can continue to add additional labels as you need to.
+
+33
+00:02:24.300 --> 00:02:27.266
+Once you're done creating all your labels, click on cancel.
+
+34
+00:02:27.266 --> 00:02:33.333
+Great, now that I'm done with the labels, I'm going to rerun back to my main issues page.
+

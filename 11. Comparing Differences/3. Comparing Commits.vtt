@@ -1,0 +1,162 @@
+﻿WEBVTT
+
+1
+00:00:00.000 --> 00:00:04.966
+Welcome, in this video, we're going to look at comparing commits in GitHub.
+
+2
+00:00:04.966 --> 00:00:08.533
+There are several ways to compare commits; one way is just to go
+
+3
+00:00:08.533 --> 00:00:11.266
+to the commits tab on your current branch,
+
+4
+00:00:11.266 --> 00:00:16.166
+and by default, when you go to a specific commit at the bottom of the commit page,
+
+5
+00:00:16.166 --> 00:00:20.600
+you actually have a diff comparing the current commit versus the prior commit.
+
+6
+00:00:20.600 --> 00:00:24.733
+And, in doing so, it provides a familiar interface that is common
+
+7
+00:00:24.733 --> 00:00:27.800
+throughout GitHub for doing compares or diffs.
+
+8
+00:00:27.800 --> 00:00:31.200
+And, on this specific commit page, we do have the option
+
+9
+00:00:31.200 --> 00:00:36.400
+to add comments at the code level, or at the overall commit level.
+
+10
+00:00:36.400 --> 00:00:40.866
+For example, I could come over here and add a message at this line,
+
+11
+00:00:40.866 --> 00:00:45.600
+which comments in general in GitHub will support Markdown syntax.
+
+12
+00:00:45.600 --> 00:00:50.033
+You can preview, and once you're happy with your comment click on "Comment".
+
+13
+00:00:50.033 --> 00:00:53.566
+If you want this comment to be associated with the entire commit,
+
+14
+00:00:53.566 --> 00:00:58.366
+just leave a comment at the bottom of the commit page. You can preview once again;
+
+15
+00:00:58.366 --> 00:01:02.400
+now, once you're happy, click on "Comment on this commit".
+
+16
+00:01:02.400 --> 00:01:07.000
+Great, now let's return to the main repository page, and click on comments.
+
+17
+00:01:07.000 --> 00:01:10.533
+On the comments page, we see that we have a comments icon
+
+18
+00:01:10.533 --> 00:01:15.500
+that indicates that we have a couple of comments associated with this specific commit.
+
+19
+00:01:15.500 --> 00:01:19.466
+Let's copy the SHA-1 associated with this commit;
+
+20
+00:01:19.466 --> 00:01:23.500
+click on the "copy to clipboard" button, and now let's use the pull request page
+
+21
+00:01:23.500 --> 00:01:28.700
+to actually do our comparison. Click on pull request, then click on new pull request.
+
+22
+00:01:28.700 --> 00:01:32.866
+In addition to comparing branches, you can compare branches to
+
+23
+00:01:32.866 --> 00:01:37.600
+other references in GitHub, including commits. We'll leave the base to develop,
+
+24
+00:01:37.600 --> 00:01:41.200
+and then we'll do the dropdown for the source location.
+
+25
+00:01:41.200 --> 00:01:46.433
+This dropdown allows us to specify a branch, tag, commit, or other history marker.
+
+26
+00:01:46.433 --> 00:01:50.500
+So now, I'm going to paste in the commit id that I just copied.
+
+27
+00:01:50.500 --> 00:01:54.600
+One you do that, select the commit id once it finds a match.
+
+28
+00:01:54.600 --> 00:01:56.933
+Sometimes, you don't see any differences,
+
+29
+00:01:56.933 --> 00:02:02.100
+so let's switch branches to master; now we see some differences.
+
+30
+00:02:02.100 --> 00:02:06.133
+When we do the compare with commits that have comments involved with them,
+
+31
+00:02:06.133 --> 00:02:08.966
+we see that we have commit comments associated
+
+32
+00:02:08.966 --> 00:02:13.266
+with this particular comparison and we see the comments listed below.
+
+33
+00:02:13.266 --> 00:02:17.566
+If we want to go a little deeper, we can; within the comparing changes interface,
+
+34
+00:02:17.566 --> 00:02:20.266
+we have the option to click on a specific commit.
+
+35
+00:02:20.266 --> 00:02:23.700
+Alright, let's return to our comparison. And what you'll notice is,
+
+36
+00:02:23.700 --> 00:02:28.033
+although we go to this page through the create a pull request mechanism,
+
+37
+00:02:28.033 --> 00:02:31.533
+if we are comparing against a specific commit or tag
+
+38
+00:02:31.533 --> 00:02:36.133
+that doesn't qualify as something we can pull request, the ability to do pull requests
+
+39
+00:02:36.133 --> 00:02:39.266
+only happens when you're comparing against branches.
+
+40
+00:02:39.266 --> 00:02:45.533
+And, we'll cover pull requests in more detail in upcoming videos.
+

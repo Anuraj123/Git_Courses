@@ -1,0 +1,38 @@
+﻿WEBVTT
+
+1
+00:00:00.000 --> 00:00:04.933
+This section is all about the repository on GitHub.
+
+2
+00:00:04.933 --> 00:00:08.733
+We will cover many of the same topics we have done so far locally,
+
+3
+00:00:08.733 --> 00:00:11.800
+but using the GitHub interface directly instead.
+
+4
+00:00:11.800 --> 00:00:18.033
+In this section, we will edit, create, rename, and delete files, all directly on GitHub.
+
+5
+00:00:18.033 --> 00:00:22.233
+We will also go over the unique aspects of the GitHub repositories
+
+6
+00:00:22.233 --> 00:00:26.200
+and how it relates to our local repository back on our system.
+
+7
+00:00:26.200 --> 00:00:30.133
+While I demonstrate many of the ways to work directly within GitHub,
+
+8
+00:00:30.133 --> 00:00:34.200
+I still recommend doing any significant work on your local system
+
+9
+00:00:34.200 --> 00:00:38.766
+and then pushing those changes back to GitHub.
+

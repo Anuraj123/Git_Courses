@@ -1,0 +1,95 @@
+﻿WEBVTT
+
+1
+00:00:00.000 --> 00:00:04.433
+In this video, we're going to do the minimum required to configure Git.
+
+2
+00:00:04.433 --> 00:00:09.733
+First off, if Git Bash is not already loaded, invoke Git Bash.
+
+3
+00:00:09.733 --> 00:00:16.266
+We're going to use Git's config command to set the values required for Git's configuration.
+
+4
+00:00:16.266 --> 00:00:23.400
+The first command we're going to use is: git, config, space, --global, space, --list.
+
+5
+00:00:23.400 --> 00:00:33.000
+The git config command can operate at the repository level, or at the user level, which is indicated by the "--global" option.
+
+6
+00:00:33.000 --> 00:00:42.333
+"--list" is the parameter we pass into the git config command to list all the known configuration options at the level being passed in,
+
+7
+00:00:42.333 --> 00:00:50.266
+in this case, global. Once you've done that press enter. Great, so we have an error message from Git Bash.
+
+8
+00:00:50.266 --> 00:00:56.266
+It's telling us that it cannot read the ".gitconfig" file under our user's home directory.
+
+9
+00:00:56.266 --> 00:01:04.066
+I wanted to demonstrate that git is using a file called .gitconfig, that is located under our user's home directory.
+
+10
+00:01:04.066 --> 00:01:13.300
+This is the file used for global configuration settings in Git. Let's start off with our first configuration setting: our user's name.
+
+11
+00:01:13.300 --> 00:01:24.066
+Type git; space; config; space; --global; followed by the setting to set, in this case "user.name"; space;
+
+12
+00:01:24.066 --> 00:01:32.900
+and then in double quotes, the value. I'm going to put my name in, but you should put in your name. Double check the line, and then press enter.
+
+13
+00:01:32.900 --> 00:01:41.966
+A lot of times when we enter in commands with Git, no news is good news. We will continue on, assuming the prior command was successful.
+
+14
+00:01:41.966 --> 00:01:53.733
+The next command is to set the email address for our user. Type git, space, config, space --globlal, space, user.email, space,
+
+15
+00:01:53.733 --> 00:02:02.900
+and then in double quotes, put your email address. I'm using my email address in this example. Review your line and then press enter.
+
+16
+00:02:02.900 --> 00:02:11.800
+Again, no news is good news, but at this point we can go ahead and verify this by listing our global configuration as we did before.
+
+17
+00:02:11.800 --> 00:02:20.500
+Like above, we're going to type git, space, config, space, --global, space, --list.
+
+18
+00:02:20.500 --> 00:02:30.200
+And this time, instead of an error, git responds with the two configuration options that we set, the user's name and the user's email.
+
+19
+00:02:30.200 --> 00:02:37.666
+To show you these commands are just being saved into a .gitconfig file, I'm going to use the "cat" command
+
+20
+00:02:37.666 --> 00:02:50.900
+to output the entire contents of that file back to the console. So type:
+cat, that's c-a-t; space; ~, which is a shortcut to our user's home directory; /.gitconfig.
+
+21
+00:02:50.900 --> 00:03:00.500
+Dot files are special files are semi-hidden, so they don't get accidentally edited or deleted. Double check the line, and then press enter.
+
+22
+00:03:00.500 --> 00:03:08.833
+The output of this file so far is a "[user]" section, with two values: name and email, and their corresponding values.
+
+23
+00:03:08.833 --> 00:03:18.366
+This is all we needed to do to in order to configure Git properly, so that we can do some other commands later on.
+

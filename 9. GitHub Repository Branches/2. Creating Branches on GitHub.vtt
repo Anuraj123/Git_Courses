@@ -1,0 +1,190 @@
+﻿WEBVTT
+
+1
+00:00:00.000 --> 00:00:04.966
+Welcome, in this video, we're going to begin looking at branching in GitHub.
+
+2
+00:00:04.966 --> 00:00:07.200
+Before we actually start creating branches,
+
+3
+00:00:07.200 --> 00:00:10.500
+I want you to make a note that we are currently on a branch.
+
+4
+00:00:10.500 --> 00:00:15.366
+That is, the master branch, which you get for free when you create a new Git repository.
+
+5
+00:00:15.366 --> 00:00:20.933
+This is also the same default branch that you get when you create a repository on GitHub.
+
+6
+00:00:20.933 --> 00:00:24.266
+And, all the commits so far have been on the master branch.
+
+7
+00:00:24.266 --> 00:00:28.033
+So, let's create a new branch. There are several ways to create new branches,
+
+8
+00:00:28.033 --> 00:00:31.266
+and to have them associated with your repository in GitHub.
+
+9
+00:00:31.266 --> 00:00:36.100
+One way, and probably one of the easiest ways, is to go to our branch dropdown
+
+10
+00:00:36.100 --> 00:00:39.066
+directly on the main page for your Git repository.
+
+11
+00:00:39.066 --> 00:00:42.666
+Just click the down indicator, and you'll notice that we are currently on
+
+12
+00:00:42.666 --> 00:00:45.900
+the master branch, because we have a check mark next to it.
+
+13
+00:00:45.900 --> 00:00:50.733
+Wherever you have the checkmark is the starting point for any branches that we create.
+
+14
+00:00:50.733 --> 00:00:54.166
+In this field that we have above the listing of branches,
+
+15
+00:00:54.166 --> 00:00:57.733
+is a combination search field and create branch field.
+
+16
+00:00:57.733 --> 00:01:00.633
+If you type something in that matches an existing branch,
+
+17
+00:01:00.633 --> 00:01:03.233
+then it will find that branch, and switch to it;
+
+18
+00:01:03.233 --> 00:01:07.766
+however, if it does not find a match, GitHub assumes that you want to create the branch.
+
+19
+00:01:07.766 --> 00:01:10.666
+So, when you press enter, it will create that branch.
+
+20
+00:01:10.666 --> 00:01:14.333
+So, let's do that now; I'm going to create a branch called "example".
+
+21
+00:01:14.333 --> 00:01:16.900
+Since we don't have any branches named example,
+
+22
+00:01:16.900 --> 00:01:20.200
+GitHub will assume that we want to create a branch, which we do.
+
+23
+00:01:20.200 --> 00:01:25.400
+It also indicates that we will be creating this example branch directly off of master.
+
+24
+00:01:25.400 --> 00:01:31.033
+Alright, so let's press enter; that automatically creates and switches to the example branch.
+
+25
+00:01:31.033 --> 00:01:33.866
+Also, GitHub provides a nice little banner at the top,
+
+26
+00:01:33.866 --> 00:01:37.833
+telling us that we just created a branch. Any edits we make at this point
+
+27
+00:01:37.833 --> 00:01:41.133
+will be separate and diverge from the master branch.
+
+28
+00:01:41.133 --> 00:01:43.700
+However, since we have not made any commits yet,
+
+29
+00:01:43.700 --> 00:01:48.300
+this branch is currently even with master, which is where we branched off of.
+
+30
+00:01:48.300 --> 00:01:51.300
+Let's make a quick edit to see things in action.
+
+31
+00:01:51.300 --> 00:01:54.933
+Let's edit the "README.md" file; click on edit this file.
+
+32
+00:01:54.933 --> 00:01:56.933
+Make any changes you want to it,
+
+33
+00:01:56.933 --> 00:02:00.200
+and now we're going to scroll down and commit our changes.
+
+34
+00:02:00.200 --> 00:02:04.666
+Once you've typed in a commit message, click on "Commit changes".
+
+35
+00:02:04.666 --> 00:02:07.966
+Great, let's return to the main page for this repository.
+
+36
+00:02:07.966 --> 00:02:11.233
+Clicking on the main page for this repository reset us back
+
+37
+00:02:11.233 --> 00:02:14.566
+to the default branch for this repository, which is master.
+
+38
+00:02:14.566 --> 00:02:19.800
+To get back to that example branch, you can drop down and click on example.
+
+39
+00:02:19.800 --> 00:02:24.966
+Now, that switches us to the example branch. Once we do that, you can see that we have
+
+40
+00:02:24.966 --> 00:02:29.366
+our latest commit, which is "Updating readme from branch example".
+
+41
+00:02:29.366 --> 00:02:33.666
+If you notice the tab for branches, it tells us we now have two branches.
+
+42
+00:02:33.666 --> 00:02:36.600
+If we click on branches, we have our default branch
+
+43
+00:02:36.600 --> 00:02:39.366
+and that, our branches, we have example.
+
+44
+00:02:39.366 --> 00:02:41.866
+That's just an overview, and it just segregates out
+
+45
+00:02:41.866 --> 00:02:45.100
+all the other branches besides our default branch.
+
+46
+00:02:45.100 --> 00:02:48.000
+We can use our browser's back button to go back a step,
+
+47
+00:02:48.000 --> 00:02:54.666
+or, once on the branches tab, we can just click on the name of the branch we want to go to.
+

@@ -1,0 +1,154 @@
+﻿WEBVTT
+
+1
+00:00:00.000 --> 00:00:04.933
+Welcome, in this video, we're going to further manage our teams.
+
+2
+00:00:04.933 --> 00:00:12.500
+I'm currently logged in as "jasongtaylor", but I'm on the "my-organization-example" organization.
+
+3
+00:00:12.500 --> 00:00:17.466
+If I go to people, I see I currently have two people that are part of this organization:
+
+4
+00:00:17.466 --> 00:00:22.100
+"awesomejt" and "jasongtaylor". If I hop over to "Teams",
+
+5
+00:00:22.100 --> 00:00:25.100
+I currently have one team called developers.
+
+6
+00:00:25.100 --> 00:00:29.066
+If I click on "Developers" I go to the developers team page,
+
+7
+00:00:29.066 --> 00:00:33.266
+which allows me to manage the settings, and who's part of this team,
+
+8
+00:00:33.266 --> 00:00:36.400
+and any repositories that are associated with this team.
+
+9
+00:00:36.400 --> 00:00:40.633
+If I click on settings, I have the ability to edit the team.
+
+10
+00:00:40.633 --> 00:00:44.433
+I'm going to change the description to "Team for development staff".
+
+11
+00:00:44.433 --> 00:00:47.000
+Once I've done that, I can click on "Update".
+
+12
+00:00:47.000 --> 00:00:51.133
+Great, the description for the "Developers" team has changed.
+
+13
+00:00:51.133 --> 00:00:56.000
+Another aspect of the teams are the repositories that are associated with the teams.
+
+14
+00:00:56.000 --> 00:01:00.333
+Teams have two facets; the team members, and the repositories.
+
+15
+00:01:00.333 --> 00:01:04.333
+Let's click on "Repositories"; by default, there are no repositories
+
+16
+00:01:04.333 --> 00:01:08.000
+associated with this team. If we go to "Add repositories",
+
+17
+00:01:08.000 --> 00:01:11.300
+and just start typing the name of a repository name,
+
+18
+00:01:11.300 --> 00:01:16.200
+we should have a listing that includes something that matches our search criteria.
+
+19
+00:01:16.200 --> 00:01:20.033
+Once we find the repository we wish to add to this team,
+
+20
+00:01:20.033 --> 00:01:23.166
+we just click on it and it is added to this team.
+
+21
+00:01:23.166 --> 00:01:28.866
+I also have the option to choose the visibility of this repository within this team.
+
+22
+00:01:28.866 --> 00:01:33.200
+By default, it's going to place it as read-only, which only allows
+
+23
+00:01:33.200 --> 00:01:38.500
+members part of this team to have read or view access to this repository.
+
+24
+00:01:38.500 --> 00:01:42.800
+If I want to, I can use the dropdown, and change the permission level.
+
+25
+00:01:42.800 --> 00:01:47.633
+"Read" means it allows team members to read or view the contents of the repository
+
+26
+00:01:47.633 --> 00:01:51.233
+and to also clone the repository, or even make a fork
+
+27
+00:01:51.233 --> 00:01:54.466
+of this repository into their personal space on GitHub.
+
+28
+00:01:54.466 --> 00:01:58.733
+This is a fairly common level when working with open-source projects
+
+29
+00:01:58.733 --> 00:02:02.766
+that you're not directly managing. "Write", which is the next level up,
+
+30
+00:02:02.766 --> 00:02:07.100
+allows team members to read, clone, and push to this repository.
+
+31
+00:02:07.100 --> 00:02:13.533
+It also allows developers to directly make modifications to files on the GitHub repository,
+
+32
+00:02:13.533 --> 00:02:18.100
+and then finally "Admin" allows team members to have admin access
+
+33
+00:02:18.100 --> 00:02:23.133
+to the repository, which means, in addition to reading, writing, and pushing,
+
+34
+00:02:23.133 --> 00:02:27.600
+it allows team members to add other collaborators to this repository.
+
+35
+00:02:27.600 --> 00:02:33.366
+For the development team, I want all repositories that are associated to have write access.
+
+36
+00:02:33.366 --> 00:02:37.400
+Once I select "Write" GitHub automatically updates that permission.
+
+37
+00:02:37.400 --> 00:02:40.433
+Great, I'm going to click on the name of my organization,
+
+38
+00:02:40.433 --> 00:02:46.066
+and that will just take me back to the organization's profile page.
+

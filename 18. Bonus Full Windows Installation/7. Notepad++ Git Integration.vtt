@@ -1,0 +1,152 @@
+﻿WEBVTT
+
+1
+00:00:00.000 --> 00:00:10.300
+Welcome, in this video, we're going to further integrate Git Bash with Notepad++
+by creating a bash alias to shorten the Notepad++ command.
+
+2
+00:00:10.300 --> 00:00:18.133
+Go to Git Bash and launch it. Within your user's home directory, we're going to use the current Notepad++ command
+
+3
+00:00:18.133 --> 00:00:27.966
+to create a new file called ".bash_profile". So type notepad++, space, .bash_profile.
+
+4
+00:00:27.966 --> 00:00:35.333
+Again, using this command must be executed from your user's home directory. Double check that line and then press enter.
+
+5
+00:00:35.333 --> 00:00:42.066
+When prompted to create a new file say "Yes". If this is not a new file, that is there is existing content here,
+
+6
+00:00:42.066 --> 00:00:48.266
+that's ok; just find a new line to add an alias. On my setup, this is a brand new file.
+
+7
+00:00:48.266 --> 00:00:53.933
+So I'm going to find a line and add the alias command. The alias syntax is:
+
+8
+00:00:53.933 --> 00:01:01.766
+alias; space; and then the alias name we want to use, that's our new command, in this case I'm going to call it npp
+
+9
+00:01:01.766 --> 00:01:08.633
+for a shorter version of Notepad++; followed by an equal sign; and then, enclosed in single quotes,
+
+10
+00:01:08.633 --> 00:01:17.833
+the command to be executed every time npp is called: in this case, "notepad++.exe"; space;
+
+11
+00:01:17.833 --> 00:01:29.666
+dash, and then a parameter "multiInst", so that's spelled dash, m-u-l-t-i-I-n-s-t; space; -nosession.
+
+12
+00:01:29.666 --> 00:01:38.400
+Double check that line, and now let's save our file. We can use the shortcut key control+s or go to "File", "Save".
+
+13
+00:01:38.400 --> 00:01:46.800
+Now that's done, let's close this file, control+w, and now, let's exit Notepad++: alt+f4.
+
+14
+00:01:46.800 --> 00:01:54.500
+Once we exit Notepad++, we are retuned to our terminal. To test out our alias, we need to exit out of Git Bash.
+
+15
+00:01:54.500 --> 00:01:59.933
+So type exit, that will close Git Bash, and now re-launch Git Bash.
+
+16
+00:01:59.933 --> 00:02:09.266
+Great. Now let's test out our alias. Type npp, now press enter. If everything went well, Notepad++ will launch.
+
+17
+00:02:09.266 --> 00:02:14.733
+Now that we've confirmed that, let's close Notepad++, and exit out of Git Bash.
+
+18
+00:02:14.733 --> 00:02:18.266
+We're going to integrate Notepad++ with Git.
+
+19
+00:02:18.266 --> 00:02:23.900
+To setup Notepad++ as the default editor within Git, let's launch Git Bash.
+
+20
+00:02:23.900 --> 00:02:29.566
+Once Git Bash is loaded, let's look at our current global configuration. We can use the command:
+
+21
+00:02:29.566 --> 00:02:37.233
+cat; space; ~, which is a shorthand for the user's home directory; / ; then .gitconfig.
+
+22
+00:02:37.233 --> 00:02:45.333
+Press enter; and so far we have only entered in the configuration information for the user's name and email address.
+
+23
+00:02:45.333 --> 00:02:52.766
+To set up Notepad++ as Git's default editor, use Git's config command to set that up:
+
+24
+00:02:52.766 --> 00:03:00.133
+git; space; config; space; --global, since we want this configuration to be at the user level;
+
+25
+00:03:00.133 --> 00:03:10.300
+followed by the configuration setting, "core.editor"; space; and then, in double quotes, the command we want to add for Notepad++:
+
+26
+00:03:10.300 --> 00:03:22.900
+which is "notepad++.exe"; space; and then our first parameter "-multiInst", that's spelled m-u-l-t-i-I-n-s-t;
+
+27
+00:03:22.900 --> 00:03:29.533
+space; and then our second parameter: "-nosession". Double check that line and then press enter.
+
+28
+00:03:29.533 --> 00:03:33.800
+With Git no news is good news, but let's verify to make sure.
+
+29
+00:03:33.800 --> 00:03:44.566
+Using the config command, we can type "git config --global --list".
+And that will list all the known configuration from the global, or user, level.
+
+30
+00:03:44.566 --> 00:03:51.666
+Press enter. Great, core.editor is set to our notepad++ executable line.
+
+31
+00:03:51.666 --> 00:03:58.000
+Well let’s test this out. We can use the git config command again, to actually test out our core editor
+
+32
+00:03:58.000 --> 00:04:10.333
+by passing in the -e parameter, which will allow us to edit the configuration. So type "git config --global -e".
+
+33
+00:04:10.333 --> 00:04:17.700
+Git will then use the default editor to edit the configuration file. Double check the line, and then press enter.
+
+34
+00:04:17.700 --> 00:04:23.966
+If Git is configured correctly, Notepad++ will load with the ".gitconfig" file.
+
+35
+00:04:23.966 --> 00:04:31.600
+Now that we've confirmed this, let's close the file, control+w, and exit Notepad++, alt+f4.
+
+36
+00:04:31.600 --> 00:04:40.633
+Since we are done integrating Notepad++ with Git, we can exit Git Bash. Type the "exit" command and then enter.
+
+37
+00:04:40.633 --> 00:04:40.666
+Since we are done integrating Notepad++ with Git, we can exit Git Bash. Type the "exit" command and then enter.
+

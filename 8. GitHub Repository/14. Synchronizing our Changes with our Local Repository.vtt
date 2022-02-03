@@ -1,0 +1,90 @@
+﻿WEBVTT
+
+1
+00:00:00.000 --> 00:00:05.000
+Welcome, in this video, we're going to synchronize our changes back to our local repository.
+
+2
+00:00:05.000 --> 00:00:10.400
+I'm currently on the GitHub site, logged in, and on the "website" GitHub repository.
+
+3
+00:00:10.400 --> 00:00:13.666
+We've made a lot of changes, and if I go over to "commits"
+
+4
+00:00:13.666 --> 00:00:17.066
+we have several changes we've made to our repository directly.
+
+5
+00:00:17.066 --> 00:00:20.800
+Again, this isn't exactly a best practice, but sometimes it happens.
+
+6
+00:00:20.800 --> 00:00:24.433
+What we want to do is make sure that we changes we have on GitHub
+
+7
+00:00:24.433 --> 00:00:27.433
+are also synchronized back to our local repository,
+
+8
+00:00:27.433 --> 00:00:31.200
+so when we go to do work there, we're not working with old files.
+
+9
+00:00:31.200 --> 00:00:33.266
+Let's jump back over to our terminal program,
+
+10
+00:00:33.266 --> 00:00:37.866
+and I'm currently in the "website" repository on my local system,
+
+11
+00:00:37.866 --> 00:00:41.600
+which is under our "projects" folder within the user's home directory.
+
+12
+00:00:41.600 --> 00:00:44.633
+I'm currently on master and, as of right now,
+
+13
+00:00:44.633 --> 00:00:48.566
+this Git repository thinks that it's up-to-date, and there's nothing to commit.
+
+14
+00:00:48.566 --> 00:00:53.266
+If I simply do a "git fetch", that will update my references from GitHub.
+
+15
+00:00:53.266 --> 00:00:57.600
+So now, when I do a "git status", it tells me that my local master branch
+
+16
+00:00:57.600 --> 00:01:01.033
+"is behind 'origin/master' by 6 commits",
+
+17
+00:01:01.033 --> 00:01:03.833
+and it also tells me this can be fast-forwarded,
+
+18
+00:01:03.833 --> 00:01:07.800
+which is the easy button version of merging in your changes.
+
+19
+00:01:07.800 --> 00:01:12.133
+So, let's do that now; as it suggests, we can simply do a "git pull".
+
+20
+00:01:12.133 --> 00:01:17.000
+Type "git pull", press enter; great, we have two files that have changed.
+
+21
+00:01:17.000 --> 00:01:23.800
+Our "index.html", which me modified the title tag, and the newly created "lipsum.txt".
+
+22
+00:01:23.800 --> 00:01:31.000
+Now, if I do an "ls -al", I can see my new file "lipsum.txt".
+

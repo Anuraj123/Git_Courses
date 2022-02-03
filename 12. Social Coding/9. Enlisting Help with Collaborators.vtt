@@ -1,0 +1,174 @@
+﻿WEBVTT
+
+1
+00:00:00.000 --> 00:00:05.233
+Welcome, in this video, I'm going to introduce you to the concept of collaborators.
+
+2
+00:00:05.233 --> 00:00:09.000
+Starting off, I'm on the "jasongtaylor" user id
+
+3
+00:00:09.000 --> 00:00:13.600
+that I have in my main browser, logged into GitHub. And, in a secondary browser,
+
+4
+00:00:13.600 --> 00:00:17.866
+I'm logged in as "awesomejt" which is a different user that I'm managing.
+
+5
+00:00:17.866 --> 00:00:23.100
+Logged in as "awesomejt", I want to add "jasongtaylor" as a contributor
+
+6
+00:00:23.100 --> 00:00:26.900
+to one of my repositories that I have within my user's space.
+
+7
+00:00:26.900 --> 00:00:30.966
+This feature is specifically for individual users in GitHub
+
+8
+00:00:30.966 --> 00:00:35.600
+that want to allow different users to contribute to a Git repository directly,
+
+9
+00:00:35.600 --> 00:00:39.666
+that is grant read and write access to those repositories.
+
+10
+00:00:39.666 --> 00:00:44.500
+So, I'm going to go down to my repositories logged in as the "awesomejt" user,
+
+11
+00:00:44.500 --> 00:00:48.533
+and select test, which is just a public repo that I have
+
+12
+00:00:48.533 --> 00:00:53.466
+as part of my "awesomejt" user. Then I'm going to go down to the right hand side,
+
+13
+00:00:53.466 --> 00:00:57.300
+of my repository, and I should have my repository menu,
+
+14
+00:00:57.300 --> 00:01:00.900
+with one of the items being settings. Click on "Settings",
+
+15
+00:01:00.900 --> 00:01:04.800
+and then on the left hand side is the list of settings options,
+
+16
+00:01:04.800 --> 00:01:08.733
+one of which is collaborators. Click on "Collaborators",
+
+17
+00:01:08.733 --> 00:01:11.900
+which then you will land on the collaborators page.
+
+18
+00:01:11.900 --> 00:01:17.666
+To add a collaborator, just search by their username, or their name, or their email address.
+
+19
+00:01:17.666 --> 00:01:23.133
+I happen to know the username is "jasongtaylor", which comes up in the search results.
+
+20
+00:01:23.133 --> 00:01:27.800
+Once you find a match, select that item, then click on add collaborator.
+
+21
+00:01:27.800 --> 00:01:33.000
+Now this user has read and write access to the "test" repository;
+
+22
+00:01:33.000 --> 00:01:37.733
+this allows the " jasongtaylor " account to directly edit this repository
+
+23
+00:01:37.733 --> 00:01:42.066
+and accept pull requests into this repository. Alright, let's check it out.
+
+24
+00:01:42.066 --> 00:01:45.200
+So, I'm going to head back over to the "jasongtaylor" profile;
+
+25
+00:01:45.200 --> 00:01:48.100
+going to do a refresh to make sure all my settings are updated,
+
+26
+00:01:48.100 --> 00:01:53.466
+and now I see, under my repositories, the "awesomejt/test" repository
+
+27
+00:01:53.466 --> 00:01:56.900
+since I have write access to this repository.
+
+28
+00:01:56.900 --> 00:02:03.466
+So, I could go in and click on this repository and now I'm in the "awesomejt/test" repository.
+
+29
+00:02:03.466 --> 00:02:07.966
+While I'm here, I'll make a quick edit to the Readme file; click on the Readme file,
+
+30
+00:02:07.966 --> 00:02:16.566
+click on edit this file. Once done editing the file, I'm going to commit my changes:
+
+31
+00:02:16.566 --> 00:02:19.500
+then click commit changes. Now that I've done that,
+
+32
+00:02:19.500 --> 00:02:24.300
+I'm going to go back over to my other account, that is my "awesomejt" user,
+
+33
+00:02:24.300 --> 00:02:26.833
+reload the page, make sure I'm up to date.
+
+34
+00:02:26.833 --> 00:02:31.066
+And, on the collaborator's page, I may decide that I didn't want to add
+
+35
+00:02:31.066 --> 00:02:35.166
+"jasongtaylor", or at this point I may wish to revoke access.
+
+36
+00:02:35.166 --> 00:02:38.433
+I can revoke access by going to the collaborator's page,
+
+37
+00:02:38.433 --> 00:02:42.966
+and then clicking the x to remove "jasongtaylor" as a collaborator.
+
+38
+00:02:42.966 --> 00:02:47.366
+Once I do that, "jasongtaylor" is no longer listed as a collaborator,
+
+39
+00:02:47.366 --> 00:02:52.200
+so now when I refresh, I only have read access to this repository.
+
+40
+00:02:52.200 --> 00:02:57.266
+If I try to edit this file, it's going to recommend that I fork this repository first.
+
+41
+00:02:57.266 --> 00:03:00.133
+Also, if I click on the octocat icon,
+
+42
+00:03:00.133 --> 00:03:03.566
+which will return me to the newsfeed page of my account,
+
+43
+00:03:03.566 --> 00:03:12.400
+I see that the "awesomejt/test" repo is no longer listed under my repositories.
+

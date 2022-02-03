@@ -1,0 +1,182 @@
+﻿WEBVTT
+
+1
+00:00:00.000 --> 00:00:05.466
+In this video, we're going to download and install Notepad++ for Windows.
+
+2
+00:00:05.466 --> 00:00:12.666
+Open up your browser, I'm using Google Chrome, and go to "notepad-plus-plus.org".
+
+3
+00:00:12.666 --> 00:00:18.900
+Once the Notepad++ website loads, on the left hand side go to the download option.
+
+4
+00:00:18.900 --> 00:00:25.300
+Once the download page loads, click on the big green "DOWNLOAD" button. This will download the Windows installer,
+
+5
+00:00:25.300 --> 00:00:32.800
+that will walk us through the rest of the process. Once the installer has finished downloading, within Chrome, we can click on open,
+
+6
+00:00:32.800 --> 00:00:41.700
+which will run the installer in place. When windows prompts you about whether or not you want to really install this program. Click on "Yes".
+
+7
+00:00:41.700 --> 00:00:50.233
+That will launch the installer for Notepad++. The first screen is to choose your language. I'm going to keep it on English and hit "OK".
+
+8
+00:00:50.233 --> 00:00:57.333
+On the first screen of the setup, I'm just going to advance on with "Next". On the license agreement page,
+
+9
+00:00:57.333 --> 00:01:03.600
+you can scroll through and make sure you agree with the license. Once you've read through this, click on "I agree"
+
+10
+00:01:03.600 --> 00:01:10.466
+On the "Choose Install Location Page" I'm going to leave it at the default location and click "Next".
+
+11
+00:01:10.466 --> 00:01:17.333
+On the first "Choose Components" page, I'm going to keep all the defaults and advance with the "Next" button.
+
+12
+00:01:17.333 --> 00:01:25.300
+On the second "Choose Components" page, I do want the installer to create a shortcut on my Desktop, so I will check that option.
+
+13
+00:01:25.300 --> 00:01:30.300
+Now, let's click the install button to install Notepad++.
+
+14
+00:01:30.300 --> 00:01:40.300
+On the final page, after the installation process, un-check "Run Notepad++"; we're going to run Notepad++ from our desktop in a moment.
+
+15
+00:01:40.300 --> 00:01:49.700
+Now, click on the "Finish" button. Great, now let's close our browser and verify that we have our Notepad++ icon on our desktop,
+
+16
+00:01:49.700 --> 00:01:55.566
+which we do. Double-click that icon to verify that Notepad++ can launch.
+
+17
+00:01:55.566 --> 00:02:01.666
+Now that we've confirmed that we've successfully installed Notepad++, let's close the program.
+
+18
+00:02:01.666 --> 00:02:06.800
+We're going to configure Notepad++ to run from within our command environment.
+
+19
+00:02:06.800 --> 00:02:15.133
+I'm going to be demonstrating this with Git Bash, but this will work equally as well with the Windows command prompt or PowerShell.
+
+20
+00:02:15.133 --> 00:02:23.233
+To demonstrate what I mean, I'm going to fire up Git Bash, and try executing Notepad++ from the command line.
+
+21
+00:02:23.233 --> 00:02:30.133
+So type "notepad++", then press enter. In this case Git Bash tells us "command not found".
+
+22
+00:02:30.133 --> 00:02:36.700
+Well, we can fix that. Let's exit out of our command environment, I'm going to type "exit" and that closes Git Bash.
+
+23
+00:02:36.700 --> 00:02:44.833
+The first step is to simply find where Notepad++ is installed. To do that, I'm going to go to file explorer.
+
+24
+00:02:44.833 --> 00:02:52.033
+File explorer may actually be named something else on your version of Windows; in some case, it's named Windows explorer.
+
+25
+00:02:52.033 --> 00:03:00.066
+Once file Explorer has loaded, expand out "This PC", then go to the C-drive, which is under local disk.
+
+26
+00:03:00.066 --> 00:03:11.766
+Notepad++ is a 32 bit piece of software, which, running in a 64 bit version of Windows, will be under "Program Files (x86)".
+
+27
+00:03:11.766 --> 00:03:21.800
+Expand that out, and we should find Notepad++ here. So click on that folder, and look for the Notepad++ application.
+
+28
+00:03:21.800 --> 00:03:26.833
+Great, we have found the location where Notepad++ is installed.
+
+29
+00:03:26.833 --> 00:03:34.366
+Now, go up to the address bar and click on it. This will give us the file path location where Notepad++ is installed.
+
+30
+00:03:34.366 --> 00:03:40.933
+Copy this location, I'm going to use control+c, or you can right click and select copy.
+
+31
+00:03:40.933 --> 00:03:48.566
+Great, with file explorer still open, I'm going to scroll back up to "This PC", and right click on "This PC".
+
+32
+00:03:48.566 --> 00:03:55.066
+From the popup menu go to "Properties". Once the "System" control pannel window opens,
+
+33
+00:03:55.066 --> 00:04:01.700
+click on "Advanced system settings". The "System Properties" will open onto the "Advanced" tab.
+
+34
+00:04:01.700 --> 00:04:06.200
+Go to the bottom of the advanced tab, and click on "Environment Variables...".
+
+35
+00:04:06.200 --> 00:04:11.666
+We need to modify the path environment variable under "System Variables".
+
+36
+00:04:11.666 --> 00:04:19.066
+So under system variables scroll down until you find the "Path" variable". Select it, and click on "Edit...".
+
+37
+00:04:19.066 --> 00:04:27.533
+In the field for "Variable value:", go to the end of this value. The quick way to do this is to hit the End key.
+
+38
+00:04:27.533 --> 00:04:34.466
+We're going to add another path value at the end of this string. To separate paths, we're going to use a semicolon.
+
+39
+00:04:34.466 --> 00:04:42.133
+After that, paste in the path location of Notepad++ that we copied in the steps before. Control+v.
+
+40
+00:04:42.133 --> 00:04:49.600
+Double check the value, and then click on "OK". Once we return to the "Environment Variables" dialogue click "OK".
+
+41
+00:04:49.600 --> 00:04:56.433
+Back at the system properties Dialogue, click "OK". At this point we can close the "System" window.
+
+42
+00:04:56.433 --> 00:05:02.866
+And it's also safe to close file explorer. Great, now that we've done that, let's test it out.
+
+43
+00:05:02.866 --> 00:05:12.066
+I'm going to return to Git Bash. And, like before, type notepad++, and then press enter. Notepad++ should launch.
+
+44
+00:05:12.066 --> 00:05:18.633
+Now that we're done with that, we can close Notepad++ and Git Bash.
+
+45
+00:05:18.633 --> 00:05:18.666
+Now that we're done with that, we can close Notepad++ and Git Bash.
+

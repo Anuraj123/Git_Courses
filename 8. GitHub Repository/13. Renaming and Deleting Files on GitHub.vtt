@@ -1,0 +1,122 @@
+﻿WEBVTT
+
+1
+00:00:00.000 --> 00:00:03.600
+Welcome, in this video, we're going to rename and then delete
+
+2
+00:00:03.600 --> 00:00:06.466
+files directly on our GitHub repository.
+
+3
+00:00:06.466 --> 00:00:10.866
+I'm currently logged in and in the "website" GitHub repository.
+
+4
+00:00:10.866 --> 00:00:15.366
+I'm on the master branch, and we just created a file under the "css" folder
+
+5
+00:00:15.366 --> 00:00:19.066
+called "demo.txt". Let's go to it now.
+
+6
+00:00:19.066 --> 00:00:23.600
+We currently have a single line of text, so let's click on "Edit this file".
+
+7
+00:00:23.600 --> 00:00:27.600
+When we do that, we have our standard editor that we have available to us,
+
+8
+00:00:27.600 --> 00:00:32.300
+and we have the ability to change the name of this file within this folder.
+
+9
+00:00:32.300 --> 00:00:38.366
+Let's change this to a Markdown file; so I changed it from "demo.txt" to "demo.md".
+
+10
+00:00:38.366 --> 00:00:43.666
+And, while I'm doing it, I will edit the contents of the file to make this a Markdown file format.
+
+11
+00:00:43.666 --> 00:00:47.966
+Let's preview the changes; GitHub already detects that this is a Markdown file,
+
+12
+00:00:47.966 --> 00:00:52.766
+so it's able to render this in the preview. Let's scroll down and commit our changes
+
+13
+00:00:52.766 --> 00:00:57.533
+Like before, I'm just going to commit directly to master. Click on the green "Commit changes".
+
+14
+00:00:57.533 --> 00:01:02.066
+Great; now we have saved our change, making this "demo.md" file.
+
+15
+00:01:02.066 --> 00:01:06.933
+We can see "demo.md" is listed in the directory listing for "css";
+
+16
+00:01:06.933 --> 00:01:12.166
+however, I realize that "demo.md" really doesn't belong in a "css" folder.
+
+17
+00:01:12.166 --> 00:01:17.066
+So, let's take care of that; let's click on the file, and detecting this is a Markdown file
+
+18
+00:01:17.066 --> 00:01:21.000
+GitHub will display this in Markdown when we're viewing it.
+
+19
+00:01:21.000 --> 00:01:25.800
+I might want to just move this file into a new folder; if I go into edit this file,
+
+20
+00:01:25.800 --> 00:01:30.300
+all I have the ability to do is to rename the file in its current folder.
+
+21
+00:01:30.300 --> 00:01:33.700
+So, what I need to do is actually delete this file entirely.
+
+22
+00:01:33.700 --> 00:01:37.600
+So, go over to the trash can icon, which if you hover over it
+
+23
+00:01:37.600 --> 00:01:41.266
+it will say "Delete this file". Click on the trash can.
+
+24
+00:01:41.266 --> 00:01:44.600
+Right now, the deletion is staged, and you can see this by a
+
+25
+00:01:44.600 --> 00:01:47.500
+diff where it's saying we're deleting the content of this file.
+
+26
+00:01:47.500 --> 00:01:52.266
+To finalize this, let's enter in our commit message: "Deleting demo file".
+
+27
+00:01:52.266 --> 00:01:56.000
+This commit is going to go directly on master, and let's commit the changes.
+
+28
+00:01:56.000 --> 00:01:59.333
+When we do that, we refresh into the folder we were in,
+
+29
+00:01:59.333 --> 00:02:04.500
+and GitHub will display a banner telling us that the file has been successfully deleted.
+
+30
+00:02:04.500 --> 00:02:08.200
+I'm going to go ahead and dismiss this banner.
+

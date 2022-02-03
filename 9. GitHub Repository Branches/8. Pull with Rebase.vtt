@@ -1,0 +1,286 @@
+﻿WEBVTT
+
+1
+00:00:00.000 --> 00:00:05.100
+Welcome, in this video, we're going to explore the option of pulling with "rebase".
+
+2
+00:00:05.100 --> 00:00:07.833
+If you remember what rebase actually does,
+
+3
+00:00:07.833 --> 00:00:11.366
+it rewinds the current commits that are on your branch
+
+4
+00:00:11.366 --> 00:00:16.000
+to a point to where the branch you're merging in originally diverged;
+
+5
+00:00:16.000 --> 00:00:19.233
+then playing back the commits that happened on
+
+6
+00:00:19.233 --> 00:00:23.533
+the branch that you're wanting to bring in; and then, after that, playing on top of that
+
+7
+00:00:23.533 --> 00:00:26.966
+any commits that have happened on the branch that you're currently on,
+
+8
+00:00:26.966 --> 00:00:30.233
+thus making any changes that you have include the changes
+
+9
+00:00:30.233 --> 00:00:34.433
+that happened on the remote branch, but with your changes made ahead of them.
+
+10
+00:00:34.433 --> 00:00:36.733
+This is a good strategy when you're working on something,
+
+11
+00:00:36.733 --> 00:00:39.233
+and you want to make sure that your changes are ahead of
+
+12
+00:00:39.233 --> 00:00:41.933
+whatever's going on from the remote side.
+
+13
+00:00:41.933 --> 00:00:46.700
+To start things off, I'm on my local system on the website Git repository;
+
+14
+00:00:46.700 --> 00:00:50.333
+I'm on the master branch, and at this point, everything is up-to-date.
+
+15
+00:00:50.333 --> 00:00:53.533
+If we do a "git pull", we can verify everything is up-to-date.
+
+16
+00:00:53.533 --> 00:00:57.400
+If I flip over to the GitHub side, do a quick reload,
+
+17
+00:00:57.400 --> 00:01:01.000
+I'm currently on master, and I'm going to do some edits on the Readme fie.
+
+18
+00:01:01.000 --> 00:01:04.366
+Click on the file, and then click on edit this file.
+
+19
+00:01:04.366 --> 00:01:08.466
+I'm going to delete these two lines, and then replace them with something else.
+
+20
+00:01:08.466 --> 00:01:11.233
+Once you've made the change, enter a commit message,
+
+21
+00:01:11.233 --> 00:01:15.700
+I'm going to make my commit message obvious, so it's easy to spot when we do our rebase.
+
+22
+00:01:15.700 --> 00:01:19.233
+Once I'm happy with that, click on "Commit changes".
+
+23
+00:01:19.233 --> 00:01:23.400
+Now that I've done that, I'm going to switch over to my local repository.
+
+24
+00:01:23.400 --> 00:01:27.666
+So, I'm back in my terminal, and before I pull in any changes from GitHub,
+
+25
+00:01:27.666 --> 00:01:30.700
+I'm going to make some changes on my local side first.
+
+26
+00:01:30.700 --> 00:01:35.566
+Let's tweak the "index.html" file, and let's just get rid of some of this conditional stuff
+
+27
+00:01:35.566 --> 00:01:39.400
+that supports older version of IE. So I'm just going to delete that,
+
+28
+00:01:39.400 --> 00:01:44.233
+and maybe even tweak the title. Once you're done with the edits, save and then close.
+
+29
+00:01:44.233 --> 00:01:46.966
+Again, I'm going to make my commit message fairly obvious
+
+30
+00:01:46.966 --> 00:01:51.566
+so we can tell what happened after our rebase. If we do a "git fetch"
+
+31
+00:01:51.566 --> 00:01:54.566
+it's going to make this a little easier; you don't have to do the "git fetch",
+
+32
+00:01:54.566 --> 00:01:57.700
+but for illustrations it's going to help. Basically, doing so
+
+33
+00:01:57.700 --> 00:02:01.700
+will update our local Git with whatever changed on the remote side,
+
+34
+00:02:01.700 --> 00:02:05.100
+so that now, when I do a "git status", it tells me that
+
+35
+00:02:05.100 --> 00:02:09.066
+the local branch master has diverged from 'origin/master'.
+
+36
+00:02:09.066 --> 00:02:12.466
+In this case, I could just merge in; I know, in doing so,
+
+37
+00:02:12.466 --> 00:02:16.900
+it's going to create an automatic merge which would result in a merge commit.
+
+38
+00:02:16.900 --> 00:02:19.800
+And that's ok, but what if I want to make sure that
+
+39
+00:02:19.800 --> 00:02:24.433
+whatever I'm currently working on stays ahead of whatever's currently in GitHub.
+
+40
+00:02:24.433 --> 00:02:29.533
+To do that, I can use a rebase; so type "git pull", and then use the option
+
+41
+00:02:29.533 --> 00:02:34.866
+"--rebase" to cause a rebase instead of a merge when it comes in.
+
+42
+00:02:34.866 --> 00:02:39.000
+As the message says, it's first rewinding the local branch,
+
+43
+00:02:39.000 --> 00:02:41.866
+then it brings in our changes from GitHub,
+
+44
+00:02:41.866 --> 00:02:45.566
+and then it applies any commits that we had on the local branch.
+
+45
+00:02:45.566 --> 00:02:50.300
+So, let's check it out; I'm going to use my alias that I created before, "git hist"
+
+46
+00:02:50.300 --> 00:02:54.433
+which is equivalent to "git log" with a whole bunch of neat options.
+
+47
+00:02:54.433 --> 00:02:57.800
+So you can see, without history, that when it did the rebase
+
+48
+00:02:57.800 --> 00:03:03.800
+it brought in the updates from GitHub, it placed them before our changes we had locally.
+
+49
+00:03:03.800 --> 00:03:08.033
+So, you can see the commit starting with "1da8b22"
+
+50
+00:03:08.033 --> 00:03:13.000
+is what 'origin/master' is currently pointing to, which is our last commit from GitHub
+
+51
+00:03:13.000 --> 00:03:19.533
+on 'origin/master' followed by the commit we just made on our local copy on master,
+
+52
+00:03:19.533 --> 00:03:22.700
+which is updating the index file before the rebase.
+
+53
+00:03:22.700 --> 00:03:26.900
+However, that commit did not include any of the updates from GitHub,
+
+54
+00:03:26.900 --> 00:03:31.400
+so that's an interesting distinction. Before, when we had that on master,
+
+55
+00:03:31.400 --> 00:03:35.600
+it only had the changes that we included while we were here locally;
+
+56
+00:03:35.600 --> 00:03:39.866
+it did not include anything that we changed on GitHub during this demo.
+
+57
+00:03:39.866 --> 00:03:43.233
+Let's check it out; let's make sure that the changes
+
+58
+00:03:43.233 --> 00:03:46.500
+from GitHub made it down to our local repository.
+
+59
+00:03:46.500 --> 00:03:51.033
+First, let's do a "git status". We are now just one commit ahead of 'origin/master',
+
+60
+00:03:51.033 --> 00:03:54.200
+and that's just the commit that includes the local changes
+
+61
+00:03:54.200 --> 00:03:57.866
+that haven't been pushed back up to GitHub. Let's check out the Readme file;
+
+62
+00:03:57.866 --> 00:04:01.533
+we invoked our editor from the command line on our local system,
+
+63
+00:04:01.533 --> 00:04:05.900
+and it shows us the changes that we made to this file while on GitHub.
+
+64
+00:04:05.900 --> 00:04:09.966
+So, that means that we know that those changes made it to our local repository.
+
+65
+00:04:09.966 --> 00:04:12.533
+Alright, now that we're done, let's clean up by pushing up
+
+66
+00:04:12.533 --> 00:04:15.700
+any changes we have back to GitHub: "git push".
+
+67
+00:04:15.700 --> 00:04:20.200
+And since what we have locally already includes what was already on GitHub,
+
+68
+00:04:20.200 --> 00:04:23.933
+all that's being pushed are the changes that we've made locally.
+
+69
+00:04:23.933 --> 00:04:26.400
+Let's click on the name of the repository.
+
+70
+00:04:26.400 --> 00:04:29.700
+That brings us back to the main page and on the master branch;
+
+71
+00:04:29.700 --> 00:04:36.400
+and, we see that we have "Updating index.html locally before rebase".
+

@@ -1,0 +1,206 @@
+﻿WEBVTT
+
+1
+00:00:00.000 --> 00:00:04.933
+Welcome, in this video, we're going to push up our tags to GitHub.
+
+2
+00:00:04.933 --> 00:00:09.333
+I'm currently in my terminal application on my local system, and I'm within the
+
+3
+00:00:09.333 --> 00:00:14.100
+website Git repository on the develop branch in a clean working directory.
+
+4
+00:00:14.100 --> 00:00:17.900
+In a previous video, we set up a couple of lightweight tags
+
+5
+00:00:17.900 --> 00:00:21.566
+and three annotated tags on our local Git repository.
+
+6
+00:00:21.566 --> 00:00:25.566
+If I flip over to GitHub, in this case I'm logged into my GitHub account
+
+7
+00:00:25.566 --> 00:00:31.366
+and I'm on the corresponding website GitHub repository. I'm also on the develop branch,
+
+8
+00:00:31.366 --> 00:00:35.300
+and there currently are no tags associated with this repository.
+
+9
+00:00:35.300 --> 00:00:38.500
+I can tell that, because if I go to the releases tab,
+
+10
+00:00:38.500 --> 00:00:42.166
+I see there are zero and this icon shows tags.
+
+11
+00:00:42.166 --> 00:00:47.233
+In GitHub, releases and tags are nearly synonymous. If I click on "releases",
+
+12
+00:00:47.233 --> 00:00:53.666
+it defaults to the releases tab and I don't have any releases. If I flip over to the "Tags" tab,
+
+13
+00:00:53.666 --> 00:00:57.366
+it also tells me there are no tag here, but it calls them releases.
+
+14
+00:00:57.366 --> 00:01:01.133
+There is a minor distinction between the two, and we'll get into that later.
+
+15
+00:01:01.133 --> 00:01:03.533
+For now, let's return back to the terminal.
+
+16
+00:01:03.533 --> 00:01:07.333
+Before we work with our remote repository, let's make sure we've received
+
+17
+00:01:07.333 --> 00:01:11.500
+all the updates from GitHub before moving forward: "git pull".
+
+18
+00:01:11.500 --> 00:01:14.800
+Great, everything’s up-to-date, so now we can keep going.
+
+19
+00:01:14.800 --> 00:01:17.200
+Now, to send all our commits that we currently have
+
+20
+00:01:17.200 --> 00:01:21.233
+on our local repository back up to GitHub, type "git push".
+
+21
+00:01:21.233 --> 00:01:25.466
+Great, in this case, everything's up-to-date; that means that all the commits
+
+22
+00:01:25.466 --> 00:01:29.533
+on our local side are also reflected on the remote side.
+
+23
+00:01:29.533 --> 00:01:33.500
+What you'll notice is that, by default, tags are not sent to GitHub
+
+24
+00:01:33.500 --> 00:01:37.900
+using the standard "git push" command. Since we just issued the "git push" command,
+
+25
+00:01:37.900 --> 00:01:41.566
+we can go back over to GitHub, on the tags page, and refresh.
+
+26
+00:01:41.566 --> 00:01:44.866
+We still don't have any tags here. Return to your terminal,
+
+27
+00:01:44.866 --> 00:01:50.166
+and now we need to use the "git push" command, specifying the tags we want to push.
+
+28
+00:01:50.166 --> 00:01:57.233
+Type "git push origin", which is what points to GitHub; space; and then the tag name.
+
+29
+00:01:57.233 --> 00:02:00.133
+Once you press enter, GitHub will push the tag,
+
+30
+00:02:00.133 --> 00:02:03.133
+and you'll know that because GitHub will confirm
+
+31
+00:02:03.133 --> 00:02:08.066
+with a response saying that it pushed a new tag, "stable", up to "stable".
+
+32
+00:02:08.066 --> 00:02:12.333
+Let's go see this on GitHub. Once on GitHub, and on the tags page,
+
+33
+00:02:12.333 --> 00:02:16.833
+just refresh your browser. Now we have a new tag named stable on GitHub,
+
+34
+00:02:16.833 --> 00:02:20.433
+and we see the commit id that it is associated with.
+
+35
+00:02:20.433 --> 00:02:23.700
+We also have a couple of options for downloading the source code
+
+36
+00:02:23.700 --> 00:02:27.533
+associated with this Git repository at this point in time;
+
+37
+00:02:27.533 --> 00:02:30.500
+we have a zip file, and we have a tarball.
+
+38
+00:02:30.500 --> 00:02:34.566
+Now, let's return back to our terminal, and we just sent one tag to GitHub.
+
+39
+00:02:34.566 --> 00:02:37.600
+And, we could keep doing that with all our other tags;
+
+40
+00:02:37.600 --> 00:02:42.133
+however, we have several tags and I really want all of them up on GitHub.
+
+41
+00:02:42.133 --> 00:02:47.233
+To push up all tags to GitHub, I can specify the "--tags" option.
+
+42
+00:02:47.233 --> 00:02:51.533
+Type "git push --tags", now press enter.
+
+43
+00:02:51.533 --> 00:02:53.833
+Git will push the rest of our tags that we have
+
+44
+00:02:53.833 --> 00:02:57.833
+in our local repository up to GitHub. Let's check it out on GitHub.
+
+45
+00:02:57.833 --> 00:03:01.400
+Return to the tags page on GitHub, and then refresh your browser.
+
+46
+00:03:01.400 --> 00:03:05.266
+Now we see all five tags that are listed on the tags page.
+
+47
+00:03:05.266 --> 00:03:10.033
+On the tags page, you'll also notice that there's a "..." next to each of the tags.
+
+48
+00:03:10.033 --> 00:03:13.666
+For the lightweight tags, if you expand out the "...",
+
+49
+00:03:13.666 --> 00:03:17.800
+the message here will be the commit message associated with the commit id.
+
+50
+00:03:17.800 --> 00:03:21.300
+For annotated tags, when you expand out the "...",
+
+51
+00:03:21.300 --> 00:03:27.100
+you'll have the specific tag message associated with that tag.
+

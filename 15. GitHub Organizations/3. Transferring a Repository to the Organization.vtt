@@ -1,0 +1,138 @@
+﻿WEBVTT
+
+1
+00:00:00.000 --> 00:00:03.833
+Welcome, in this video, we're going to move an existing repository
+
+2
+00:00:03.833 --> 00:00:08.300
+from my personal space into the new organization we just created.
+
+3
+00:00:08.300 --> 00:00:13.466
+I'm currently logged into GitHub and, although I'm logged in as my individual user,
+
+4
+00:00:13.466 --> 00:00:17.300
+I'm on the "my-organization-example" profile page.
+
+5
+00:00:17.300 --> 00:00:21.800
+At the moment, we don't have any repositories, and while I could create a new one here,
+
+6
+00:00:21.800 --> 00:00:25.900
+what I want to do is actually transfer an existing repository
+
+7
+00:00:25.900 --> 00:00:30.533
+into my organization and then fork it back to my individual user.
+
+8
+00:00:30.533 --> 00:00:35.833
+To get stated, I'm going to return to the newsfeed page by clicking on the octocat icon.
+
+9
+00:00:35.833 --> 00:00:38.566
+Since I'm currently logged into the organization,
+
+10
+00:00:38.566 --> 00:00:41.666
+I need to switch to my individual user account.
+
+11
+00:00:41.666 --> 00:00:45.400
+Once there, select the repository that we wish to transfer.
+
+12
+00:00:45.400 --> 00:00:48.500
+I'm going to pick on the repository named "website".
+
+13
+00:00:48.500 --> 00:00:53.666
+Right now, this website repository is associated with my user account.
+
+14
+00:00:53.666 --> 00:00:58.100
+In order to transfer this to somewhere else, I need to go down to settings,
+
+15
+00:00:58.100 --> 00:01:01.933
+and on the main settings page, I'm going to scroll all the way down
+
+16
+00:01:01.933 --> 00:01:04.633
+until you find the "Danger Zone" area.
+
+17
+00:01:04.633 --> 00:01:09.033
+One of the items will be transfer ownership. Click on "Transfer".
+
+18
+00:01:09.033 --> 00:01:12.066
+Type the name of the repository that we're going to be transferring,
+
+19
+00:01:12.066 --> 00:01:15.900
+and GitHub really does this to ensure that we really mean
+
+20
+00:01:15.900 --> 00:01:19.866
+to transfer the repository, since it has some downstream effects.
+
+21
+00:01:19.866 --> 00:01:23.866
+I'm going to type the name website, and then the new owners GitHub name
+
+22
+00:01:23.866 --> 00:01:28.333
+or organization name: "my-organization-example".
+
+23
+00:01:28.333 --> 00:01:33.266
+Now, click on the button that says "I understand, transfer this repository".
+
+24
+00:01:33.266 --> 00:01:37.466
+As a confirmation, GitHub will prompt you for your user's password;
+
+25
+00:01:37.466 --> 00:01:40.833
+supply your password and click "Confirm password".
+
+26
+00:01:40.833 --> 00:01:44.266
+Once you've done that, you should receive a banner message at the top
+
+27
+00:01:44.266 --> 00:01:47.366
+saying that you have successfully moved your repository
+
+28
+00:01:47.366 --> 00:01:49.866
+to the organization that you provided.
+
+29
+00:01:49.866 --> 00:01:54.233
+In my case, it specifics "my-organization-example".
+
+30
+00:01:54.233 --> 00:01:56.533
+It also warns me this may take a few minutes,
+
+31
+00:01:56.533 --> 00:02:01.800
+although in all actuality this shouldn't take too terribly long. We can x out of that notice,
+
+32
+00:02:01.800 --> 00:02:06.500
+and then switch over to the "my-organization-example" organization.
+
+33
+00:02:06.500 --> 00:02:11.766
+Back on the my organization's newsfeed page, we see that we now have
+
+34
+00:02:11.766 --> 00:02:17.666
+the "website" repository associated with this organization.
+

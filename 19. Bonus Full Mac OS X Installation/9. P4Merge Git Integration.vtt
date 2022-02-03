@@ -1,0 +1,111 @@
+﻿WEBVTT
+
+1
+00:00:00.000 --> 00:00:05.166
+Welcome, in this video, we're going to configure P4Merge to integrate with Git.
+
+2
+00:00:05.166 --> 00:00:14.833
+Let's fire up our terminal. The first thing we need to do before we configure Git to work with P4Merge, is to locate the specific P4Merge executable.
+
+3
+00:00:14.833 --> 00:00:23.133
+It's going to be under "/Applications/p4merge.app/Contents/MacOS/".
+
+4
+00:00:23.133 --> 00:00:30.500
+Underneath that directory, we have a single p4merge application. If we type "/p4merege"
+
+5
+00:00:30.500 --> 00:00:38.900
+then press enter, it will launch P4Merge. Great, we know we have the right executable. Let's do a pwd at this point.
+
+6
+00:00:38.900 --> 00:00:45.166
+pwd just tells us our present working directory, which gives us our full path to our current location.
+
+7
+00:00:45.166 --> 00:00:50.866
+I'm just going to cd back to our user's home directory. The first set of configurations I'm going to do
+
+8
+00:00:50.866 --> 00:00:58.833
+will be to set up P4Merge as our diff tool. Type git, space, config, space, --global, space,
+
+9
+00:00:58.833 --> 00:01:07.366
+diff.tool, space, p4merge. Next, we need to specify the P4Merge path.
+
+10
+00:01:07.366 --> 00:01:18.200
+Type git, space, config, space, --global, space, diftool (as one word), ".p4merge.path",
+
+11
+00:01:18.200 --> 00:01:33.000
+space, and then the path to the executable to P4Merge, in this case "/Applications/p4merge.app/Contents/MacOS/p4merge".
+
+12
+00:01:33.000 --> 00:01:39.566
+Double check that line, and then press enter. Finally for our diftool, I like disabling the prompt.
+
+13
+00:01:39.566 --> 00:01:47.866
+This will make it so each time we launch P4Merge as our diftool, we won't be constantly prompted each and every time.
+
+14
+00:01:47.866 --> 00:01:57.566
+Type, git, space, config, space, --global, space, diftool.prompt, space, then the value "false".
+
+15
+00:01:57.566 --> 00:02:05.300
+Double check that line, and then press enter. Great now let's do the same thing for the merge tool configuration with Git.
+
+16
+00:02:05.300 --> 00:02:10.466
+Let's set up our initial P4Merge configuration for the merge tool:
+
+17
+00:02:10.466 --> 00:02:19.833
+type, git, space, config, space, --global, space, merge.tool, space, p4merge.
+
+18
+00:02:19.833 --> 00:02:27.100
+Double check the line, and then press enter. Next we need to configure the merge tool path for P4Merge.
+
+19
+00:02:27.100 --> 00:02:36.800
+Type git, space, config, space, --global, space, mergetool.p4merge.path,
+
+20
+00:02:36.800 --> 00:02:53.366
+space, and then the path to the p4merge executable, in this case "/Applications/p4merge.app/Contents/MacOS/p4merge". Then press enter.
+
+21
+00:02:53.366 --> 00:03:00.100
+Like before with diftool, I like to set mergetool to prompt being false. To do so,
+
+22
+00:03:00.100 --> 00:03:12.633
+type git, space, config, space, --global, space mergetool.prompt, space, and then the value false. Double check the line, and then press enter.
+
+23
+00:03:12.633 --> 00:03:21.166
+Great! List out our global configuration. Git, space, config, space, --global, space, --list.
+
+24
+00:03:21.166 --> 00:03:30.766
+This lists out our configuration as of now, which includes the last several lines, which are the diftool and the mergetool configurations.
+
+25
+00:03:30.766 --> 00:03:39.566
+Optionally, we can also specify -e instead of --list to load the .gitconfig file in our default editor.
+
+26
+00:03:39.566 --> 00:03:52.366
+This is the contents of our .gitconfig file within our user's home directory.
+At this point most of this configuration file is dedicated to our difftool and our mergetool configuration.
+
+27
+00:03:52.366 --> 00:04:02.200
+Once finished with reviewing the configuration file, quit out of text mate using command+q, and now let's exit out of the terminal. "exit".
+

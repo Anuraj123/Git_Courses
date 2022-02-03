@@ -1,0 +1,186 @@
+﻿WEBVTT
+
+1
+00:00:00.000 --> 00:00:05.200
+Welcome, in this video, we're going to create a new release and tag directly on GitHub.
+
+2
+00:00:05.200 --> 00:00:10.666
+I'm currently logged into GitHub and on the website GitHub repository within releases.
+
+3
+00:00:10.666 --> 00:00:14.500
+At this point, we have deleted all of our annotated tags
+
+4
+00:00:14.500 --> 00:00:19.100
+and we are left with our two lightweight tags: "stable" and "unstable".
+
+5
+00:00:19.100 --> 00:00:22.666
+If I go over to tags, I can see the same two tags listed.
+
+6
+00:00:22.666 --> 00:00:26.500
+What's interesting is, if I want to create a new tag on GitHub
+
+7
+00:00:26.500 --> 00:00:32.333
+I can't directly do it from the tags tab; instead it's folded in with releases.
+
+8
+00:00:32.333 --> 00:00:37.766
+Click on "Releases"; now, let's create a new tag and release at the same time.
+
+9
+00:00:37.766 --> 00:00:40.300
+Click on the button "Draft a new release".
+
+10
+00:00:40.300 --> 00:00:44.866
+This takes us to the release notes form, but we have some extra options now.
+
+11
+00:00:44.866 --> 00:00:50.833
+First we can actually create our tag name, in this case, I'm going to use "v1.0".
+
+12
+00:00:50.833 --> 00:00:55.600
+And, with a new tag name, I need to associate it some place in GitHub.
+
+13
+00:00:55.600 --> 00:00:58.533
+With the targets dropdown, expand it out;
+
+14
+00:00:58.533 --> 00:01:03.066
+I have two branches I can use, or I can use a list of commits.
+
+15
+00:01:03.066 --> 00:01:07.500
+I want my "v1.0" tag to be associated with the master branch.
+
+16
+00:01:07.500 --> 00:01:11.266
+Go back over to the branches tab, and then select "master".
+
+17
+00:01:11.266 --> 00:01:14.666
+Now, proceed to fill out the release notes like before.
+
+18
+00:01:14.666 --> 00:01:18.966
+I'm going to use "Release 1.0" as the header for this release.
+
+19
+00:01:18.966 --> 00:01:25.366
+Alright, so I'm going to use some markdown syntax, and I'm going to preview it
+
+20
+00:01:25.366 --> 00:01:29.866
+before I submit; so I have my heading and my bold for "master".
+
+21
+00:01:29.866 --> 00:01:35.300
+Once I'm content with this, I'm going to leave the "This is a pre-release" option unchecked,
+
+22
+00:01:35.300 --> 00:01:40.633
+since I want this to be a production ready type tag. Then click "Publish release".
+
+23
+00:01:40.633 --> 00:01:45.900
+GitHub will then create both the tag and the release notes under witch it's based on,
+
+24
+00:01:45.900 --> 00:01:50.066
+and then it takes us to the "Release 1.0" tag's page.
+
+25
+00:01:50.066 --> 00:01:54.500
+If we go back to releases, we can see that we have our other tags listed,
+
+26
+00:01:54.500 --> 00:01:59.033
+and we also have "Release 1.0" listed with the release notes.
+
+27
+00:01:59.033 --> 00:02:03.633
+And, this time, we have a nice green label that says "Latest release",
+
+28
+00:02:03.633 --> 00:02:07.733
+which is different than the other release we had, which was "pre-release".
+
+29
+00:02:07.733 --> 00:02:12.400
+If we switch over to tags, we have our "v1.0" tag.
+
+30
+00:02:12.400 --> 00:02:17.066
+Let's go back over to our local repository; I'm currently on the "develop" branch,
+
+31
+00:02:17.066 --> 00:02:20.566
+within our "website" Git repository on our local system.
+
+32
+00:02:20.566 --> 00:02:23.300
+And, since I know this tag is going to be associated with master,
+
+33
+00:02:23.300 --> 00:02:27.633
+lets' go ahead and switch back to master: "git checkout master".
+
+34
+00:02:27.633 --> 00:02:31.466
+If I list the tags that are currently available in our Git repository,
+
+35
+00:02:31.466 --> 00:02:34.366
+we have "stable", "unstable", and our "v0.3-beta".
+
+36
+00:02:34.366 --> 00:02:38.600
+Like I've demonstrated before, just because we delete the tag in GitHub,
+
+37
+00:02:38.600 --> 00:02:41.066
+doesn't mean we've deleted the tag locally.
+
+38
+00:02:41.066 --> 00:02:45.300
+In this case, I'd like to keep this tag locally for future reference.
+
+39
+00:02:45.300 --> 00:02:48.666
+In order to get all the updates from GitHub type "git pull".
+
+40
+00:02:48.666 --> 00:02:53.400
+Doing the "git pull", it sees our new tag out on GitHub and brings it down.
+
+41
+00:02:53.400 --> 00:02:57.933
+Now, if I type "git tag", it shows our "v1.0" tag.
+
+42
+00:02:57.933 --> 00:03:02.566
+Let's inspect our tag locally: "git show v1.0".
+
+43
+00:03:02.566 --> 00:03:08.100
+And I can tell by the output of the "show" command; since there's no tag specific information
+
+44
+00:03:08.100 --> 00:03:11.733
+when we show that tag, that means this is a lightweight tag,
+
+45
+00:03:11.733 --> 00:03:14.733
+which means that GitHub will create lightweight tags
+
+46
+00:03:14.733 --> 00:03:19.300
+when you create them using the GitHub interface.
+

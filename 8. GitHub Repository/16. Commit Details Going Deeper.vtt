@@ -1,0 +1,210 @@
+﻿WEBVTT
+
+1
+00:00:00.000 --> 00:00:03.566
+Welcome, in this video, we're going to look at the particular details
+
+2
+00:00:03.566 --> 00:00:07.466
+of a specific commit within GitHub. I'm currently logged into GitHub,
+
+3
+00:00:07.466 --> 00:00:13.133
+and I'm on the website GitHub repository; in particular I'm in the commit history.
+
+4
+00:00:13.133 --> 00:00:15.866
+If you don't know how to get there, on the main page of the
+
+5
+00:00:15.866 --> 00:00:18.900
+GitHub repository click on the "commits" tab.
+
+6
+00:00:18.900 --> 00:00:22.866
+I'm going to go down and find a commit that I wish to find more information about.
+
+7
+00:00:22.866 --> 00:00:26.933
+This looks interesting. I can either click on the commit message itself,
+
+8
+00:00:26.933 --> 00:00:31.933
+or I can click on the button that contains the abbreviated SHA-1 commit id.
+
+9
+00:00:31.933 --> 00:00:34.666
+Let's use that approach first. Clicking on that button
+
+10
+00:00:34.666 --> 00:00:39.966
+brings us to this specific commit page, which tells us exactly what happened.
+
+11
+00:00:39.966 --> 00:00:45.166
+It tells us that this commit was done on Master; and this is the full commit id;
+
+12
+00:00:45.166 --> 00:00:48.700
+and that it had a single parent, which was the commit prior to it.
+
+13
+00:00:48.700 --> 00:00:53.033
+I could go directly to that commit id if I wanted to; let's scroll down.
+
+14
+00:00:53.033 --> 00:00:56.633
+GitHub tells me there was one file changed with this commit,
+
+15
+00:00:56.633 --> 00:00:59.433
+which had "5 additions and 0 deletions."
+
+16
+00:00:59.433 --> 00:01:03.233
+If there was anything to compare against besides new file content,
+
+17
+00:01:03.233 --> 00:01:06.633
+I could go over to the split view. Let's go back to unified.
+
+18
+00:01:06.633 --> 00:01:11.766
+Within the unified view, I have the ability to add comments in-line
+
+19
+00:01:11.766 --> 00:01:14.366
+to the changes that are associated with this commit.
+
+20
+00:01:14.366 --> 00:01:17.500
+I can hover over the beginning of the line,
+
+21
+00:01:17.500 --> 00:01:23.233
+between the line number and the actual line content itself; that displays a plus mark.
+
+22
+00:01:23.233 --> 00:01:27.466
+Click on the plus mark, and it provides us an opportunity to leave a comment.
+
+23
+00:01:27.466 --> 00:01:30.866
+I'm allowed to leave Markdown formatted comments;
+
+24
+00:01:30.866 --> 00:01:33.766
+if I go to preview, you can see what the preview would be.
+
+25
+00:01:33.766 --> 00:01:39.000
+Once you're happy with the comment for that particular line, click on "Comment",
+
+26
+00:01:39.000 --> 00:01:44.566
+and it shows that particular comment in-line, along with whoever left that particular comment.
+
+27
+00:01:44.566 --> 00:01:48.733
+I have the ability to edit this comment, or delete the comment entirely.
+
+28
+00:01:48.733 --> 00:01:51.533
+Let's edit the comment. I'm going to copy this for later.
+
+29
+00:01:51.533 --> 00:01:53.866
+I'm going to add emphasis to the word better.
+
+30
+00:01:53.866 --> 00:01:56.566
+Once you've done that, click on "Update comment".
+
+31
+00:01:56.566 --> 00:01:59.633
+Now, we see the emphasis on the word better.
+
+32
+00:01:59.633 --> 00:02:05.300
+At some point, I can say "Well, maybe this comment wasn't appropriate for this particular area."
+
+33
+00:02:05.300 --> 00:02:07.400
+I can click on this to delete the message.
+
+34
+00:02:07.400 --> 00:02:11.566
+GitHub is going to prompt me to make sure I really want to do this; click on OK.
+
+35
+00:02:11.566 --> 00:02:15.766
+Now the comment has disappeared. If I wanted to, I could leave a comment
+
+36
+00:02:15.766 --> 00:02:20.100
+that pertains to the entire change, as opposed to a specific line.
+
+37
+00:02:20.100 --> 00:02:22.466
+So, we're going to paste in what I copied before.
+
+38
+00:02:22.466 --> 00:02:26.333
+Again, the preview shows the Markdown version of this file.
+
+39
+00:02:26.333 --> 00:02:29.600
+Now, I'm going to comment on the commit as a whole.
+
+40
+00:02:29.600 --> 00:02:33.433
+You could use this mechanism to have discussions about various changes,
+
+41
+00:02:33.433 --> 00:02:35.866
+or do even a code review. Great.
+
+42
+00:02:35.866 --> 00:02:38.900
+If I needed to, I could click on the button for "View";
+
+43
+00:02:38.900 --> 00:02:43.633
+this will view this entire file at this particular point in history.
+
+44
+00:02:43.633 --> 00:02:48.000
+And we know that because this dropdown changed from master branch
+
+45
+00:02:48.000 --> 00:02:51.033
+to tree colon the commit id that we're on.
+
+46
+00:02:51.033 --> 00:02:55.666
+I always have the option to go to the current version of this file on master
+
+47
+00:02:55.666 --> 00:02:58.733
+by just clicking on the branch. Let's go back to history.
+
+48
+00:02:58.733 --> 00:03:03.266
+While we're on this file, we see the history as it pertains to just this file.
+
+49
+00:03:03.266 --> 00:03:06.000
+While we're on this file, it actually updates the badge
+
+50
+00:03:06.000 --> 00:03:09.300
+to show that we have a single comment pertaining to this commit.
+
+51
+00:03:09.300 --> 00:03:11.733
+I'm going to click on the name of the repository,
+
+52
+00:03:11.733 --> 00:03:17.166
+and then click on commits to get back to the commit history.
+

@@ -1,0 +1,58 @@
+﻿WEBVTT
+
+1
+00:00:00.000 --> 00:00:03.666
+Welcome, in this video, we're going to be poking around the commits
+
+2
+00:00:03.666 --> 00:00:07.233
+and looking at our history for our GitHub repository.
+
+3
+00:00:07.233 --> 00:00:12.066
+I'm currently logged into GitHub, and I'm on the "website" GitHub repository.
+
+4
+00:00:12.066 --> 00:00:17.433
+We've made several changes to our repository, which has resulted in "11 commits".
+
+5
+00:00:17.433 --> 00:00:21.566
+If I click on the commits tab, it brings up our commit history.
+
+6
+00:00:21.566 --> 00:00:24.833
+So, if we scroll back, you can see that they're grouped by date.
+
+7
+00:00:24.833 --> 00:00:27.966
+So, the current date of the recording is August 22nd,
+
+8
+00:00:27.966 --> 00:00:29.900
+so these commits are grouped together.
+
+9
+00:00:29.900 --> 00:00:33.600
+There were commits yesterday, which is as far as it goes back.
+
+10
+00:00:33.600 --> 00:00:39.633
+On this listing of commits, I have access to the SHA-1 id of the commit itself,
+
+11
+00:00:39.633 --> 00:00:43.033
+which I can copy to the clipboard if I need it for something later;
+
+12
+00:00:43.033 --> 00:00:46.666
+an option to go to the details for this specific commit,
+
+13
+00:00:46.666 --> 00:00:50.433
+again, this is the abbreviated SHA-1 for this commit id;
+
+14
+00:00:50.433 --> 00:00:58.333
+and, I have the option to browse the repository as of this point in the commit history.
+

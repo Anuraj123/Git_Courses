@@ -1,0 +1,142 @@
+﻿WEBVTT
+
+1
+00:00:00.000 --> 00:00:02.533
+Great, now that we have our tags up on GitHub,
+
+2
+00:00:02.533 --> 00:00:06.300
+let's get more familiar with the way that tags are displayed on GitHub.
+
+3
+00:00:06.300 --> 00:00:08.933
+As I mentioned before, on this listing of tags,
+
+4
+00:00:08.933 --> 00:00:12.300
+we have both annotated and lightweight tags listed.
+
+5
+00:00:12.300 --> 00:00:17.033
+For the lightweight tags, we just have the commit message associated with that tag.
+
+6
+00:00:17.033 --> 00:00:20.800
+And, for annotated tags, we have the corresponding tag message.
+
+7
+00:00:20.800 --> 00:00:24.033
+We also have the commit id that they're associated with,
+
+8
+00:00:24.033 --> 00:00:27.666
+along with a zip file or tarball of the source code
+
+9
+00:00:27.666 --> 00:00:33.266
+from that version of our repository at that point in time. We also have a reverse timeline,
+
+10
+00:00:33.266 --> 00:00:36.500
+starting with the most recent and working our way backwards.
+
+11
+00:00:36.500 --> 00:00:40.600
+If you click on the tag name within GitHub, it takes you to a specific
+
+12
+00:00:40.600 --> 00:00:45.700
+page about that tag; in this case it shows that I tagged it 17 minutes ago,
+
+13
+00:00:45.700 --> 00:00:49.333
+and that develop has had 14 commits since this tag.
+
+14
+00:00:49.333 --> 00:00:52.566
+It also shows me the message for the tag, and the downloads,
+
+15
+00:00:52.566 --> 00:00:55.033
+which are the corresponding zip and tarball.
+
+16
+00:00:55.033 --> 00:00:58.800
+If I click on "14 commits", it takes me to a diff
+
+17
+00:00:58.800 --> 00:01:03.266
+comparing the tag that I clicked on and the develop branch.
+
+18
+00:01:03.266 --> 00:01:06.366
+And, if I want, I can click on the specific commit id,
+
+19
+00:01:06.366 --> 00:01:10.900
+which takes me to a page that has information specifically about this commit.
+
+20
+00:01:10.900 --> 00:01:15.100
+And, on this commit page, you can see that we have our tag associated
+
+21
+00:01:15.100 --> 00:01:19.500
+with this commit, as well as being on the develop branch.
+
+22
+00:01:19.500 --> 00:01:22.900
+I'm going to click on tags to get back to our listing of tags.
+
+23
+00:01:22.900 --> 00:01:27.966
+Click on the name of the repository, and that will return us to the main page for this repository.
+
+24
+00:01:27.966 --> 00:01:32.566
+One thing I like to point out is that our branch dropdown, if we click it to expand,
+
+25
+00:01:32.566 --> 00:01:36.000
+we now have the option between branches and tags.
+
+26
+00:01:36.000 --> 00:01:39.266
+If I click on the tab for tags, I see a listing
+
+27
+00:01:39.266 --> 00:01:43.200
+of all our tags that we have associated with this GitHub repository.
+
+28
+00:01:43.200 --> 00:01:47.366
+I also have the option to find a tag if I had a really long list.
+
+29
+00:01:47.366 --> 00:01:52.000
+To see this repository as of a specific tag, just select a tag.
+
+30
+00:01:52.000 --> 00:01:56.166
+For example, I will select "v0.2-alpha".
+
+31
+00:01:56.166 --> 00:02:00.333
+Now, we are viewing this repository as of that particular tag.
+
+32
+00:02:00.333 --> 00:02:04.733
+At any point, I could switch to another tag, or to one of the branches.
+
+33
+00:02:04.733 --> 00:02:07.200
+I'm going to return back to that tag.
+
+34
+00:02:07.200 --> 00:02:12.133
+As I click around, I'm still viewing this repository as of this tag.
+
+35
+00:02:12.133 --> 00:02:18.000
+At any point, I could change the tag or the branch.
+

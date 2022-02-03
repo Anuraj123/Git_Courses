@@ -1,0 +1,26 @@
+﻿WEBVTT
+
+1
+00:00:00.000 --> 00:00:03.900
+In this section, we will look at the built in issue tracking system
+
+2
+00:00:03.900 --> 00:00:09.133
+provided by GitHub called GitHub issues. While the system is fairly basic,
+
+3
+00:00:09.133 --> 00:00:13.966
+it is built in and it's functionality is adequate for most projects.
+
+4
+00:00:13.966 --> 00:00:17.366
+We will start off by creating some labels to use with issues,
+
+5
+00:00:17.366 --> 00:00:21.133
+then we will use issues within the GitHub issues interface,
+
+6
+00:00:21.133 --> 00:00:27.566
+and then we will associate issues from our commits within our repository.
+

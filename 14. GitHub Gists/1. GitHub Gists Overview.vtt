@@ -1,0 +1,38 @@
+﻿WEBVTT
+
+1
+00:00:00.000 --> 00:00:05.400
+In this section, we will look at an often overlooked feature of GitHub: Gists.
+
+2
+00:00:05.400 --> 00:00:12.066
+Gists are a simple way to share code, either entire files or just part of a file.
+
+3
+00:00:12.066 --> 00:00:16.200
+I like to think of Gists as a "micro" Git repository.
+
+4
+00:00:16.200 --> 00:00:19.633
+We can even clone a Gist to work on it locally.
+
+5
+00:00:19.633 --> 00:00:22.433
+We will cover all the basic aspects of Gists,
+
+6
+00:00:22.433 --> 00:00:25.833
+including creating, modifying, sharing, and deleting them.
+
+7
+00:00:25.833 --> 00:00:28.500
+While other services do the same thing,
+
+8
+00:00:28.500 --> 00:00:31.733
+I like the fact that this feature is just included with GtHub
+
+9
+00:00:31.733 --> 00:00:37.733
+and it acts like a Git repository, including local access.
+

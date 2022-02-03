@@ -1,0 +1,78 @@
+﻿WEBVTT
+
+1
+00:00:00.000 --> 00:00:03.066
+Welcome, in this video, I'm going to create another file,
+
+2
+00:00:03.066 --> 00:00:05.633
+but this time directly on the master branch.
+
+3
+00:00:05.633 --> 00:00:10.133
+In a previous video, I created a new file, but I chose to go on a different path;
+
+4
+00:00:10.133 --> 00:00:13.766
+that is, I decided to create a feature branch directly in the
+
+5
+00:00:13.766 --> 00:00:17.900
+create the new file interface, and then walk through the pull request mechanism
+
+6
+00:00:17.900 --> 00:00:20.533
+in order to integrate those changes back into master.
+
+7
+00:00:20.533 --> 00:00:24.166
+However, this time I want to demonstrate the fact that you don't have to do that;
+
+8
+00:00:24.166 --> 00:00:27.633
+that's a new feature that was recently added to the GitHub interface,
+
+9
+00:00:27.633 --> 00:00:31.133
+but you can still go through the process of directly adding a file
+
+10
+00:00:31.133 --> 00:00:33.066
+on the branch you happen to be on.
+
+11
+00:00:33.066 --> 00:00:38.133
+Right now, since I deleted my feature branch, I only have the master branch.
+
+12
+00:00:38.133 --> 00:00:42.066
+And, just to show you that I can, I'm going to click into the "css" folder
+
+13
+00:00:42.066 --> 00:00:44.766
+and create a new file at this location.
+
+14
+00:00:44.766 --> 00:00:48.833
+I'm going to call this "demo.txt"; "This is a test" for the content.
+
+15
+00:00:48.833 --> 00:00:51.933
+The commit message is going to be "Create new demo file".
+
+16
+00:00:51.933 --> 00:00:54.266
+Since this is optional, I'm going to leave it blank.
+
+17
+00:00:54.266 --> 00:00:59.833
+And, this time, I will leave it on commit directly to master branch. Then click "Commit new file".
+
+18
+00:00:59.833 --> 00:01:03.266
+This process is a little bit more streamlined than the other process.
+
+19
+00:01:03.266 --> 00:01:10.166
+But, I wanted to show you both ways of doing it since you may prefer one over the other.
+

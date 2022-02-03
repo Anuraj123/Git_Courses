@@ -1,0 +1,82 @@
+﻿WEBVTT
+
+1
+00:00:00.000 --> 00:00:07.300
+Welcome, in this video, we're going to provide Git with the bare minimum configuration required to do meaningful work.
+
+2
+00:00:07.300 --> 00:00:12.166
+When you first get started, you can do a handful of commands without configuring Git.
+
+3
+00:00:12.166 --> 00:00:17.033
+However, before you can make any commits, you need to tell Git about yourself.
+
+4
+00:00:17.033 --> 00:00:21.733
+I'm currently in my terminal application, and in my user's home directory.
+
+5
+00:00:21.733 --> 00:00:29.933
+If I list all files here, there is a specific configuration file that Git uses to load it's configuration at the user level,
+
+6
+00:00:29.933 --> 00:00:35.666
+which is the ".gitconfig" file. We can also ask Git to list its global configuration.
+
+7
+00:00:35.666 --> 00:00:42.900
+“git”, space, “config”, space, “-- global -- list”. Then press enter.
+
+8
+00:00:42.900 --> 00:00:49.166
+As expected, Git complains that the ".gitconfig" file is not available, which is true.
+
+9
+00:00:49.166 --> 00:00:59.000
+Let's set our first entry. “git”, space, “config”, space, -“-global”, space, and then the configuration entry name
+
+10
+00:00:59.000 --> 00:01:07.000
+user.name, space, followed by the value to set, which in double quotes i put my name "Jason Taylor".
+
+11
+00:01:07.000 --> 00:01:14.600
+When we press enter, Git will create the ".gitconfig" file for us and put this entry in there. Press enter.
+
+12
+00:01:14.600 --> 00:01:21.400
+With Git, no news is good news, usually. The other value needed is the user's email address.
+
+13
+00:01:21.400 --> 00:01:29.300
+so type: “git”, space, “config”, space, “--global”, space, the entry name "user.email",
+
+14
+00:01:29.300 --> 00:01:36.500
+space, and then the value in double quotes: I’m putting my email address "jason@git.training".
+
+15
+00:01:36.500 --> 00:01:42.600
+Press enter. Like before we can use the “git config” command to list our global entries.
+
+16
+00:01:42.600 --> 00:01:49.800
+“git”, space, “config”, space, “--global”, space, “--list”. Press enter.
+
+17
+00:01:49.800 --> 00:01:55.366
+Git responds with two entries: our user.name and the “user.email”.
+
+18
+00:01:55.366 --> 00:02:01.733
+Now if we list all the files in our user's home directory, we have our .gitconfig file.
+
+19
+00:02:01.733 --> 00:02:11.400
+If I use the "cat" command, followed by the file name ".gitconfig", that will echo out the complete file contents of the ".gitconfig" file.
+
+20
+00:02:11.400 --> 00:02:22.200
+Press enter. Our config file starts with a user section, and then two entries: name and email, with their respective values.
+

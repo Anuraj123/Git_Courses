@@ -1,0 +1,146 @@
+﻿WEBVTT
+
+1
+00:00:00.000 --> 00:00:04.933
+Welcome, in this video, we're going to directly edit our files on GitHub.
+
+2
+00:00:04.933 --> 00:00:09.366
+While normally I don't recommend this as a best practice, there are times when
+
+3
+00:00:09.366 --> 00:00:14.266
+editing files directly on GitHub can be a bit beneficial, or at least convenient.
+
+4
+00:00:14.266 --> 00:00:19.066
+I'm currently logged in, and on the "website" Git repository on GitHub.
+
+5
+00:00:19.066 --> 00:00:23.233
+I have my list of files and folders that are part of my repository,
+
+6
+00:00:23.233 --> 00:00:29.100
+and let's just start out by going to the "index.html" file, and editing it directly.
+
+7
+00:00:29.100 --> 00:00:34.066
+Click on the file, and that will load that particular file into this interface.
+
+8
+00:00:34.066 --> 00:00:38.100
+What we're interested in in particular is the "Edit this file" button.
+
+9
+00:00:38.100 --> 00:00:41.466
+Before we do that, we can see that GitHub will display this
+
+10
+00:00:41.466 --> 00:00:45.933
+in a nice viewer with syntax highlighting if the language is known.
+
+11
+00:00:45.933 --> 00:00:49.500
+In this case, it picks up on the fact that this is an HTML document,
+
+12
+00:00:49.500 --> 00:00:55.066
+So, GitHub will dutifully display the HTML markup, with syntax highlighting.
+
+13
+00:00:55.066 --> 00:00:57.700
+Alright, now let's click on "Edit this file".
+
+14
+00:00:57.700 --> 00:01:02.500
+The file then reloads into an editor, which we can then make our changes.
+
+15
+00:01:02.500 --> 00:01:06.500
+We have several options available, including previewing the changes,
+
+16
+00:01:06.500 --> 00:01:09.533
+whether or not we want to use spaces or tabs,
+
+17
+00:01:09.533 --> 00:01:12.800
+and how many spaces to use for the indent size.
+
+18
+00:01:12.800 --> 00:01:18.766
+4 spaces for a tab size or intention level is fairly standard, so I'm going to leave that.
+
+19
+00:01:18.766 --> 00:01:23.866
+We also have the option to wrap or do a soft wrap; I'm going to leave it with "No wrap".
+
+20
+00:01:23.866 --> 00:01:27.500
+And, we have the option of going to editing in full screen mode.
+
+21
+00:01:27.500 --> 00:01:32.700
+Let's check that out right quick; that provides a "different" view of our source code...
+
+22
+00:01:32.700 --> 00:01:38.433
+I'm going to exit the full screen mode, which GitHub sometimes refers to as "Zen Mode".
+
+23
+00:01:38.433 --> 00:01:42.766
+And, I'm going to do my editing directly in this particular style of editor,
+
+24
+00:01:42.766 --> 00:01:48.266
+since it has the syntax highlighting as well as the numbers of the lines.
+
+25
+00:01:48.266 --> 00:01:53.933
+I'm going to find the title tag, and inside the title tag I'm going to make an update here.
+
+26
+00:01:53.933 --> 00:01:56.033
+Great, that's the only change I want to make for now.
+
+27
+00:01:56.033 --> 00:02:00.600
+So, let's scroll down; past the editor we have options for committing this change.
+
+28
+00:02:00.600 --> 00:02:05.166
+Just like on our local GitHub repository, we need to commit our changes.
+
+29
+00:02:05.166 --> 00:02:09.300
+If you need to, you can also provide an optional extended description;
+
+30
+00:02:09.300 --> 00:02:14.766
+this is not required, but it is helpful. You can also use Markdown syntax if you want.
+
+31
+00:02:14.766 --> 00:02:17.933
+And, for now, we're going to keep the commit directly on master;
+
+32
+00:02:17.933 --> 00:02:22.200
+however, if we wanted to, we could switch to another branch prior to doing the commit.
+
+33
+00:02:22.200 --> 00:02:25.100
+I'm going to go ahead and click on commit changes.
+
+34
+00:02:25.100 --> 00:02:28.700
+If I didn't like my changes, I could also exit out by clicking on cancel.
+
+35
+00:02:28.700 --> 00:02:32.000
+Great, now that I've made that change, if you notice at the top here
+
+36
+00:02:32.000 --> 00:02:38.300
+we have our commit message, which is "Update title for Personal Website".
+

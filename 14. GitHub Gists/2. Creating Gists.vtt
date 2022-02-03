@@ -1,0 +1,142 @@
+﻿WEBVTT
+
+1
+00:00:00.000 --> 00:00:04.966
+Welcome, in this video, we're going to take a quick look at Gists.
+
+2
+00:00:04.966 --> 00:00:08.666
+I'm currently logged into GitHub, and I'm on my newsfeed page.
+
+3
+00:00:08.666 --> 00:00:13.700
+If you're somewhere else in GitHub, just click on the octocat icon at the top.
+
+4
+00:00:13.700 --> 00:00:17.733
+This will take you back to your newsfeed page. At the top of the page,
+
+5
+00:00:17.733 --> 00:00:22.766
+we have an item called "Gist" or "Gist", depending on how you prefer to pronounce this.
+
+6
+00:00:22.766 --> 00:00:27.100
+Click on "Gist"; gists are a way of sharing little snippets of code,
+
+7
+00:00:27.100 --> 00:00:30.300
+kind of like a Pastebin. But it's not intended for a full file,
+
+8
+00:00:30.300 --> 00:00:34.833
+although it can be; typically it's for one or a few files.
+
+9
+00:00:34.833 --> 00:00:38.766
+Using gists, it's basically a miniature Git repository.
+
+10
+00:00:38.766 --> 00:00:42.300
+Starting out, I don't have any gists, so I'm going to create one.
+
+11
+00:00:42.300 --> 00:00:45.333
+I'm going to give my gist a description; I'm going to call this:
+
+12
+00:00:45.333 --> 00:00:47.833
+"Java Home Environment Variable on Linux".
+
+13
+00:00:47.833 --> 00:00:51.400
+The file name I want to use, which would be the filename plus extension;
+
+14
+00:00:51.400 --> 00:00:57.200
+I'm going to call this ".bashrc", and in the contents I will just type in or paste in
+
+15
+00:00:57.200 --> 00:01:01.400
+the contents of the snippet of this file that I wish to share with others.
+
+16
+00:01:01.400 --> 00:01:07.066
+I can add additional files if I need to. For some systems, ".bashrc" file will be fine,
+
+17
+00:01:07.066 --> 00:01:14.500
+but for others I will need to use another file: ".bash_profile".
+
+18
+00:01:14.500 --> 00:01:19.300
+So, this gist has two files, or really the partial of two files.
+
+19
+00:01:19.300 --> 00:01:24.166
+Once I'm happy with my changes, I have two options; I can create a secret gist
+
+20
+00:01:24.166 --> 00:01:28.466
+or a public gist. A secret gist is publically available,
+
+21
+00:01:28.466 --> 00:01:32.866
+but excluded from search engines, so you must give out the gist URL
+
+22
+00:01:32.866 --> 00:01:36.200
+for people to access it. If we create a public gist,
+
+23
+00:01:36.200 --> 00:01:41.500
+the gist will be fully available to anyone searching on Google or other search engines.
+
+24
+00:01:41.500 --> 00:01:46.766
+I'm going to create public gist. Great, so I land on the page that is for this gist,
+
+25
+00:01:46.766 --> 00:01:51.000
+and you can see it looks a lot like a miniature Git repository.
+
+26
+00:01:51.000 --> 00:01:57.900
+For example, I can edit if I go up to the edit button; let's separate this out onto two lines.
+
+27
+00:01:57.900 --> 00:02:02.300
+Great, in bash I create a variable, in this case "JAVA_HOME",
+
+28
+00:02:02.300 --> 00:02:07.733
+and set its value to "/path/to/java", then I export the "JAVA_HOME" environment variable.
+
+29
+00:02:07.733 --> 00:02:10.400
+Then, I'm going to click on "Update public gist".
+
+30
+00:02:10.400 --> 00:02:13.300
+Great, so the code over here shows revisions;
+
+31
+00:02:13.300 --> 00:02:17.200
+if I click on revisions, I can see a diff between the different versions.
+
+32
+00:02:17.200 --> 00:02:21.166
+I'm going to click on the name of the gist to go back to its page, and at the bottom
+
+33
+00:02:21.166 --> 00:02:24.933
+if I wish to, I can leave a comment using the markdown format.
+
+34
+00:02:24.933 --> 00:02:27.566
+Once I'm happy with my comment, I'm going to preview it.
+
+35
+00:02:27.566 --> 00:02:32.366
+That looks good to me; click on "Comment" to leave the comment.
+

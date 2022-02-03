@@ -1,0 +1,158 @@
+﻿WEBVTT
+
+1
+00:00:00.000 --> 00:00:05.500
+Welcome, in this video, we're going to look at the pulse and graphs section of GitHub
+
+2
+00:00:05.500 --> 00:00:09.266
+Instead of showing those features with the main login that we've been using
+
+3
+00:00:09.266 --> 00:00:13.033
+throughout the course, I'm going to return to the "starter-web"
+
+4
+00:00:13.033 --> 00:00:16.733
+under "scm-ninja", logged in with a different account.
+
+5
+00:00:16.733 --> 00:00:20.366
+And, that's because that I have more data in this repository
+
+6
+00:00:20.366 --> 00:00:24.400
+than I have with the repositories that we've been using throughout this course.
+
+7
+00:00:24.400 --> 00:00:30.000
+So first let's check on "pulse", which is on the right hand side menu of our repository:
+
+8
+00:00:30.000 --> 00:00:35.100
+click on pulse. The pulse will give us trends over time for our repository.
+
+9
+00:00:35.100 --> 00:00:43.700
+We can change the time period to show last 3 days, 24 hours, 1 week, or the past month.
+
+10
+00:00:43.700 --> 00:00:47.400
+And, this just gives us overall statistics about our repository,
+
+11
+00:00:47.400 --> 00:00:50.833
+including merged pull requests; proposed pull requests,
+
+12
+00:00:50.833 --> 00:00:54.733
+which are pull requests that are open; closed and new issues,
+
+13
+00:00:54.733 --> 00:00:58.500
+which we will be covering in an upcoming section of this course;
+
+14
+00:00:58.500 --> 00:01:03.100
+and then some general statistics about the number authors involved, the number of commits,
+
+15
+00:01:03.100 --> 00:01:07.066
+and how many additions and deletions were involved across the board.
+
+16
+00:01:07.066 --> 00:01:11.566
+From here, we go over to the right hand side, and we see an abbreviated
+
+17
+00:01:11.566 --> 00:01:15.766
+version of our menu; we have icons that represent each of the parts
+
+18
+00:01:15.766 --> 00:01:19.200
+of our repository that we can get to using that menu:
+
+19
+00:01:19.200 --> 00:01:24.666
+code; issues; pull requests; wiki; pulse, which we're currently on; and then graphs.
+
+20
+00:01:24.666 --> 00:01:28.600
+Click on "Graphs". The first tab we come to is contributors.
+
+21
+00:01:28.600 --> 00:01:33.000
+Contributors are all the people that make contributions to your repository.
+
+22
+00:01:33.000 --> 00:01:36.800
+I can filter by commits, deletions, and additions.
+
+23
+00:01:36.800 --> 00:01:40.800
+Next, let's click on traffic, and we can see the overall activity
+
+24
+00:01:40.800 --> 00:01:45.033
+on our repository, including number of clones that are happening;
+
+25
+00:01:45.033 --> 00:01:49.500
+the number of visitors to the GitHub repository; our referring sites;
+
+26
+00:01:49.500 --> 00:01:54.733
+and our most popular content within the repository, along with the views and visitors.
+
+27
+00:01:54.733 --> 00:01:58.300
+Next, let's check out commits. This shows us the commits
+
+28
+00:01:58.300 --> 00:02:03.766
+that have been happening recently to this repository. Now, let's check out code frequency.
+
+29
+00:02:03.766 --> 00:02:07.766
+This gives us a graph of additions and deletions to this repository.
+
+30
+00:02:07.766 --> 00:02:11.366
+At this point, we haven't been doing a whole lot, so there's not much to see here.
+
+31
+00:02:11.366 --> 00:02:16.266
+Now, let's check out "Punch card"; the punch card shows the commits we've made
+
+32
+00:02:16.266 --> 00:02:20.900
+by day of week and timeframe. Next, let's check out "Network".
+
+33
+00:02:20.900 --> 00:02:26.000
+Network shows a lot of the branches that are involved along with a lot of the forks as well.
+
+34
+00:02:26.000 --> 00:02:30.400
+Now, let's move onto "Members"; Members is a great way to see a list of
+
+35
+00:02:30.400 --> 00:02:33.600
+all the people that have forked your repository,
+
+36
+00:02:33.600 --> 00:02:39.800
+including the fork that we created earlier, which goes to my "jasongtaylor" user account.
+
+37
+00:02:39.800 --> 00:02:43.333
+I'm going to click on the name of this repository, and I'd like to show you
+
+38
+00:02:43.333 --> 00:02:46.900
+there are sometimes alternate ways to get to each of those items.
+
+39
+00:02:46.900 --> 00:02:53.633
+So, for example, I can click on the number of forks to take me to the network page.
+

@@ -1,0 +1,90 @@
+﻿WEBVTT
+
+1
+00:00:00.000 --> 00:00:05.166
+In this section, we cover an often overlooked and misunderstood feature of GitHub:
+
+2
+00:00:05.166 --> 00:00:09.733
+organizations. People think that organizations are for companies,
+
+3
+00:00:09.733 --> 00:00:13.900
+but that's not entirely true; I think of a GitHub organization
+
+4
+00:00:13.900 --> 00:00:17.100
+as simply a group of related repositories.
+
+5
+00:00:17.100 --> 00:00:22.600
+That means anyone can have an organization, or two, or even more;
+
+6
+00:00:22.600 --> 00:00:26.733
+it just depends on how many groups of repositories you have.
+
+7
+00:00:26.733 --> 00:00:30.733
+Sometimes organizations are related to a company, department,
+
+8
+00:00:30.733 --> 00:00:33.966
+or a group of friends hacking on a project together.
+
+9
+00:00:33.966 --> 00:00:36.966
+I actually have several GitHub organizations
+
+10
+00:00:36.966 --> 00:00:40.866
+to group together several repositories from courses I teach.
+
+11
+00:00:40.866 --> 00:00:45.433
+Also, it's fairly easy to transfer repositories from your individual account,
+
+12
+00:00:45.433 --> 00:00:49.100
+or between organizations. In this section,
+
+13
+00:00:49.100 --> 00:00:51.966
+we will cover setting up your own organization
+
+14
+00:00:51.966 --> 00:00:54.666
+and all the management fun that comes with it.
+
+15
+00:00:54.666 --> 00:00:57.966
+We will transfer one of the repositories we have been working with
+
+16
+00:00:57.966 --> 00:01:03.266
+in our individual account, and then forking that same repository back to our main account.
+
+17
+00:01:03.266 --> 00:01:07.400
+Along the way, we will explore the differences and similarities
+
+18
+00:01:07.400 --> 00:01:10.566
+between individual accounts and organizations.
+
+19
+00:01:10.566 --> 00:01:14.133
+A key part of organizations is teams.
+
+20
+00:01:14.133 --> 00:01:18.100
+Teams allow us to group contributors together in logical groups
+
+21
+00:01:18.100 --> 00:01:22.533
+that have specific permissions, depending on their role in our projects.
+
+22
+00:01:22.533 --> 00:01:28.266
+We will set up and manage teams within our organization.
+
